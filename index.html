@@ -1,1 +1,708 @@
 
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robotaxi 行业观察</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",
+    "Microsoft YaHei",Arial,sans-serif;
+    background:#f5f7fa;
+    color:#1f2937;
+}
+.header{
+    background:#111827;
+    color:white;
+    padding:28px 5%;
+}
+.header h1{margin:0;font-size:30px}
+.header p{margin:8px 0 0;color:#9ca3af}
+
+.nav{
+    background:white;
+    padding:12px 5%;
+    border-bottom:1px solid #e5e7eb;
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+.nav button{
+    border:0;
+    background:white;
+    padding:9px 15px;
+    margin-right:6px;
+    cursor:pointer;
+    border-radius:6px;
+}
+.nav button:hover{
+    background:#eef2ff;
+}
+
+.container{
+    max-width:1400px;
+    margin:25px auto;
+    padding:0 20px;
+}
+
+.section{
+    display:none;
+}
+.section.active{
+    display:block;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:22px;
+    margin-bottom:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+
+.metric{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    border:1px solid #e5e7eb;
+}
+
+.metric .number{
+    font-size:28px;
+    font-weight:bold;
+    margin-top:8px;
+}
+
+.tag{
+    display:inline-block;
+    padding:4px 9px;
+    border-radius:20px;
+    background:#eef2ff;
+    font-size:12px;
+}
+
+.event{
+    border-bottom:1px solid #eee;
+    padding:18px 0;
+}
+.event:last-child{border-bottom:0}
+
+.event h3{
+    margin:8px 0;
+}
+
+.source{
+    font-size:13px;
+    color:#6b7280;
+}
+
+a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding:12px;
+    border-bottom:1px solid #eee;
+    text-align:left;
+}
+
+th{
+    background:#f9fafb;
+}
+
+.search{
+    width:100%;
+    padding:12px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+.notice{
+    background:#f9fafb;
+    padding:15px;
+    border-radius:8px;
+    color:#4b5563;
+}
+
+.footer{
+    text-align:center;
+    padding:30px;
+    color:#9ca3af;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>Robotaxi 行业观察</h1>
+    <p>中国市场优先 · 全球市场补充 · 持续跟踪数据库</p>
+</div>
+
+<div class="nav">
+    <button onclick="show('dashboard')">Dashboard</button>
+    <button onclick="show('china')">🇨🇳 中国Robotaxi</button>
+    <button onclick="show('overseas')">🌎 海外</button>
+    <button onclick="show('companies')">企业数据库</button>
+    <button onclick="show('cities')">城市数据库</button>
+    <button onclick="show('policy')">政策监管</button>
+    <button onclick="show('ue')">单车UE</button>
+    <button onclick="show('capital')">资本合作</button>
+    <button onclick="show('history')">历史日报</button>
+    <button onclick="show('risk')">风险雷达</button>
+</div>
+
+<div class="container">
+
+<!-- Dashboard -->
+
+<div id="dashboard" class="section active">
+
+<div class="card">
+<h2>今日行业判断</h2>
+
+<p>
+中国Robotaxi正在进入由“技术验证”向“规模运营与商业模式验证”
+转换的阶段。后续重点不再只是L4能力本身，而是城市准入、
+订单获取、车辆资产、运营效率、平台合作及单车经济性。
+</p>
+
+<div class="notice">
+<strong>每日更新时间：</strong>08:00（北京时间）<br>
+<strong>信息优先级：</strong>中国 ＞ 美国 ＞ 欧洲及其他市场
+</div>
+</div>
+
+<div class="grid">
+
+<div class="metric">
+<div>中国重点情报</div>
+<div class="number">—</div>
+</div>
+
+<div class="metric">
+<div>今日开城/运营</div>
+<div class="number">—</div>
+</div>
+
+<div class="metric">
+<div>政策变化</div>
+<div class="number">—</div>
+</div>
+
+<div class="metric">
+<div>资本/合作</div>
+<div class="number">—</div>
+</div>
+
+</div>
+
+<div class="card">
+<h2>重点观察方向</h2>
+<ul>
+<li>中国Robotaxi城市规模化运营</li>
+<li>L4准入与道路通行政策</li>
+<li>Robotaxi订单密度与车辆利用率</li>
+<li>车辆销售/资产运营模式</li>
+<li>平台佣金与流量入口</li>
+<li>地方政府、国企及OEM合作</li>
+<li>单车UE及投资回收周期</li>
+<li>事故、异常事件及远程协助</li>
+</ul>
+</div>
+
+</div>
+
+
+<!-- 中国 -->
+
+<div id="china" class="section">
+
+<div class="card">
+<h2>🇨🇳 中国 Robotaxi｜今日重点</h2>
+
+<input
+class="search"
+placeholder="搜索中国Robotaxi情报……"
+onkeyup="searchEvents(this,'chinaEvents')">
+
+<div id="chinaEvents">
+
+<div class="event">
+<span class="tag">待更新</span>
+<h3>每日08:00更新国内Robotaxi重点信息</h3>
+<p>
+重点抓取政策、开城、订单、收入、价格、车辆、
+企业合作、融资、安全事件等信息。
+</p>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<h2>中国市场重点跟踪</h2>
+
+<table>
+<tr>
+<th>维度</th>
+<th>重点指标</th>
+</tr>
+
+<tr>
+<td>城市</td>
+<td>准入、测试、示范运营、商业运营</td>
+</tr>
+
+<tr>
+<td>运营</td>
+<td>车辆数、订单数、日均订单、单车里程</td>
+</tr>
+
+<tr>
+<td>商业</td>
+<td>客单价、收入、平台抽佣、单车UE</td>
+</tr>
+
+<tr>
+<td>政策</td>
+<td>L4准入、道路通行、责任认定、数据合规</td>
+</tr>
+
+<tr>
+<td>合作</td>
+<td>OEM、平台、国企、运营商、地方政府</td>
+</tr>
+
+</table>
+</div>
+
+</div>
+
+
+<!-- 海外 -->
+
+<div id="overseas" class="section">
+
+<div class="card">
+<h2>🌎 海外 Robotaxi</h2>
+
+<div class="event">
+<span class="tag">美国</span>
+<h3>Waymo / Tesla / Zoox / Uber / Lyft</h3>
+<p>
+海外市场作为中国市场的补充观察对象，
+重点关注规模化运营、平台合作、专用Robotaxi车型、
+监管和商业模式。
+</p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- 企业 -->
+
+<div id="companies" class="section">
+
+<div class="card">
+<h2>核心企业数据库</h2>
+
+<table>
+
+<tr>
+<th>企业</th>
+<th>主要定位</th>
+<th>重点观察</th>
+</tr>
+
+<tr>
+<td>百度 Apollo Go</td>
+<td>Robotaxi运营</td>
+<td>中国城市规模、订单、车辆</td>
+</tr>
+
+<tr>
+<td>小马智行</td>
+<td>自动驾驶+Robotaxi</td>
+<td>城市运营、OEM合作</td>
+</tr>
+
+<tr>
+<td>文远知行</td>
+<td>自动驾驶+Robotaxi</td>
+<td>商业化、海外扩张</td>
+</tr>
+
+<tr>
+<td>滴滴</td>
+<td>出行平台</td>
+<td>流量入口、Robotaxi合作</td>
+</tr>
+
+<tr>
+<td>高德</td>
+<td>出行平台</td>
+<td>聚合流量、订单入口</td>
+</tr>
+
+<tr>
+<td>千里科技/千里智行</td>
+<td>智能汽车/智能运力</td>
+<td>E05M、车辆资产及合作模式</td>
+</tr>
+
+<tr>
+<td>Waymo</td>
+<td>Robotaxi技术与运营</td>
+<td>规模化及平台合作</td>
+</tr>
+
+<tr>
+<td>Tesla</td>
+<td>整车+Robotaxi</td>
+<td>专用车型、制造成本</td>
+</tr>
+
+<tr>
+<td>Zoox</td>
+<td>专用Robotaxi</td>
+<td>城市复制、车队运营</td>
+</tr>
+
+</table>
+</div>
+
+</div>
+
+
+<!-- 城市 -->
+
+<div id="cities" class="section">
+
+<div class="card">
+<h2>城市Robotaxi数据库</h2>
+
+<table>
+
+<tr>
+<th>城市</th>
+<th>市场</th>
+<th>重点观察</th>
+</tr>
+
+<tr>
+<td>北京</td>
+<td>中国</td>
+<td>政策、准入、商业化</td>
+</tr>
+
+<tr>
+<td>上海</td>
+<td>中国</td>
+<td>示范运营、商业化</td>
+</tr>
+
+<tr>
+<td>深圳</td>
+<td>中国</td>
+<td>L4准入、Robotaxi规模运营</td>
+</tr>
+
+<tr>
+<td>广州</td>
+<td>中国</td>
+<td>Robotaxi运营及政策</td>
+</tr>
+
+<tr>
+<td>武汉</td>
+<td>中国</td>
+<td>Apollo Go规模化运营</td>
+</tr>
+
+<tr>
+<td>重庆</td>
+<td>中国</td>
+<td>地方产业、出租车及智能运力</td>
+</tr>
+
+<tr>
+<td>成都</td>
+<td>中国</td>
+<td>Robotaxi及网约车市场</td>
+</tr>
+
+</table>
+</div>
+
+</div>
+
+
+<!-- 政策 -->
+
+<div id="policy" class="section">
+
+<div class="card">
+<h2>政策 / 监管数据库</h2>
+
+<table>
+
+<tr>
+<th>政策方向</th>
+<th>重点跟踪内容</th>
+</tr>
+
+<tr>
+<td>L4准入</td>
+<td>机动车产品准入、型式认证</td>
+</tr>
+
+<tr>
+<td>道路通行</td>
+<td>测试、示范、商业运营</td>
+</tr>
+
+<tr>
+<td>责任认定</td>
+<td>车辆、平台、运营主体责任</td>
+</tr>
+
+<tr>
+<td>远程协助</td>
+<td>远程驾驶、异常处置</td>
+</tr>
+
+<tr>
+<td>数据安全</td>
+<td>地图、车辆数据、个人信息</td>
+</tr>
+
+</table>
+</div>
+
+</div>
+
+
+<!-- UE -->
+
+<div id="ue" class="section">
+
+<div class="card">
+
+<h2>Robotaxi 单车UE模型</h2>
+
+<table>
+
+<tr>
+<th>模块</th>
+<th>核心变量</th>
+<th>计算逻辑</th>
+</tr>
+
+<tr>
+<td>订单收入</td>
+<td>日订单 × 客单价</td>
+<td>日订单 × 平均客单价 × 运营天数</td>
+</tr>
+
+<tr>
+<td>平台成本</td>
+<td>平台佣金</td>
+<td>订单收入 × 平台费率</td>
+</tr>
+
+<tr>
+<td>车辆资产</td>
+<td>售价/折旧/融资</td>
+<td>资产成本按生命周期摊销</td>
+</tr>
+
+<tr>
+<td>能源</td>
+<td>里程/电耗/电价</td>
+<td>公里数 × 单公里能耗 × 电价</td>
+</tr>
+
+<tr>
+<td>运营</td>
+<td>保险/维修/云舱/客服</td>
+<td>固定成本 + 变动成本</td>
+</tr>
+
+<tr>
+<td>核心结果</td>
+<td>单车利润</td>
+<td>收入 - 平台 - 能源 - 运营 - 资产</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+
+<!-- 资本 -->
+
+<div id="capital" class="section">
+
+<div class="card">
+
+<h2>资本 / 合作数据库</h2>
+
+<ul>
+<li>OEM × 自动驾驶公司</li>
+<li>自动驾驶公司 × 网约车平台</li>
+<li>地方政府 × Robotaxi企业</li>
+<li>国企 × Robotaxi运营</li>
+<li>车辆销售 × Robotaxi运营</li>
+<li>融资租赁 × 智能运力资产</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- 历史 -->
+
+<div id="history" class="section">
+
+<div class="card">
+
+<h2>历史日报</h2>
+
+<table>
+
+<tr>
+<th>日期</th>
+<th>重点</th>
+</tr>
+
+<tr>
+<td>2026-09-17</td>
+<td>Robotaxi行业观察</td>
+</tr>
+
+<tr>
+<td>2026-09-16</td>
+<td>Robotaxi行业观察</td>
+</tr>
+
+<tr>
+<td>2026-09-15</td>
+<td>Robotaxi行业观察</td>
+</tr>
+
+<tr>
+<td>2026-09-14</td>
+<td>Robotaxi行业观察</td>
+</tr>
+
+<tr>
+<td>2026-09-13</td>
+<td>Robotaxi行业观察</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+
+<!-- 风险 -->
+
+<div id="risk" class="section">
+
+<div class="card">
+
+<h2>风险雷达</h2>
+
+<div class="grid">
+
+<div class="metric">
+<strong>政策风险</strong>
+<p>城市准入、责任认定、商业运营规则变化</p>
+</div>
+
+<div class="metric">
+<strong>平台风险</strong>
+<p>订单入口、平台佣金及流量依赖</p>
+</div>
+
+<div class="metric">
+<strong>资产风险</strong>
+<p>车辆折旧、残值及资本占用</p>
+</div>
+
+<div class="metric">
+<strong>安全风险</strong>
+<p>事故、异常事件、远程协助</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+Robotaxi 行业观察 · 中国市场优先 · 每日08:00更新
+</div>
+
+
+<script>
+
+function show(id){
+
+    document.querySelectorAll(".section")
+    .forEach(x=>x.classList.remove("active"));
+
+    document.getElementById(id)
+    .classList.add("active");
+
+    window.scrollTo(0,0);
+}
+
+function searchEvents(input,id){
+
+    let q=input.value.toLowerCase();
+
+    document.querySelectorAll("#"+id+" .event")
+    .forEach(e=>{
+
+        if(e.innerText.toLowerCase().includes(q)){
+            e.style.display="block";
+        }else{
+            e.style.display="none";
+        }
+
+    });
+}
+
+</script>
+
+</body>
+</html>
