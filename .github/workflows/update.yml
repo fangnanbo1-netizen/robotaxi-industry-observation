@@ -1,1 +1,352 @@
 
+name: Robotaxi Industry Daily Update
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '0 8 * * *'
+      timezone: 'Asia/Shanghai'
+
+permissions:
+  contents: write
+
+jobs:
+  update-robotaxi:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install feedparser requests
+
+      - name: Collect Robotaxi intelligence
+        run: |
+          python <<'PY'
+          import feedparser
+          import json
+          import os
+          import re
+          from datetime import datetime, timedelta, timezone
+          from email.utils import parsedate_to_datetime
+
+          # =========================
+          # 基础配置
+          # =========================
+
+          TZ = timezone(timedelta(hours=8))
+          now = datetime.now(TZ)
+          today = now.strftime("%Y-%m-%d")
+
+          os.makedirs("data", exist_ok=True)
+
+          # =========================
+          # Robotaxi 信息源
+          # 中国优先
+          # =========================
+
+          feeds = [
+              (
+                  "中国 Robotaxi",
+                  "https://news.google.com/rss/search?q=Robotaxi+中国+自动驾驶&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+              ),
+              (
+                  "中国 自动驾驶出租车",
+                  "https://news.google.com/rss/search?q=自动驾驶出租车+Robotaxi&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+              ),
+              (
+                  "百度 Apollo Go",
+                  "https://news.google.com/rss/search?q=Apollo+Go+萝卜快跑&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+              ),
+              (
+                  "小马智行",
+                  "https://news.google.com/rss/search?q=小马智行+Robotaxi&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+              ),
+              (
+                  "文远知行",
+                  "https://news.google.com/rss/search?q=文远知行+Robotaxi&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+              ),
+              (
+                  "滴滴 自动驾驶",
+                  "https://news.google.com/rss/search?q=滴滴+自动驾驶+Robotaxi&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+              ),
+              (
+                  "海外 Robotaxi",
+                  "https://news.google.com/rss/search?q=Robotaxi+Waymo+Zoox+Tesla&hl=en-US&gl=US&ceid=US:en"
+              )
+          ]
+
+          # =========================
+          # 关键词分类
+          # =========================
+
+          keywords = {
+              "政策监管": [
+                  "政策", "法规", "监管", "准入", "道路测试",
+                  "示范应用", "牌照", "试点", "标准", "交通运输"
+              ],
+              "城市运营": [
+                  "开城", "运营", "商业化", "订单", "服务",
+                  "机场", "网约车", "出租车", "Robotaxi"
+              ],
+              "企业动态": [
+                  "Apollo", "萝卜快跑", "小马智行", "文远知行",
+                  "滴滴", "高德", "T3", "享道", "Waymo",
+                  "Zoox", "Tesla"
+              ],
+              "资本合作": [
+                  "融资", "投资", "合作", "战略合作", "订单",
+                  "采购", "定点", "合资", "上市"
+              ],
+              "技术车辆": [
+                  "L4", "L2", "自动驾驶", "车辆", "车型",
+                  "传感器", "激光雷达", "无人驾驶"
+              ],
+              "安全事件": [
+                  "事故", "碰撞", "故障", "召回", "安全",
+                  "异常", "监管处罚"
+              ]
+          }
+
+          def classify(title, summary):
+              text = f"{title} {summary}".lower()
+
+              result = []
+
+              for category, words in keywords.items():
+                  for word in words:
+                      if word.lower() in text:
+                          result.append(category)
+                          break
+
+              return result or ["行业动态"]
+
+          def clean_text(text):
+              text = re.sub(r"<[^>]+>", " ", text or "")
+              text = re.sub(r"\s+", " ", text)
+              return text.strip()
+
+          # =========================
+          # 抓取过去 48 小时
+          # =========================
+
+          cutoff = now - timedelta(hours=48)
+
+          items = []
+
+          for source_name, url in feeds:
+
+              try:
+                  feed = feedparser.parse(url)
+
+                  for entry in feed.entries:
+
+                      title = clean_text(entry.get("title", ""))
+
+                      if not title:
+                          continue
+
+                      link = entry.get("link", "")
+
+                      summary = clean_text(
+                          entry.get("summary", "")
+                      )
+
+                      published = entry.get("published", "")
+
+                      try:
+                          published_dt = parsedate_to_datetime(
+                              published
+                          ).astimezone(TZ)
+                      except Exception:
+                          published_dt = now
+
+                      if published_dt < cutoff:
+                          continue
+
+                      categories = classify(
+                          title,
+                          summary
+                      )
+
+                      items.append({
+                          "title": title,
+                          "summary": summary[:500],
+                          "source": source_name,
+                          "url": link,
+                          "published": published_dt.isoformat(),
+                          "categories": categories
+                      })
+
+              except Exception as e:
+                  print(
+                      f"Feed error: {source_name}: {e}"
+                  )
+
+          # =========================
+          # 去重
+          # =========================
+
+          unique = {}
+
+          for item in items:
+
+              key = re.sub(
+                  r"[^a-zA-Z0-9\u4e00-\u9fff]",
+                  "",
+                  item["title"].lower()
+              )
+
+              if key not in unique:
+                  unique[key] = item
+
+          items = list(unique.values())
+
+          # =========================
+          # 排序
+          # 中国优先、时间倒序
+          # =========================
+
+          def priority(item):
+
+              source = item["source"]
+
+              if "海外" in source:
+                  region = 1
+              else:
+                  region = 0
+
+              return (
+                  region,
+                  -datetime.fromisoformat(
+                      item["published"]
+                  ).timestamp()
+              )
+
+          items.sort(key=priority)
+
+          # =========================
+          # 生成日报
+          # =========================
+
+          report = {
+              "date": today,
+              "updated_at": now.isoformat(),
+              "timezone": "Asia/Shanghai",
+              "total_items": len(items),
+              "china_priority": True,
+              "items": items
+          }
+
+          daily_file = f"data/daily-{today}.json"
+
+          with open(
+              daily_file,
+              "w",
+              encoding="utf-8"
+          ) as f:
+
+              json.dump(
+                  report,
+                  f,
+                  ensure_ascii=False,
+                  indent=2
+              )
+
+          # =========================
+          # 更新历史索引
+          # =========================
+
+          history_file = "data/history.json"
+
+          if os.path.exists(history_file):
+
+              try:
+                  with open(
+                      history_file,
+                      "r",
+                      encoding="utf-8"
+                  ) as f:
+                      history = json.load(f)
+              except Exception:
+                  history = []
+
+          else:
+              history = []
+
+          history = [
+              x for x in history
+              if x.get("date") != today
+          ]
+
+          history.insert(
+              0,
+              {
+                  "date": today,
+                  "file": daily_file,
+                  "items": len(items),
+                  "updated_at": now.isoformat()
+              }
+          )
+
+          history = history[:365]
+
+          with open(
+              history_file,
+              "w",
+              encoding="utf-8"
+          ) as f:
+
+              json.dump(
+                  history,
+                  f,
+                  ensure_ascii=False,
+                  indent=2
+              )
+
+          # =========================
+          # 生成 latest.json
+          # =========================
+
+          with open(
+              "data/latest.json",
+              "w",
+              encoding="utf-8"
+          ) as f:
+
+              json.dump(
+                  report,
+                  f,
+                  ensure_ascii=False,
+                  indent=2
+              )
+
+          print(
+              f"Robotaxi daily update completed: "
+              f"{today}, {len(items)} items"
+          )
+
+          PY
+
+      - name: Commit daily intelligence
+        run: |
+          git config user.name "robotaxi-observation-bot"
+          git config user.email "robotaxi-observation-bot@users.noreply.github.com"
+
+          git add data/
+
+          if git diff --cached --quiet; then
+            echo "No new data to commit."
+          else
+            git commit -m "Daily Robotaxi intelligence update $(date +'%Y-%m-%d')"
+            git push
+          fi
