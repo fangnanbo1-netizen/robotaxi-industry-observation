@@ -1,706 +1,2038 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Robotaxi 行业观察</title>
+
+<title>Robotaxi 行业观察 | 中国Robotaxi产业数据库</title>
+
+<meta name="description" content="中国Robotaxi行业观察、政策、企业、城市、资本、技术、商业模式与单车UE数据库">
 
 <style>
-*{box-sizing:border-box}
-body{
-    margin:0;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",
-    "Microsoft YaHei",Arial,sans-serif;
-    background:#f5f7fa;
-    color:#1f2937;
-}
-.header{
-    background:#111827;
-    color:white;
-    padding:28px 5%;
-}
-.header h1{margin:0;font-size:30px}
-.header p{margin:8px 0 0;color:#9ca3af}
 
-.nav{
-    background:white;
-    padding:12px 5%;
-    border-bottom:1px solid #e5e7eb;
-    position:sticky;
-    top:0;
-    z-index:10;
-}
-.nav button{
-    border:0;
-    background:white;
-    padding:9px 15px;
-    margin-right:6px;
-    cursor:pointer;
-    border-radius:6px;
-}
-.nav button:hover{
-    background:#eef2ff;
+* {
+    box-sizing: border-box;
 }
 
-.container{
-    max-width:1400px;
-    margin:25px auto;
-    padding:0 20px;
+body {
+    margin: 0;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Microsoft YaHei",
+        Arial,
+        sans-serif;
+    background: #f5f7fa;
+    color: #1f2937;
 }
 
-.section{
-    display:none;
-}
-.section.active{
-    display:block;
+/* =========================
+   顶部
+========================= */
+
+.header {
+    background: #111827;
+    color: white;
+    padding: 26px 40px;
 }
 
-.card{
-    background:white;
-    border-radius:12px;
-    padding:22px;
-    margin-bottom:20px;
-    box-shadow:0 2px 10px rgba(0,0,0,.05);
+.header-inner {
+    max-width: 1400px;
+    margin: auto;
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:15px;
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
-.metric{
-    background:white;
-    padding:20px;
-    border-radius:12px;
-    border:1px solid #e5e7eb;
+.subtitle {
+    margin-top: 8px;
+    color: #9ca3af;
+    font-size: 14px;
 }
 
-.metric .number{
-    font-size:28px;
-    font-weight:bold;
-    margin-top:8px;
+/* =========================
+   导航
+========================= */
+
+.nav {
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-.tag{
-    display:inline-block;
-    padding:4px 9px;
-    border-radius:20px;
-    background:#eef2ff;
-    font-size:12px;
+.nav-inner {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    overflow-x: auto;
 }
 
-.event{
-    border-bottom:1px solid #eee;
-    padding:18px 0;
-}
-.event:last-child{border-bottom:0}
-
-.event h3{
-    margin:8px 0;
+.nav a {
+    padding: 16px 20px;
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 14px;
+    white-space: nowrap;
 }
 
-.source{
-    font-size:13px;
-    color:#6b7280;
+.nav a:hover {
+    color: #111827;
+    background: #f3f4f6;
 }
 
-a{
-    color:#2563eb;
-    text-decoration:none;
+/* =========================
+   主体
+========================= */
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 30px 24px 60px;
 }
 
-table{
-    width:100%;
-    border-collapse:collapse;
+/* =========================
+   状态
+========================= */
+
+.status-card {
+    background: white;
+    border-radius: 12px;
+    padding: 22px 26px;
+    margin-bottom: 24px;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
-th,td{
-    padding:12px;
-    border-bottom:1px solid #eee;
-    text-align:left;
+.status-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
-th{
-    background:#f9fafb;
+.status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #10b981;
 }
 
-.search{
-    width:100%;
-    padding:12px;
-    border:1px solid #d1d5db;
-    border-radius:8px;
-    margin-bottom:15px;
+.status-dot.loading {
+    background: #f59e0b;
 }
 
-.notice{
-    background:#f9fafb;
-    padding:15px;
-    border-radius:8px;
-    color:#4b5563;
+.status-dot.error {
+    background: #ef4444;
 }
 
-.footer{
-    text-align:center;
-    padding:30px;
-    color:#9ca3af;
+.status-title {
+    font-size: 18px;
+    font-weight: 700;
 }
+
+.status-time {
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 5px;
+}
+
+/* =========================
+   核心指标
+========================= */
+
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.metric {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 22px;
+}
+
+.metric-label {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.metric-value {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.metric-desc {
+    font-size: 12px;
+    color: #9ca3af;
+    margin-top: 5px;
+}
+
+/* =========================
+   Section
+========================= */
+
+.section {
+    margin-top: 36px;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.section-subtitle {
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: -8px;
+    margin-bottom: 18px;
+}
+
+/* =========================
+   新闻卡片
+========================= */
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.news-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.15s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+}
+
+.news-category {
+    display: inline-block;
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background: #eef2ff;
+    color: #4338ca;
+    margin-bottom: 10px;
+}
+
+.news-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.55;
+}
+
+.news-title a {
+    color: #111827;
+    text-decoration: none;
+}
+
+.news-title a:hover {
+    text-decoration: underline;
+}
+
+.news-summary {
+    font-size: 13px;
+    color: #6b7280;
+    line-height: 1.7;
+    margin-top: 10px;
+}
+
+.news-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 14px;
+    font-size: 11px;
+    color: #9ca3af;
+}
+
+/* =========================
+   数据表
+========================= */
+
+.table-wrapper {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: left;
+    font-size: 13px;
+}
+
+th {
+    background: #f9fafb;
+    font-weight: 600;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* =========================
+   数据库模块
+========================= */
+
+.database-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.database-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 22px;
+}
+
+.database-card h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.database-card p {
+    margin: 0;
+    font-size: 13px;
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+/* =========================
+   空状态
+========================= */
+
+.empty {
+    background: white;
+    border: 1px dashed #d1d5db;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    color: #9ca3af;
+}
+
+/* =========================
+   Footer
+========================= */
+
+.footer {
+    text-align: center;
+    padding: 30px;
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 900px) {
+
+    .metrics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .database-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 22px;
+    }
+
+    .container {
+        padding: 20px 14px 40px;
+    }
+
+    .status-card {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .metrics {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .metric {
+        padding: 16px;
+    }
+
+    .metric-value {
+        font-size: 24px;
+    }
+
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="header">
-    <h1>Robotaxi 行业观察</h1>
-    <p>中国市场优先 · 全球市场补充 · 持续跟踪数据库</p>
-</div>
-
-<div class="nav">
-    <button onclick="show('dashboard')">Dashboard</button>
-    <button onclick="show('china')">🇨🇳 中国Robotaxi</button>
-    <button onclick="show('overseas')">🌎 海外</button>
-    <button onclick="show('companies')">企业数据库</button>
-    <button onclick="show('cities')">城市数据库</button>
-    <button onclick="show('policy')">政策监管</button>
-    <button onclick="show('ue')">单车UE</button>
-    <button onclick="show('capital')">资本合作</button>
-    <button onclick="show('history')">历史日报</button>
-    <button onclick="show('risk')">风险雷达</button>
-</div>
-
-<div class="container">
-
-<!-- Dashboard -->
-
-<div id="dashboard" class="section active">
-
-<div class="card">
-<h2>今日行业判断</h2>
-
-<p>
-中国Robotaxi正在进入由“技术验证”向“规模运营与商业模式验证”
-转换的阶段。后续重点不再只是L4能力本身，而是城市准入、
-订单获取、车辆资产、运营效率、平台合作及单车经济性。
-</p>
-
-<div class="notice">
-<strong>每日更新时间：</strong>08:00（北京时间）<br>
-<strong>信息优先级：</strong>中国 ＞ 美国 ＞ 欧洲及其他市场
-</div>
-</div>
-
-<div class="grid">
-
-<div class="metric">
-<div>中国重点情报</div>
-<div class="number">—</div>
-</div>
-
-<div class="metric">
-<div>今日开城/运营</div>
-<div class="number">—</div>
-</div>
-
-<div class="metric">
-<div>政策变化</div>
-<div class="number">—</div>
-</div>
-
-<div class="metric">
-<div>资本/合作</div>
-<div class="number">—</div>
-</div>
-
-</div>
-
-<div class="card">
-<h2>重点观察方向</h2>
-<ul>
-<li>中国Robotaxi城市规模化运营</li>
-<li>L4准入与道路通行政策</li>
-<li>Robotaxi订单密度与车辆利用率</li>
-<li>车辆销售/资产运营模式</li>
-<li>平台佣金与流量入口</li>
-<li>地方政府、国企及OEM合作</li>
-<li>单车UE及投资回收周期</li>
-<li>事故、异常事件及远程协助</li>
-</ul>
-</div>
+<!-- =========================
+     Header
+========================= -->
 
-</div>
+<header class="header">
 
+    <div class="header-inner">
 
-<!-- 中国 -->
-
-<div id="china" class="section">
+        <div class="logo">
+            Robotaxi 行业观察
+        </div>
 
-<div class="card">
-<h2>🇨🇳 中国 Robotaxi｜今日重点</h2>
-
-<input
-class="search"
-placeholder="搜索中国Robotaxi情报……"
-onkeyup="searchEvents(this,'chinaEvents')">
-
-<div id="chinaEvents">
-
-<div class="event">
-<span class="tag">待更新</span>
-<h3>每日08:00更新国内Robotaxi重点信息</h3>
-<p>
-重点抓取政策、开城、订单、收入、价格、车辆、
-企业合作、融资、安全事件等信息。
-</p>
-</div>
+        <div class="subtitle">
+            中国Robotaxi产业数据库 · 行业情报 · 政策 · 企业 · 城市 · 商业模式
+        </div>
 
-</div>
-</div>
+    </div>
 
-<div class="card">
-<h2>中国市场重点跟踪</h2>
+</header>
 
-<table>
-<tr>
-<th>维度</th>
-<th>重点指标</th>
-</tr>
 
-<tr>
-<td>城市</td>
-<td>准入、测试、示范运营、商业运营</td>
-</tr>
+<!-- =========================
+     Navigation
+========================= -->
 
-<tr>
-<td>运营</td>
-<td>车辆数、订单数、日均订单、单车里程</td>
-</tr>
-
-<tr>
-<td>商业</td>
-<td>客单价、收入、平台抽佣、单车UE</td>
-</tr>
-
-<tr>
-<td>政策</td>
-<td>L4准入、道路通行、责任认定、数据合规</td>
-</tr>
-
-<tr>
-<td>合作</td>
-<td>OEM、平台、国企、运营商、地方政府</td>
-</tr>
-
-</table>
-</div>
-
-</div>
+<nav class="nav">
 
+    <div class="nav-inner">
 
-<!-- 海外 -->
+        <a href="#dashboard">Dashboard</a>
+        <a href="#today">今日情报</a>
+        <a href="#companies">企业数据库</a>
+        <a href="#cities">城市数据库</a>
+        <a href="#policy">政策监管</a>
+        <a href="#ue">单车UE</a>
+        <a href="#capital">资本合作</a>
+        <a href="#history">历史日报</a>
+        <a href="#risk">风险雷达</a>
 
-<div id="overseas" class="section">
+    </div>
 
-<div class="card">
-<h2>🌎 海外 Robotaxi</h2>
+</nav>
 
-<div class="event">
-<span class="tag">美国</span>
-<h3>Waymo / Tesla / Zoox / Uber / Lyft</h3>
-<p>
-海外市场作为中国市场的补充观察对象，
-重点关注规模化运营、平台合作、专用Robotaxi车型、
-监管和商业模式。
-</p>
-</div>
 
-</div>
+<!-- =========================
+     Main
+========================= -->
 
-</div>
+<main class="container">
 
 
-<!-- 企业 -->
-
-<div id="companies" class="section">
+    <!-- 状态 -->
 
-<div class="card">
-<h2>核心企业数据库</h2>
-
-<table>
+    <div class="status-card">
 
-<tr>
-<th>企业</th>
-<th>主要定位</th>
-<th>重点观察</th>
-</tr>
-
-<tr>
-<td>百度 Apollo Go</td>
-<td>Robotaxi运营</td>
-<td>中国城市规模、订单、车辆</td>
-</tr>
-
-<tr>
-<td>小马智行</td>
-<td>自动驾驶+Robotaxi</td>
-<td>城市运营、OEM合作</td>
-</tr>
-
-<tr>
-<td>文远知行</td>
-<td>自动驾驶+Robotaxi</td>
-<td>商业化、海外扩张</td>
-</tr>
-
-<tr>
-<td>滴滴</td>
-<td>出行平台</td>
-<td>流量入口、Robotaxi合作</td>
-</tr>
-
-<tr>
-<td>高德</td>
-<td>出行平台</td>
-<td>聚合流量、订单入口</td>
-</tr>
+        <div class="status-left">
 
-<tr>
-<td>千里科技/千里智行</td>
-<td>智能汽车/智能运力</td>
-<td>E05M、车辆资产及合作模式</td>
-</tr>
+            <div
+                id="statusDot"
+                class="status-dot loading">
+            </div>
 
-<tr>
-<td>Waymo</td>
-<td>Robotaxi技术与运营</td>
-<td>规模化及平台合作</td>
-</tr>
+            <div>
 
-<tr>
-<td>Tesla</td>
-<td>整车+Robotaxi</td>
-<td>专用车型、制造成本</td>
-</tr>
+                <div
+                    id="statusTitle"
+                    class="status-title">
+                    正在加载最新行业数据
+                </div>
 
-<tr>
-<td>Zoox</td>
-<td>专用Robotaxi</td>
-<td>城市复制、车队运营</td>
-</tr>
+                <div
+                    id="statusTime"
+                    class="status-time">
+                    数据来源：Robotaxi Industry Daily Update
+                </div>
 
-</table>
-</div>
-
-</div>
-
-
-<!-- 城市 -->
-
-<div id="cities" class="section">
-
-<div class="card">
-<h2>城市Robotaxi数据库</h2>
-
-<table>
+            </div>
 
-<tr>
-<th>城市</th>
-<th>市场</th>
-<th>重点观察</th>
-</tr>
+        </div>
 
-<tr>
-<td>北京</td>
-<td>中国</td>
-<td>政策、准入、商业化</td>
-</tr>
+        <div>
+            <strong id="todayDate">
+                --
+            </strong>
+        </div>
 
-<tr>
-<td>上海</td>
-<td>中国</td>
-<td>示范运营、商业化</td>
-</tr>
+    </div>
 
-<tr>
-<td>深圳</td>
-<td>中国</td>
-<td>L4准入、Robotaxi规模运营</td>
-</tr>
 
-<tr>
-<td>广州</td>
-<td>中国</td>
-<td>Robotaxi运营及政策</td>
-</tr>
+    <!-- =========================
+         Dashboard
+    ========================= -->
 
-<tr>
-<td>武汉</td>
-<td>中国</td>
-<td>Apollo Go规模化运营</td>
-</tr>
+    <section
+        id="dashboard"
+        class="section">
 
-<tr>
-<td>重庆</td>
-<td>中国</td>
-<td>地方产业、出租车及智能运力</td>
-</tr>
+        <div class="section-title">
+            行业 Dashboard
+        </div>
 
-<tr>
-<td>成都</td>
-<td>中国</td>
-<td>Robotaxi及网约车市场</td>
-</tr>
+        <div class="section-subtitle">
+            每日自动更新的Robotaxi行业核心信息
+        </div>
 
-</table>
-</div>
-
-</div>
+        <div class="metrics">
 
+            <div class="metric">
 
-<!-- 政策 -->
+                <div class="metric-label">
+                    今日重点信息
+                </div>
 
-<div id="policy" class="section">
+                <div
+                    id="metricNews"
+                    class="metric-value">
+                    -
+                </div>
 
-<div class="card">
-<h2>政策 / 监管数据库</h2>
+                <div class="metric-desc">
+                    条
+                </div>
 
-<table>
+            </div>
 
-<tr>
-<th>政策方向</th>
-<th>重点跟踪内容</th>
-</tr>
 
-<tr>
-<td>L4准入</td>
-<td>机动车产品准入、型式认证</td>
-</tr>
+            <div class="metric">
 
-<tr>
-<td>道路通行</td>
-<td>测试、示范、商业运营</td>
-</tr>
+                <div class="metric-label">
+                    政策监管
+                </div>
 
-<tr>
-<td>责任认定</td>
-<td>车辆、平台、运营主体责任</td>
-</tr>
+                <div
+                    id="metricPolicy"
+                    class="metric-value">
+                    -
+                </div>
 
-<tr>
-<td>远程协助</td>
-<td>远程驾驶、异常处置</td>
-</tr>
+                <div class="metric-desc">
+                    条
+                </div>
 
-<tr>
-<td>数据安全</td>
-<td>地图、车辆数据、个人信息</td>
-</tr>
+            </div>
 
-</table>
-</div>
 
-</div>
+            <div class="metric">
 
+                <div class="metric-label">
+                    企业动态
+                </div>
 
-<!-- UE -->
+                <div
+                    id="metricCompany"
+                    class="metric-value">
+                    -
+                </div>
 
-<div id="ue" class="section">
+                <div class="metric-desc">
+                    条
+                </div>
 
-<div class="card">
+            </div>
 
-<h2>Robotaxi 单车UE模型</h2>
 
-<table>
+            <div class="metric">
 
-<tr>
-<th>模块</th>
-<th>核心变量</th>
-<th>计算逻辑</th>
-</tr>
+                <div class="metric-label">
+                    城市/运营
+                </div>
 
-<tr>
-<td>订单收入</td>
-<td>日订单 × 客单价</td>
-<td>日订单 × 平均客单价 × 运营天数</td>
-</tr>
+                <div
+                    id="metricCity"
+                    class="metric-value">
+                    -
+                </div>
 
-<tr>
-<td>平台成本</td>
-<td>平台佣金</td>
-<td>订单收入 × 平台费率</td>
-</tr>
+                <div class="metric-desc">
+                    条
+                </div>
 
-<tr>
-<td>车辆资产</td>
-<td>售价/折旧/融资</td>
-<td>资产成本按生命周期摊销</td>
-</tr>
+            </div>
 
-<tr>
-<td>能源</td>
-<td>里程/电耗/电价</td>
-<td>公里数 × 单公里能耗 × 电价</td>
-</tr>
+        </div>
 
-<tr>
-<td>运营</td>
-<td>保险/维修/云舱/客服</td>
-<td>固定成本 + 变动成本</td>
-</tr>
+    </section>
 
-<tr>
-<td>核心结果</td>
-<td>单车利润</td>
-<td>收入 - 平台 - 能源 - 运营 - 资产</td>
-</tr>
 
-</table>
+    <!-- =========================
+         今日情报
+    ========================= -->
 
-</div>
+    <section
+        id="today"
+        class="section">
 
-</div>
+        <div class="section-title">
+            今日 Robotaxi 重点情报
+        </div>
 
+        <div class="section-subtitle">
+            优先展示中国市场，海外信息作为补充
+        </div>
 
-<!-- 资本 -->
+        <div
+            id="newsContainer"
+            class="news-grid">
 
-<div id="capital" class="section">
+            <div class="empty">
+                正在读取今日行业数据……
+            </div>
 
-<div class="card">
+        </div>
 
-<h2>资本 / 合作数据库</h2>
+    </section>
 
-<ul>
-<li>OEM × 自动驾驶公司</li>
-<li>自动驾驶公司 × 网约车平台</li>
-<li>地方政府 × Robotaxi企业</li>
-<li>国企 × Robotaxi运营</li>
-<li>车辆销售 × Robotaxi运营</li>
-<li>融资租赁 × 智能运力资产</li>
-</ul>
 
-</div>
+    <!-- =========================
+         行业分类
+    ========================= -->
 
-</div>
+    <section class="section">
 
+        <div class="section-title">
+            今日行业分项
+        </div>
 
-<!-- 历史 -->
+        <div
+            id="categoryContainer"
+            class="news-grid">
 
-<div id="history" class="section">
+        </div>
 
-<div class="card">
+    </section>
 
-<h2>历史日报</h2>
 
-<table>
+    <!-- =========================
+         企业
+    ========================= -->
 
-<tr>
-<th>日期</th>
-<th>重点</th>
-</tr>
+    <section
+        id="companies"
+        class="section">
 
-<tr>
-<td>2026-09-17</td>
-<td>Robotaxi行业观察</td>
-</tr>
+        <div class="section-title">
+            企业数据库
+        </div>
 
-<tr>
-<td>2026-09-16</td>
-<td>Robotaxi行业观察</td>
-</tr>
+        <div class="database-grid">
 
-<tr>
-<td>2026-09-15</td>
-<td>Robotaxi行业观察</td>
-</tr>
+            <div class="database-card">
+                <h3>Robotaxi运营商</h3>
+                <p>
+                    百度Apollo Go、文远知行、小马智行、
+                    如祺出行、萝卜快跑等。
+                </p>
+            </div>
 
-<tr>
-<td>2026-09-14</td>
-<td>Robotaxi行业观察</td>
-</tr>
+            <div class="database-card">
+                <h3>主机厂</h3>
+                <p>
+                    跟踪传统OEM、新能源车企及Robotaxi
+                    专用车辆合作情况。
+                </p>
+            </div>
 
-<tr>
-<td>2026-09-13</td>
-<td>Robotaxi行业观察</td>
-</tr>
+            <div class="database-card">
+                <h3>自动驾驶技术企业</h3>
+                <p>
+                    跟踪L2、L3、L4技术路线、量产、
+                    OTA升级及Robotaxi落地。
+                </p>
+            </div>
 
-</table>
+        </div>
 
-</div>
+    </section>
 
-</div>
 
+    <!-- =========================
+         城市
+    ========================= -->
 
-<!-- 风险 -->
+    <section
+        id="cities"
+        class="section">
 
-<div id="risk" class="section">
+        <div class="section-title">
+            城市数据库
+        </div>
 
-<div class="card">
+        <div class="table-wrapper">
 
-<h2>风险雷达</h2>
+            <table>
 
-<div class="grid">
+                <thead>
 
-<div class="metric">
-<strong>政策风险</strong>
-<p>城市准入、责任认定、商业运营规则变化</p>
-</div>
+                    <tr>
+                        <th>城市</th>
+                        <th>Robotaxi阶段</th>
+                        <th>政策状态</th>
+                        <th>运营主体</th>
+                    </tr>
 
-<div class="metric">
-<strong>平台风险</strong>
-<p>订单入口、平台佣金及流量依赖</p>
-</div>
+                </thead>
 
-<div class="metric">
-<strong>资产风险</strong>
-<p>车辆折旧、残值及资本占用</p>
-</div>
+                <tbody id="cityTable">
 
-<div class="metric">
-<strong>安全风险</strong>
-<p>事故、异常事件、远程协助</p>
-</div>
+                    <tr>
+                        <td>北京</td>
+                        <td>持续跟踪</td>
+                        <td>持续跟踪</td>
+                        <td>—</td>
+                    </tr>
 
-</div>
+                    <tr>
+                        <td>上海</td>
+                        <td>持续跟踪</td>
+                        <td>持续跟踪</td>
+                        <td>—</td>
+                    </tr>
 
-</div>
+                    <tr>
+                        <td>深圳</td>
+                        <td>持续跟踪</td>
+                        <td>持续跟踪</td>
+                        <td>—</td>
+                    </tr>
 
-</div>
+                    <tr>
+                        <td>广州</td>
+                        <td>持续跟踪</td>
+                        <td>持续跟踪</td>
+                        <td>—</td>
+                    </tr>
 
-</div>
+                    <tr>
+                        <td>成都</td>
+                        <td>持续跟踪</td>
+                        <td>持续跟踪</td>
+                        <td>—</td>
+                    </tr>
 
-<div class="footer">
-Robotaxi 行业观察 · 中国市场优先 · 每日08:00更新
-</div>
+                    <tr>
+                        <td>重庆</td>
+                        <td>持续跟踪</td>
+                        <td>持续跟踪</td>
+                        <td>—</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         政策
+    ========================= -->
+
+    <section
+        id="policy"
+        class="section">
+
+        <div class="section-title">
+            政策监管
+        </div>
+
+        <div
+            id="policyContainer"
+            class="news-grid">
+
+            <div class="empty">
+                等待每日政策信息更新
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         单车UE
+    ========================= -->
+
+    <section
+        id="ue"
+        class="section">
+
+        <div class="section-title">
+            Robotaxi 单车 UE
+        </div>
+
+        <div class="database-grid">
+
+            <div class="database-card">
+
+                <h3>收入端</h3>
+
+                <p>
+                    日均里程、订单数、客单价、运营天数、
+                    平台抽佣、订单转化率。
+                </p>
+
+            </div>
+
+
+            <div class="database-card">
+
+                <h3>成本端</h3>
+
+                <p>
+                    车辆折旧、融资、保险、能源、云舱、
+                    运维、救援及城市运营成本。
+                </p>
+
+            </div>
+
+
+            <div class="database-card">
+
+                <h3>核心指标</h3>
+
+                <p>
+                    单车日收入、单车日成本、单车贡献利润、
+                    回本周期及资本回报率。
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         资本合作
+    ========================= -->
+
+    <section
+        id="capital"
+        class="section">
+
+        <div class="section-title">
+            资本与合作
+        </div>
+
+        <div
+            id="capitalContainer"
+            class="news-grid">
+
+            <div class="empty">
+                等待每日资本与合作信息更新
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         历史日报
+    ========================= -->
+
+    <section
+        id="history"
+        class="section">
+
+        <div class="section-title">
+            历史日报
+        </div>
+
+        <div
+            id="historyContainer"
+            class="table-wrapper">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>日期</th>
+                        <th>信息数量</th>
+                        <th>查看</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="historyTable">
+
+                    <tr>
+                        <td colspan="3">
+                            正在读取历史数据……
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         风险雷达
+    ========================= -->
+
+    <section
+        id="risk"
+        class="section">
+
+        <div class="section-title">
+            风险雷达
+        </div>
+
+        <div class="database-grid">
+
+            <div class="database-card">
+
+                <h3>
+                    政策风险
+                </h3>
+
+                <p>
+                    重点关注L4准入、道路测试、
+                    示范运营、商业化收费及地方准入。
+                </p>
+
+            </div>
+
+
+            <div class="database-card">
+
+                <h3>
+                    商业模式风险
+                </h3>
+
+                <p>
+                    重点关注平台流量依赖、车辆利用率、
+                    单车UE、资产折旧及融资成本。
+                </p>
+
+            </div>
+
+
+            <div class="database-card">
+
+                <h3>
+                    安全运营风险
+                </h3>
+
+                <p>
+                    重点关注事故、接管、车辆故障、
+                    远程协助及应急保障。
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<!-- =========================
+     Footer
+========================= -->
+
+<footer class="footer">
+
+    Robotaxi 行业观察 · 自动更新系统
+
+    <br>
+
+    数据更新时间：
+    <span id="footerTime">
+        --
+    </span>
+
+</footer>
 
 
 <script>
 
-function show(id){
+/* =====================================================
+   Robotaxi Industry Observation
+   Dynamic Data Loader
+===================================================== */
 
-    document.querySelectorAll(".section")
-    .forEach(x=>x.classList.remove("active"));
 
-    document.getElementById(id)
-    .classList.add("active");
+/* -----------------------------
+   工具函数
+----------------------------- */
 
-    window.scrollTo(0,0);
+function safeArray(value) {
+
+    if (Array.isArray(value)) {
+        return value;
+    }
+
+    return [];
+
 }
 
-function searchEvents(input,id){
 
-    let q=input.value.toLowerCase();
+function escapeHTML(value) {
 
-    document.querySelectorAll("#"+id+" .event")
-    .forEach(e=>{
+    if (value === null || value === undefined) {
+        return "";
+    }
 
-        if(e.innerText.toLowerCase().includes(q)){
-            e.style.display="block";
-        }else{
-            e.style.display="none";
+    return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+
+/* -----------------------------
+   日期格式化
+----------------------------- */
+
+function formatDate(value) {
+
+    if (!value) {
+        return "--";
+    }
+
+    try {
+
+        const date = new Date(value);
+
+        if (isNaN(date.getTime())) {
+            return value;
         }
 
-    });
+        return date.toLocaleString(
+            "zh-CN",
+            {
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit",
+                hour: "2-digit",
+                minute: "2-digit"
+            }
+        );
+
+    } catch (e) {
+
+        return value;
+
+    }
+
 }
+
+
+/* -----------------------------
+   判断分类
+----------------------------- */
+
+function getCategory(item) {
+
+    return (
+        item.category ||
+        item.type ||
+        item.topic ||
+        "其他"
+    );
+
+}
+
+
+/* -----------------------------
+   获取标题
+----------------------------- */
+
+function getTitle(item) {
+
+    return (
+        item.title ||
+        item.name ||
+        item.headline ||
+        "未命名信息"
+    );
+
+}
+
+
+/* -----------------------------
+   获取摘要
+----------------------------- */
+
+function getSummary(item) {
+
+    return (
+        item.summary ||
+        item.description ||
+        item.content ||
+        item.text ||
+        ""
+    );
+
+}
+
+
+/* -----------------------------
+   获取来源
+----------------------------- */
+
+function getSource(item) {
+
+    return (
+        item.source ||
+        item.publisher ||
+        item.site ||
+        "来源未知"
+    );
+
+}
+
+
+/* -----------------------------
+   获取链接
+----------------------------- */
+
+function getLink(item) {
+
+    return (
+        item.url ||
+        item.link ||
+        item.source_url ||
+        "#"
+    );
+
+}
+
+
+/* =====================================================
+   新闻卡片
+===================================================== */
+
+function createNewsCard(item) {
+
+    const title = escapeHTML(
+        getTitle(item)
+    );
+
+    const summary = escapeHTML(
+        getSummary(item)
+    );
+
+    const category = escapeHTML(
+        getCategory(item)
+    );
+
+    const source = escapeHTML(
+        getSource(item)
+    );
+
+    const link = getLink(item);
+
+    const date = formatDate(
+        item.published ||
+        item.date ||
+        item.time ||
+        item.updated
+    );
+
+    return `
+
+        <article class="news-card">
+
+            <div class="news-category">
+                ${category}
+            </div>
+
+            <div class="news-title">
+
+                <a
+                    href="${escapeHTML(link)}"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    ${title}
+
+                </a>
+
+            </div>
+
+            ${
+                summary
+                ?
+                `<div class="news-summary">
+                    ${summary}
+                </div>`
+                :
+                ""
+            }
+
+            <div class="news-meta">
+
+                <span>
+                    ${source}
+                </span>
+
+                <span>
+                    ${date}
+                </span>
+
+            </div>
+
+        </article>
+
+    `;
+
+}
+
+
+/* =====================================================
+   加载今日新闻
+===================================================== */
+
+function renderNews(items) {
+
+    const container =
+        document.getElementById(
+            "newsContainer"
+        );
+
+    if (!items.length) {
+
+        container.innerHTML = `
+
+            <div class="empty">
+
+                今日暂无可展示的Robotaxi行业信息
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+    container.innerHTML =
+        items
+        .map(createNewsCard)
+        .join("");
+
+}
+
+
+/* =====================================================
+   分类统计
+===================================================== */
+
+function renderCategories(items) {
+
+    const categories = {};
+
+    items.forEach(item => {
+
+        const category =
+            getCategory(item);
+
+        if (!categories[category]) {
+
+            categories[category] = [];
+
+        }
+
+        categories[category].push(item);
+
+    });
+
+
+    const container =
+        document.getElementById(
+            "categoryContainer"
+        );
+
+
+    const entries =
+        Object.entries(categories);
+
+
+    if (!entries.length) {
+
+        container.innerHTML = "";
+
+        return;
+
+    }
+
+
+    container.innerHTML =
+        entries
+        .map(([category, list]) => {
+
+            return `
+
+                <div class="news-card">
+
+                    <div class="news-category">
+                        ${escapeHTML(category)}
+                    </div>
+
+                    <div
+                        class="news-title">
+
+                        ${list.length}
+                        条重点信息
+
+                    </div>
+
+                    <div
+                        class="news-summary">
+
+                        今日该类别共收录
+                        ${list.length}
+                        条信息。
+
+                    </div>
+
+                </div>
+
+            `;
+
+        })
+        .join("");
+
+}
+
+
+/* =====================================================
+   Dashboard
+===================================================== */
+
+function renderDashboard(items) {
+
+    document.getElementById(
+        "metricNews"
+    ).textContent = items.length;
+
+
+    const policy =
+        items.filter(item => {
+
+            const category =
+                getCategory(item)
+                .toLowerCase();
+
+            return (
+                category.includes("政策") ||
+                category.includes("监管") ||
+                category.includes("policy")
+            );
+
+        });
+
+
+    const company =
+        items.filter(item => {
+
+            const category =
+                getCategory(item)
+                .toLowerCase();
+
+            return (
+                category.includes("企业") ||
+                category.includes("公司") ||
+                category.includes("enterprise")
+            );
+
+        });
+
+
+    const city =
+        items.filter(item => {
+
+            const category =
+                getCategory(item)
+                .toLowerCase();
+
+            return (
+                category.includes("城市") ||
+                category.includes("运营") ||
+                category.includes("city")
+            );
+
+        });
+
+
+    document.getElementById(
+        "metricPolicy"
+    ).textContent =
+        policy.length;
+
+
+    document.getElementById(
+        "metricCompany"
+    ).textContent =
+        company.length;
+
+
+    document.getElementById(
+        "metricCity"
+    ).textContent =
+        city.length;
+
+}
+
+
+/* =====================================================
+   政策
+===================================================== */
+
+function renderPolicy(items) {
+
+    const container =
+        document.getElementById(
+            "policyContainer"
+        );
+
+
+    const policy =
+        items.filter(item => {
+
+            const category =
+                getCategory(item)
+                .toLowerCase();
+
+            return (
+                category.includes("政策") ||
+                category.includes("监管") ||
+                category.includes("policy")
+            );
+
+        });
+
+
+    if (!policy.length) {
+
+        container.innerHTML = `
+
+            <div class="empty">
+
+                今日暂无新增政策信息
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    container.innerHTML =
+        policy
+        .map(createNewsCard)
+        .join("");
+
+}
+
+
+/* =====================================================
+   资本合作
+===================================================== */
+
+function renderCapital(items) {
+
+    const container =
+        document.getElementById(
+            "capitalContainer"
+        );
+
+
+    const capital =
+        items.filter(item => {
+
+            const category =
+                getCategory(item)
+                .toLowerCase();
+
+            return (
+                category.includes("资本") ||
+                category.includes("合作") ||
+                category.includes("融资") ||
+                category.includes("capital")
+            );
+
+        });
+
+
+    if (!capital.length) {
+
+        container.innerHTML = `
+
+            <div class="empty">
+
+                今日暂无新增资本合作信息
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    container.innerHTML =
+        capital
+        .map(createNewsCard)
+        .join("");
+
+}
+
+
+/* =====================================================
+   状态
+===================================================== */
+
+function renderStatus(data) {
+
+    const dot =
+        document.getElementById(
+            "statusDot"
+        );
+
+    const title =
+        document.getElementById(
+            "statusTitle"
+        );
+
+    const time =
+        document.getElementById(
+            "statusTime"
+        );
+
+
+    dot.className =
+        "status-dot";
+
+
+    title.textContent =
+        "数据更新成功";
+
+
+    const updateTime =
+        data.updated_at ||
+        data.updated ||
+        data.update_time ||
+        data.generated_at ||
+        data.date;
+
+
+    time.textContent =
+        updateTime
+        ?
+        "最后更新：" +
+        formatDate(updateTime)
+        :
+        "数据已成功加载";
+
+
+    document.getElementById(
+        "todayDate"
+    ).textContent =
+        data.date ||
+        new Date().toLocaleDateString(
+            "zh-CN"
+        );
+
+
+    document.getElementById(
+        "footerTime"
+    ).textContent =
+        updateTime
+        ?
+        formatDate(updateTime)
+        :
+        "--";
+
+}
+
+
+/* =====================================================
+   历史数据
+===================================================== */
+
+function renderHistory(history) {
+
+    const table =
+        document.getElementById(
+            "historyTable"
+        );
+
+
+    const list =
+        safeArray(history);
+
+
+    if (!list.length) {
+
+        table.innerHTML = `
+
+            <tr>
+
+                <td colspan="3">
+                    暂无历史日报
+                </td>
+
+            </tr>
+
+        `;
+
+        return;
+
+    }
+
+
+    table.innerHTML =
+        list
+        .slice()
+        .reverse()
+        .slice(0, 30)
+        .map(item => {
+
+            const date =
+                item.date ||
+                item.day ||
+                item.report_date ||
+                "--";
+
+
+            const count =
+                item.count ||
+                item.total ||
+                (
+                    Array.isArray(item.items)
+                    ?
+                    item.items.length
+                    :
+                    "-"
+                );
+
+
+            const file =
+                item.file ||
+                item.path ||
+                `data/daily-${date}.json`;
+
+
+            return `
+
+                <tr>
+
+                    <td>
+                        ${escapeHTML(date)}
+                    </td>
+
+                    <td>
+                        ${count}
+                    </td>
+
+                    <td>
+
+                        <a
+                            href="${escapeHTML(file)}"
+                            target="_blank">
+
+                            查看日报
+
+                        </a>
+
+                    </td>
+
+                </tr>
+
+            `;
+
+        })
+        .join("");
+
+}
+
+
+/* =====================================================
+   城市数据库
+===================================================== */
+
+function renderCities(data) {
+
+    const cities =
+        safeArray(
+            data.cities
+        );
+
+
+    if (!cities.length) {
+        return;
+    }
+
+
+    const table =
+        document.getElementById(
+            "cityTable"
+        );
+
+
+    table.innerHTML =
+        cities.map(city => {
+
+            return `
+
+                <tr>
+
+                    <td>
+                        ${escapeHTML(
+                            city.name ||
+                            city.city ||
+                            "--"
+                        )}
+                    </td>
+
+                    <td>
+                        ${escapeHTML(
+                            city.stage ||
+                            city.status ||
+                            "--"
+                        )}
+                    </td>
+
+                    <td>
+                        ${escapeHTML(
+                            city.policy ||
+                            "--"
+                        )}
+                    </td>
+
+                    <td>
+                        ${escapeHTML(
+                            city.operator ||
+                            city.company ||
+                            "--"
+                        )}
+                    </td>
+
+                </tr>
+
+            `;
+
+        }).join("");
+
+}
+
+
+/* =====================================================
+   主数据加载
+===================================================== */
+
+async function loadLatestData() {
+
+    try {
+
+        /*
+         * GitHub Pages缓存控制
+         * 加随机参数，避免浏览器继续读取旧JSON
+         */
+
+        const cacheBust =
+            "?t=" +
+            new Date().getTime();
+
+
+        const response =
+            await fetch(
+                "data/latest.json" +
+                cacheBust
+            );
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                "latest.json HTTP " +
+                response.status
+            );
+
+        }
+
+
+        const data =
+            await response.json();
+
+
+        /*
+         * 兼容不同JSON结构
+         */
+
+        let items = [];
+
+
+        if (Array.isArray(data)) {
+
+            items = data;
+
+        }
+
+        else if (
+            Array.isArray(data.items)
+        ) {
+
+            items = data.items;
+
+        }
+
+        else if (
+            Array.isArray(data.news)
+        ) {
+
+            items = data.news;
+
+        }
+
+        else if (
+            Array.isArray(data.articles)
+        ) {
+
+            items = data.articles;
+
+        }
+
+
+        renderStatus(data);
+
+        renderDashboard(items);
+
+        renderNews(items);
+
+        renderCategories(items);
+
+        renderPolicy(items);
+
+        renderCapital(items);
+
+        renderCities(data);
+
+
+        /*
+         * 尝试读取历史数据
+         */
+
+        loadHistory();
+
+
+    }
+
+    catch (error) {
+
+        console.error(
+            "Robotaxi数据加载失败:",
+            error
+        );
+
+
+        const dot =
+            document.getElementById(
+                "statusDot"
+            );
+
+        dot.className =
+            "status-dot error";
+
+
+        document.getElementById(
+            "statusTitle"
+        ).textContent =
+            "数据读取失败";
+
+
+        document.getElementById(
+            "statusTime"
+        ).textContent =
+            "请检查 data/latest.json 是否存在";
+
+
+        document.getElementById(
+            "newsContainer"
+        ).innerHTML = `
+
+            <div class="empty">
+
+                <strong>
+                    暂时无法读取今日数据
+                </strong>
+
+                <br><br>
+
+                请检查：
+
+                <br>
+
+                ① data/latest.json 是否已经生成
+
+                <br>
+
+                ② GitHub Actions 是否执行成功
+
+                <br>
+
+                ③ GitHub Pages 是否已经完成部署
+
+            </div>
+
+        `;
+
+    }
+
+}
+
+
+/* =====================================================
+   加载历史
+===================================================== */
+
+async function loadHistory() {
+
+    try {
+
+        const response =
+            await fetch(
+                "data/history.json?t=" +
+                new Date().getTime()
+            );
+
+
+        if (!response.ok) {
+
+            return;
+
+        }
+
+
+        const data =
+            await response.json();
+
+
+        let history = [];
+
+
+        if (Array.isArray(data)) {
+
+            history = data;
+
+        }
+
+        else if (
+            Array.isArray(data.history)
+        ) {
+
+            history =
+                data.history;
+
+        }
+
+        else if (
+            Array.isArray(data.items)
+        ) {
+
+            history =
+                data.items;
+
+        }
+
+
+        renderHistory(history);
+
+    }
+
+    catch (error) {
+
+        console.log(
+            "历史数据暂不可用"
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   页面启动
+===================================================== */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function() {
+
+        loadLatestData();
+
+    }
+);
+
+
+/* =====================================================
+   每10分钟自动刷新
+===================================================== */
+
+setInterval(
+    function() {
+
+        loadLatestData();
+
+    },
+    10 * 60 * 1000
+);
 
 </script>
 
