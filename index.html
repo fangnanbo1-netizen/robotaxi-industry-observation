@@ -1,1220 +1,1175 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
-
 <meta charset="UTF-8">
-
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Robotaxi 行业观察</title>
 
-<meta name="description"
-      content="中国Robotaxi行业每日观察">
-
 <style>
-
-/* ==============================
-   基础
-================================ */
-
-* {
-    box-sizing: border-box;
+:root{
+    --bg:#f5f7fa;
+    --card:#ffffff;
+    --text:#172033;
+    --muted:#6b7280;
+    --line:#e5e7eb;
+    --primary:#111827;
+    --blue:#2563eb;
+    --blue-light:#eff6ff;
+    --green:#059669;
+    --orange:#d97706;
+    --red:#dc2626;
+    --sidebar:#111827;
 }
 
-body {
-    margin: 0;
-    background: #f5f6f8;
-    color: #1f2937;
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
     font-family:
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
+        "PingFang SC",
         "Microsoft YaHei",
         Arial,
         sans-serif;
+    background:var(--bg);
+    color:var(--text);
 }
 
-a {
-    color: inherit;
+/* =========================
+   Layout
+========================= */
+
+.app{
+    display:flex;
+    min-height:100vh;
 }
 
+.sidebar{
+    width:240px;
+    background:var(--sidebar);
+    color:#fff;
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    overflow-y:auto;
+    z-index:20;
+}
 
-/* ==============================
+.logo{
+    padding:25px 22px 20px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo-title{
+    font-size:20px;
+    font-weight:700;
+    letter-spacing:.5px;
+}
+
+.logo-sub{
+    margin-top:6px;
+    font-size:11px;
+    color:#9ca3af;
+}
+
+.nav{
+    padding:15px 10px;
+}
+
+.nav-group{
+    margin-top:18px;
+}
+
+.nav-title{
+    padding:8px 12px;
+    color:#6b7280;
+    font-size:11px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.nav-item{
+    padding:10px 12px;
+    border-radius:7px;
+    cursor:pointer;
+    font-size:14px;
+    color:#d1d5db;
+    margin:2px 0;
+    transition:.15s;
+}
+
+.nav-item:hover{
+    background:#1f2937;
+    color:#fff;
+}
+
+.nav-item.active{
+    background:#2563eb;
+    color:#fff;
+}
+
+.main{
+    margin-left:240px;
+    width:calc(100% - 240px);
+}
+
+/* =========================
    Header
-================================ */
+========================= */
 
-.header {
-    background: #111827;
-    color: white;
-    padding: 28px 24px;
+.topbar{
+    height:70px;
+    background:#fff;
+    border-bottom:1px solid var(--line);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 32px;
+    position:sticky;
+    top:0;
+    z-index:10;
 }
 
-.header-inner {
-    max-width: 1400px;
-    margin: auto;
+.page-title{
+    font-size:20px;
+    font-weight:700;
 }
 
-.logo {
-    font-size: 28px;
-    font-weight: 700;
+.update-info{
+    font-size:12px;
+    color:var(--muted);
 }
 
-.subtitle {
-    margin-top: 8px;
-    color: #9ca3af;
-    font-size: 14px;
+/* =========================
+   Content
+========================= */
+
+.content{
+    padding:28px 32px 50px;
+    max-width:1500px;
 }
 
-
-/* ==============================
-   Navigation
-================================ */
-
-.nav {
-    background: white;
-    border-bottom: 1px solid #e5e7eb;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+.section{
+    display:none;
 }
 
-.nav-inner {
-    max-width: 1400px;
-    margin: auto;
-    display: flex;
-    overflow-x: auto;
+.section.active{
+    display:block;
 }
 
-.nav a {
-    text-decoration: none;
-    padding: 15px 20px;
-    color: #4b5563;
-    font-size: 14px;
-    white-space: nowrap;
+.section-header{
+    margin-bottom:22px;
 }
 
-.nav a:hover {
-    background: #f3f4f6;
-    color: #111827;
+.section-title{
+    font-size:25px;
+    font-weight:750;
+    margin:0 0 6px;
 }
 
-
-/* ==============================
-   Main
-================================ */
-
-.container {
-    max-width: 1400px;
-    margin: auto;
-    padding: 30px 24px 60px;
+.section-desc{
+    font-size:13px;
+    color:var(--muted);
 }
 
-
-/* ==============================
-   Status
-================================ */
-
-.status {
-    background: white;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 20px 24px;
-    margin-bottom: 24px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    gap: 20px;
-}
-
-.status-left {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.status-dot {
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    background: #10b981;
-}
-
-.status-dot.error {
-    background: #ef4444;
-}
-
-.status-title {
-    font-size: 17px;
-    font-weight: 700;
-}
-
-.status-time {
-    margin-top: 5px;
-    color: #6b7280;
-    font-size: 13px;
-}
-
-
-/* ==============================
+/* =========================
    Dashboard
-================================ */
+========================= */
 
-.dashboard {
-    display: grid;
-    grid-template-columns:
-        repeat(4, 1fr);
-
-    gap: 16px;
-
-    margin-bottom: 32px;
+.kpi-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:14px;
+    margin-bottom:22px;
 }
 
-.metric {
-    background: white;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 22px;
+.kpi{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:20px;
 }
 
-.metric-label {
-    color: #6b7280;
-    font-size: 13px;
+.kpi-label{
+    color:var(--muted);
+    font-size:12px;
 }
 
-.metric-number {
-    margin-top: 8px;
-    font-size: 30px;
-    font-weight: 700;
+.kpi-value{
+    font-size:28px;
+    font-weight:750;
+    margin-top:9px;
 }
 
-.metric-desc {
-    margin-top: 4px;
-    color: #9ca3af;
-    font-size: 12px;
+.kpi-sub{
+    font-size:11px;
+    color:var(--muted);
+    margin-top:5px;
 }
 
-
-/* ==============================
-   Section
-================================ */
-
-.section {
-    margin-top: 35px;
+.dashboard-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:18px;
 }
 
-.section-title {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 8px;
+.card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:20px;
 }
 
-.section-desc {
-    color: #6b7280;
-    font-size: 13px;
-    margin-bottom: 18px;
+.card-title{
+    font-size:15px;
+    font-weight:700;
+    margin-bottom:16px;
 }
 
+.event-list{
+    display:flex;
+    flex-direction:column;
+    gap:0;
+}
 
-/* ==============================
+.event{
+    padding:14px 0;
+    border-bottom:1px solid var(--line);
+}
+
+.event:last-child{
+    border-bottom:0;
+}
+
+.event-title{
+    font-size:14px;
+    line-height:1.55;
+    font-weight:600;
+}
+
+.event-meta{
+    display:flex;
+    gap:8px;
+    margin-top:7px;
+    flex-wrap:wrap;
+}
+
+.tag{
+    display:inline-block;
+    padding:3px 7px;
+    border-radius:4px;
+    font-size:10px;
+    background:#f3f4f6;
+    color:#4b5563;
+}
+
+.tag.blue{
+    background:#eff6ff;
+    color:#2563eb;
+}
+
+.tag.green{
+    background:#ecfdf5;
+    color:#059669;
+}
+
+.tag.orange{
+    background:#fffbeb;
+    color:#d97706;
+}
+
+.tag.red{
+    background:#fef2f2;
+    color:#dc2626;
+}
+
+.source-link{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+.source-link:hover{
+    text-decoration:underline;
+}
+
+/* =========================
    News
-================================ */
+========================= */
 
-.news-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(2, 1fr);
-
-    gap: 16px;
+.news-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
 }
 
-.news-card {
-    background: white;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 20px;
-
-    transition: all .15s ease;
+.news-column{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:20px;
 }
 
-.news-card:hover {
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 5px 18px rgba(0,0,0,.06);
+.news-column-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-weight:700;
+    margin-bottom:10px;
 }
 
-.tags {
-    margin-bottom: 10px;
+.news-count{
+    font-size:11px;
+    color:var(--muted);
 }
 
-.tag {
-    display: inline-block;
-
-    padding: 4px 8px;
-
-    margin-right: 5px;
-    margin-bottom: 4px;
-
-    border-radius: 5px;
-
-    background: #eef2ff;
-
-    color: #4338ca;
-
-    font-size: 11px;
+.news-item{
+    padding:15px 0;
+    border-bottom:1px solid var(--line);
 }
 
-.news-title {
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 1.55;
+.news-item:last-child{
+    border-bottom:0;
 }
 
-.news-title a {
-    text-decoration: none;
+.news-title{
+    font-size:14px;
+    font-weight:600;
+    line-height:1.5;
 }
 
-.news-title a:hover {
-    text-decoration: underline;
+.news-summary{
+    color:#6b7280;
+    font-size:12px;
+    line-height:1.6;
+    margin-top:6px;
 }
 
-.news-summary {
-    margin-top: 10px;
-
-    color: #6b7280;
-
-    font-size: 13px;
-
-    line-height: 1.7;
+.news-meta{
+    margin-top:8px;
+    font-size:11px;
+    color:#9ca3af;
 }
 
-.news-meta {
-    margin-top: 15px;
+/* =========================
+   Tables
+========================= */
 
-    padding-top: 12px;
-
-    border-top: 1px solid #f0f0f0;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    gap: 10px;
-
-    color: #9ca3af;
-
-    font-size: 11px;
+.table-wrap{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:10px;
+    overflow:auto;
 }
 
-
-/* ==============================
-   Category
-================================ */
-
-.category-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 16px;
+table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:850px;
 }
 
-.category-card {
-    background: white;
-
-    border: 1px solid #e5e7eb;
-
-    border-radius: 12px;
-
-    padding: 20px;
+th{
+    background:#f9fafb;
+    font-size:11px;
+    color:#6b7280;
+    font-weight:600;
+    text-align:left;
+    padding:13px 14px;
+    border-bottom:1px solid var(--line);
+    white-space:nowrap;
 }
 
-.category-name {
-    font-weight: 700;
-    font-size: 15px;
+td{
+    font-size:12px;
+    padding:14px;
+    border-bottom:1px solid var(--line);
+    vertical-align:top;
 }
 
-.category-number {
-    font-size: 28px;
-    font-weight: 700;
-    margin-top: 8px;
+tr:last-child td{
+    border-bottom:0;
 }
 
-
-/* ==============================
-   Empty
-================================ */
-
-.empty {
-    background: white;
-
-    border: 1px dashed #d1d5db;
-
-    border-radius: 12px;
-
-    padding: 40px;
-
-    text-align: center;
-
-    color: #9ca3af;
+.company-name{
+    font-weight:700;
 }
 
-
-/* ==============================
-   Footer
-================================ */
-
-.footer {
-    padding: 30px;
-
-    text-align: center;
-
-    color: #9ca3af;
-
-    font-size: 12px;
+.small{
+    font-size:11px;
+    color:var(--muted);
 }
 
+/* =========================
+   Policy Tree
+========================= */
 
-/* ==============================
-   Mobile
-================================ */
+.policy-layout{
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:18px;
+}
 
-@media(max-width:900px) {
+.policy-tree{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:15px;
+}
 
-    .dashboard {
-        grid-template-columns:
-            repeat(2,1fr);
+.policy-node{
+    padding:10px 12px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:13px;
+    margin:3px 0;
+}
+
+.policy-node:hover{
+    background:#f3f4f6;
+}
+
+.policy-node.active{
+    background:#eff6ff;
+    color:#2563eb;
+    font-weight:600;
+}
+
+.policy-child{
+    padding-left:22px;
+    font-size:12px;
+}
+
+.policy-detail{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:22px;
+}
+
+.policy-empty{
+    color:var(--muted);
+    font-size:13px;
+    line-height:1.7;
+}
+
+/* =========================
+   Empty State
+========================= */
+
+.empty{
+    text-align:center;
+    padding:55px 20px;
+    color:var(--muted);
+}
+
+.empty-title{
+    font-size:15px;
+    font-weight:600;
+    color:#374151;
+    margin-bottom:7px;
+}
+
+.empty-text{
+    font-size:12px;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media(max-width:1100px){
+    .kpi-grid{
+        grid-template-columns:repeat(3,1fr);
     }
 
-    .news-grid {
-        grid-template-columns: 1fr;
+    .dashboard-grid{
+        grid-template-columns:1fr;
     }
-
-    .category-grid {
-        grid-template-columns: 1fr;
-    }
-
 }
 
-@media(max-width:600px) {
-
-    .container {
-        padding: 20px 14px 40px;
+@media(max-width:800px){
+    .sidebar{
+        width:200px;
     }
 
-    .dashboard {
-        gap: 10px;
+    .main{
+        margin-left:200px;
+        width:calc(100% - 200px);
     }
 
-    .metric {
-        padding: 16px;
+    .content{
+        padding:20px;
     }
 
-    .metric-number {
-        font-size: 24px;
+    .news-layout{
+        grid-template-columns:1fr;
     }
 
-    .status {
-        align-items: flex-start;
-        flex-direction: column;
+    .policy-layout{
+        grid-template-columns:1fr;
     }
-
 }
 
+@media(max-width:600px){
+    .sidebar{
+        position:relative;
+        width:100%;
+        height:auto;
+    }
+
+    .app{
+        display:block;
+    }
+
+    .main{
+        margin-left:0;
+        width:100%;
+    }
+
+    .topbar{
+        position:relative;
+    }
+
+    .kpi-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
 </style>
-
 </head>
-
 
 <body>
 
+<div class="app">
 
-<!-- ==========================================
-     Header
-========================================== -->
+<!-- =========================
+     Sidebar
+========================= -->
 
-<header class="header">
+<aside class="sidebar">
 
-    <div class="header-inner">
+    <div class="logo">
+        <div class="logo-title">Robotaxi 行业观察</div>
+        <div class="logo-sub">INDUSTRY INTELLIGENCE</div>
+    </div>
 
-        <div class="logo">
-            Robotaxi 行业观察
+    <div class="nav">
+
+        <div class="nav-group">
+            <div class="nav-title">Overview</div>
+
+            <div class="nav-item active"
+                 data-section="dashboard">
+                Dashboard
+            </div>
+
+            <div class="nav-item"
+                 data-section="news">
+                今日情报
+            </div>
         </div>
 
-        <div class="subtitle">
-            中国Robotaxi产业 · 每日行业情报
+        <div class="nav-group">
+            <div class="nav-title">Industry Database</div>
+
+            <div class="nav-item"
+                 data-section="companies">
+                企业数据库
+            </div>
+
+            <div class="nav-item"
+                 data-section="cities">
+                城市数据库
+            </div>
+        </div>
+
+        <div class="nav-group">
+            <div class="nav-title">Policy & Capital</div>
+
+            <div class="nav-item"
+                 data-section="policies">
+                政策法规
+            </div>
+
+            <div class="nav-item"
+                 data-section="capital">
+                资本与合作
+            </div>
+        </div>
+
+        <div class="nav-group">
+            <div class="nav-title">Archive</div>
+
+            <div class="nav-item"
+                 data-section="history">
+                历史日报
+            </div>
         </div>
 
     </div>
-
-</header>
-
-
-<!-- ==========================================
-     Navigation
-========================================== -->
-
-<nav class="nav">
-
-    <div class="nav-inner">
-
-        <a href="#dashboard">
-            Dashboard
-        </a>
-
-        <a href="#today">
-            今日情报
-        </a>
-
-        <a href="#category">
-            分类观察
-        </a>
-
-        <a href="#companies">
-            企业数据库
-        </a>
-
-        <a href="#cities">
-            城市数据库
-        </a>
-
-        <a href="#policy">
-            政策监管
-        </a>
-
-        <a href="#ue">
-            单车UE
-        </a>
-
-        <a href="#capital">
-            资本合作
-        </a>
-
-        <a href="#history">
-            历史日报
-        </a>
-
-        <a href="#risk">
-            风险雷达
-        </a>
-
-    </div>
-
-</nav>
+</aside>
 
 
-<!-- ==========================================
+<!-- =========================
      Main
-========================================== -->
+========================= -->
 
-<main class="container">
+<main class="main">
 
-
-<!-- ==========================================
-     Status
-========================================== -->
-
-<div class="status">
-
-    <div class="status-left">
-
-        <div
-            id="statusDot"
-            class="status-dot">
+    <header class="topbar">
+        <div class="page-title" id="pageTitle">
+            Dashboard
         </div>
 
-        <div>
-
-            <div
-                id="statusTitle"
-                class="status-title">
-
-                正在读取今日行业数据……
-
-            </div>
-
-            <div
-                id="statusTime"
-                class="status-time">
-
-                每日08:00自动更新
-
-            </div>
-
+        <div class="update-info" id="updateInfo">
+            数据加载中……
         </div>
-
-    </div>
-
-
-    <div>
-
-        <strong id="date">
-            --
-        </strong>
-
-    </div>
-
-</div>
+    </header>
 
 
-<!-- ==========================================
-     Dashboard
-========================================== -->
+    <div class="content">
 
-<section
-    id="dashboard"
-    class="section">
+        <!-- =====================
+             Dashboard
+        ====================== -->
 
-    <div class="section-title">
-        行业 Dashboard
-    </div>
+        <section id="dashboard"
+                 class="section active">
 
-    <div class="section-desc">
-        今日中国Robotaxi重点信息概览
-    </div>
+            <div class="section-header">
+                <h1 class="section-title">
+                    Robotaxi 行业 Dashboard
+                </h1>
 
-
-    <div class="dashboard">
-
-
-        <div class="metric">
-
-            <div class="metric-label">
-                今日重点信息
+                <div class="section-desc">
+                    中国市场优先，海外市场补充；持续跟踪企业、城市、政策、资本与商业化进展。
+                </div>
             </div>
 
-            <div
-                id="total"
-                class="metric-number">
 
-                -
+            <div class="kpi-grid">
 
-            </div>
+                <div class="kpi">
+                    <div class="kpi-label">今日情报</div>
+                    <div class="kpi-value"
+                         id="kpiNews">
+                        -
+                    </div>
+                    <div class="kpi-sub">
+                        条
+                    </div>
+                </div>
 
-            <div class="metric-desc">
-                条
-            </div>
+                <div class="kpi">
+                    <div class="kpi-label">中国情报</div>
+                    <div class="kpi-value"
+                         id="kpiChina">
+                        -
+                    </div>
+                    <div class="kpi-sub">
+                        China
+                    </div>
+                </div>
 
-        </div>
+                <div class="kpi">
+                    <div class="kpi-label">海外情报</div>
+                    <div class="kpi-value"
+                         id="kpiOverseas">
+                        -
+                    </div>
+                    <div class="kpi-sub">
+                        Overseas
+                    </div>
+                </div>
 
+                <div class="kpi">
+                    <div class="kpi-label">企业数据库</div>
+                    <div class="kpi-value"
+                         id="kpiCompanies">
+                        -
+                    </div>
+                    <div class="kpi-sub">
+                        家
+                    </div>
+                </div>
 
-        <div class="metric">
-
-            <div class="metric-label">
-                政策监管
-            </div>
-
-            <div
-                id="policy"
-                class="metric-number">
-
-                -
-
-            </div>
-
-            <div class="metric-desc">
-                条
-            </div>
-
-        </div>
-
-
-        <div class="metric">
-
-            <div class="metric-label">
-                企业动态
-            </div>
-
-            <div
-                id="company"
-                class="metric-number">
-
-                -
+                <div class="kpi">
+                    <div class="kpi-label">城市数据库</div>
+                    <div class="kpi-value"
+                         id="kpiCities">
+                        -
+                    </div>
+                    <div class="kpi-sub">
+                        城市
+                    </div>
+                </div>
 
             </div>
 
-            <div class="metric-desc">
-                条
+
+            <div class="dashboard-grid">
+
+                <div class="card">
+
+                    <div class="card-title">
+                        今日重点事件
+                    </div>
+
+                    <div id="dashboardEvents"
+                         class="event-list">
+
+                        <div class="empty">
+                            <div class="empty-title">
+                                正在加载
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="card-title">
+                        今日行业结构
+                    </div>
+
+                    <div id="categoryStats">
+                        <div class="empty">
+                            <div class="empty-text">
+                                数据加载中……
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
-        </div>
+        </section>
 
 
-        <div class="metric">
+        <!-- =====================
+             News
+        ====================== -->
 
-            <div class="metric-label">
-                城市运营
+        <section id="news"
+                 class="section">
+
+            <div class="section-header">
+
+                <h1 class="section-title">
+                    今日情报
+                </h1>
+
+                <div class="section-desc">
+                    按中国 / 海外分区展示；同一事件的不同媒体转载进行合并。
+                </div>
+
             </div>
 
-            <div
-                id="city"
-                class="metric-number">
 
-                -
+            <div class="news-layout">
+
+                <div class="news-column">
+
+                    <div class="news-column-title">
+
+                        <span>
+                            中国 Robotaxi
+                        </span>
+
+                        <span class="news-count"
+                              id="chinaNewsCount">
+                            -
+                        </span>
+
+                    </div>
+
+                    <div id="chinaNews"></div>
+
+                </div>
+
+
+                <div class="news-column">
+
+                    <div class="news-column-title">
+
+                        <span>
+                            海外 Robotaxi
+                        </span>
+
+                        <span class="news-count"
+                              id="overseasNewsCount">
+                            -
+                        </span>
+
+                    </div>
+
+                    <div id="overseasNews"></div>
+
+                </div>
 
             </div>
 
-            <div class="metric-desc">
-                条
+        </section>
+
+
+        <!-- =====================
+             Companies
+        ====================== -->
+
+        <section id="companies"
+                 class="section">
+
+            <div class="section-header">
+
+                <h1 class="section-title">
+                    企业数据库
+                </h1>
+
+                <div class="section-desc">
+                    不做企业简介，重点记录运营城市、车辆规模、技术路线、合作关系与商业化状态。
+                </div>
+
             </div>
 
-        </div>
 
+            <div class="table-wrap">
 
-    </div>
+                <table>
 
-</section>
+                    <thead>
 
+                        <tr>
 
-<!-- ==========================================
-     今日情报
-========================================== -->
+                            <th>企业</th>
 
-<section
-    id="today"
-    class="section">
+                            <th>类型</th>
 
-    <div class="section-title">
-        今日 Robotaxi 重点情报
-    </div>
+                            <th>运营城市</th>
 
-    <div class="section-desc">
+                            <th>车辆数</th>
 
-        国内Robotaxi优先 · 原始信息可点击查看
+                            <th>技术路线</th>
 
-    </div>
+                            <th>合作方</th>
 
+                            <th>商业化阶段</th>
 
-    <div
-        id="news"
-        class="news-grid">
+                            <th>最新进展</th>
 
-        <div class="empty">
+                        </tr>
 
-            正在读取数据……
+                    </thead>
 
-        </div>
+                    <tbody id="companyTable">
 
-    </div>
+                    </tbody>
 
-</section>
+                </table>
 
-
-<!-- ==========================================
-     分类观察
-========================================== -->
-
-<section
-    id="category"
-    class="section">
-
-    <div class="section-title">
-        分类观察
-    </div>
-
-    <div class="section-desc">
-        今日信息按行业维度自动归类
-    </div>
-
-
-    <div
-        id="categories"
-        class="category-grid">
-
-    </div>
-
-</section>
-
-
-<!-- ==========================================
-     企业数据库
-========================================== -->
-
-<section
-    id="companies"
-    class="section">
-
-    <div class="section-title">
-        企业数据库
-    </div>
-
-    <div class="section-desc">
-        后续将持续沉淀Robotaxi核心企业动态
-    </div>
-
-
-    <div class="category-grid">
-
-        <div class="category-card">
-
-            <div class="category-name">
-                百度 Apollo Go
             </div>
 
-            <p>
-                Robotaxi规模化运营、车辆投放、
-                城市拓展及商业化进展。
-            </p>
-
-        </div>
+        </section>
 
 
-        <div class="category-card">
+        <!-- =====================
+             Cities
+        ====================== -->
 
-            <div class="category-name">
-                小马智行
+        <section id="cities"
+                 class="section">
+
+            <div class="section-header">
+
+                <h1 class="section-title">
+                    城市数据库
+                </h1>
+
+                <div class="section-desc">
+                    核心回答：Robotaxi 到底在哪些城市运营、运营到什么阶段、规模有多大。
+                </div>
+
             </div>
 
-            <p>
-                Robotaxi、自动驾驶技术、
-                资本及主机厂合作。
-            </p>
 
-        </div>
+            <div class="table-wrap">
 
+                <table>
 
-        <div class="category-card">
+                    <thead>
 
-            <div class="category-name">
-                文远知行
+                        <tr>
+
+                            <th>城市</th>
+
+                            <th>国家/地区</th>
+
+                            <th>运营企业</th>
+
+                            <th>车辆数</th>
+
+                            <th>商业化状态</th>
+
+                            <th>无人化状态</th>
+
+                            <th>运营范围</th>
+
+                            <th>政策状态</th>
+
+                            <th>最新进展</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="cityTable">
+
+                    </tbody>
+
+                </table>
+
             </div>
 
-            <p>
-                Robotaxi、自动驾驶商业化、
-                城市运营及海外市场。
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
+        </section>
 
 
-<!-- ==========================================
-     城市数据库
-========================================== -->
+        <!-- =====================
+             Policies
+        ====================== -->
 
-<section
-    id="cities"
-    class="section">
+        <section id="policies"
+                 class="section">
 
-    <div class="section-title">
-        城市数据库
-    </div>
+            <div class="section-header">
 
-    <div class="section-desc">
-        重点跟踪中国Robotaxi主要运营城市
-    </div>
+                <h1 class="section-title">
+                    政策法规
+                </h1>
 
+                <div class="section-desc">
+                    Robotaxi 法律法规体系。政策更新进入对应节点，并保留历史。
+                </div>
 
-    <div class="category-grid">
-
-        <div class="category-card">
-            <div class="category-name">
-                上海
-            </div>
-            <p>
-                Robotaxi商业化、牌照、运营规模。
-            </p>
-        </div>
-
-
-        <div class="category-card">
-            <div class="category-name">
-                深圳
-            </div>
-            <p>
-                自动驾驶政策、Robotaxi、
-                智能网联汽车商业化。
-            </p>
-        </div>
-
-
-        <div class="category-card">
-            <div class="category-name">
-                广州
-            </div>
-            <p>
-                L4准入、Robotaxi运营及政策创新。
-            </p>
-        </div>
-
-
-        <div class="category-card">
-            <div class="category-name">
-                北京
-            </div>
-            <p>
-                自动驾驶测试、示范及商业运营。
-            </p>
-        </div>
-
-
-        <div class="category-card">
-            <div class="category-name">
-                成都
-            </div>
-            <p>
-                西部Robotaxi及智能网联汽车发展。
-            </p>
-        </div>
-
-
-        <div class="category-card">
-            <div class="category-name">
-                重庆
-            </div>
-            <p>
-                汽车产业、智能网联及Robotaxi。
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ==========================================
-     政策
-========================================== -->
-
-<section
-    id="policy"
-    class="section">
-
-    <div class="section-title">
-        政策监管
-    </div>
-
-    <div class="section-desc">
-        自动筛选今日政策与监管信息
-    </div>
-
-
-    <div
-        id="policyNews"
-        class="news-grid">
-
-    </div>
-
-</section>
-
-
-<!-- ==========================================
-     UE
-========================================== -->
-
-<section
-    id="ue"
-    class="section">
-
-    <div class="section-title">
-        Robotaxi 单车 UE
-    </div>
-
-    <div class="section-desc">
-        后续逐步接入Robotaxi单车经济模型
-    </div>
-
-
-    <div class="category-grid">
-
-
-        <div class="category-card">
-
-            <div class="category-name">
-                收入端
             </div>
 
-            <p>
-                日均里程、订单数、客单价、
-                运营天数、平台抽佣。
-            </p>
 
-        </div>
+            <div class="policy-layout">
+
+                <div class="policy-tree"
+                     id="policyTree">
+
+                    <div class="empty">
+                        <div class="empty-text">
+                            政策体系加载中……
+                        </div>
+                    </div>
+
+                </div>
 
 
-        <div class="category-card">
+                <div class="policy-detail"
+                     id="policyDetail">
 
-            <div class="category-name">
-                成本端
+                    <div class="policy-empty">
+
+                        <strong>
+                            Robotaxi 法律法规体系
+                        </strong>
+
+                        <p>
+                            当前页面预留完整政策法规树。
+                        </p>
+
+                        <p>
+                            后续将按照国家层面、地方政策、测试、示范应用、载客运营、无人化、车辆准入、保险责任、数据安全等维度持续维护。
+                        </p>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <p>
-                车辆折旧、融资、保险、能源、
-                云舱、运维、救援。
-            </p>
-
-        </div>
+        </section>
 
 
-        <div class="category-card">
+        <!-- =====================
+             Capital
+        ====================== -->
 
-            <div class="category-name">
-                核心指标
+        <section id="capital"
+                 class="section">
+
+            <div class="section-header">
+
+                <h1 class="section-title">
+                    资本与合作
+                </h1>
+
+                <div class="section-desc">
+                    跟踪融资、战略合作、主机厂合作、出行平台合作及产业链合作。
+                </div>
+
             </div>
 
-            <p>
-                单车日收入、单车日成本、
-                单车贡献利润、回本周期。
-            </p>
 
-        </div>
+            <div class="card">
 
+                <div id="capitalList">
 
-    </div>
+                    <div class="empty">
 
-</section>
+                        <div class="empty-title">
+                            数据建设中
+                        </div>
 
+                        <div class="empty-text">
+                            后续从日报情报中自动沉淀资本与合作事件。
+                        </div>
 
-<!-- ==========================================
-     资本
-========================================== -->
+                    </div>
 
-<section
-    id="capital"
-    class="section">
+                </div>
 
-    <div class="section-title">
-        资本与合作
-    </div>
-
-    <div class="section-desc">
-        自动筛选融资、资本及产业合作信息
-    </div>
-
-
-    <div
-        id="capitalNews"
-        class="news-grid">
-
-    </div>
-
-</section>
-
-
-<!-- ==========================================
-     历史
-========================================== -->
-
-<section
-    id="history"
-    class="section">
-
-    <div class="section-title">
-        历史日报
-    </div>
-
-    <div class="section-desc">
-        每日数据持续沉淀，不覆盖历史
-    </div>
-
-
-    <div class="empty">
-
-        历史日报数据库将在下一阶段接入。
-
-    </div>
-
-</section>
-
-
-<!-- ==========================================
-     风险
-========================================== -->
-
-<section
-    id="risk"
-    class="section">
-
-    <div class="section-title">
-        风险雷达
-    </div>
-
-    <div class="section-desc">
-        Robotaxi行业重点风险跟踪
-    </div>
-
-
-    <div class="category-grid">
-
-
-        <div class="category-card">
-
-            <div class="category-name">
-                政策风险
             </div>
 
-            <p>
-                L4准入、道路测试、示范运营、
-                商业化收费及地方准入。
-            </p>
-
-        </div>
+        </section>
 
 
-        <div class="category-card">
+        <!-- =====================
+             History
+        ====================== -->
 
-            <div class="category-name">
-                商业模式风险
+        <section id="history"
+                 class="section">
+
+            <div class="section-header">
+
+                <h1 class="section-title">
+                    历史日报
+                </h1>
+
+                <div class="section-desc">
+                    每日数据持续累积，不覆盖历史。
+                </div>
+
             </div>
 
-            <p>
-                平台流量依赖、车辆利用率、
-                单车UE、资产折旧。
-            </p>
 
-        </div>
+            <div class="table-wrap">
 
+                <table>
 
-        <div class="category-card">
+                    <thead>
 
-            <div class="category-name">
-                安全运营风险
+                        <tr>
+
+                            <th>日期</th>
+
+                            <th>总情报</th>
+
+                            <th>中国</th>
+
+                            <th>海外</th>
+
+                            <th>更新时间</th>
+
+                            <th>日报</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="historyTable">
+
+                    </tbody>
+
+                </table>
+
             </div>
 
-            <p>
-                事故、接管、车辆故障、
-                远程协助及应急保障。
-            </p>
-
-        </div>
-
+        </section>
 
     </div>
-
-</section>
-
 
 </main>
 
-
-<!-- ==========================================
-     Footer
-========================================== -->
-
-<footer class="footer">
-
-    Robotaxi 行业观察
-
-    <br><br>
-
-    数据来源：
-    Robotaxi Industry Daily Update
-
-    <br>
-
-    更新时间：
-    <span id="footerTime">
-        --
-    </span>
-
-</footer>
-
+</div>
 
 
 <script>
 
 /* =========================================================
-   Robotaxi Industry Observation
-   数据源：
-   data/latest.json
-
-   当前JSON结构：
-
-   {
-       "date": "...",
-       "updated_at": "...",
-       "total_items": 8,
-       "items": [
-           {
-               "title": "...",
-               "summary": "...",
-               "source": "...",
-               "url": "...",
-               "published": "...",
-               "categories": [
-                   "企业动态"
-               ]
-           }
-       ]
-   }
-
+   Global Data
 ========================================================= */
 
+let latestData = null;
+let companiesData = [];
+let citiesData = [];
+let policiesData = null;
+let historyData = [];
 
-/* ==========================================
-   HTML安全处理
-========================================== */
 
-function escapeHTML(value) {
+/* =========================================================
+   Utility
+========================================================= */
 
-    if (
-        value === null ||
-        value === undefined
-    ) {
+function escapeHtml(value){
+
+    if(value === undefined || value === null){
         return "";
     }
 
     return String(value)
+        .replace(/&/g,"&amp;")
+        .replace(/</g,"&lt;")
+        .replace(/>/g,"&gt;")
+        .replace(/"/g,"&quot;")
+        .replace(/'/g,"&#039;");
+}
 
-        .replace(/&/g, "&amp;")
 
-        .replace(/</g, "&lt;")
+function safeArray(value){
 
-        .replace(/>/g, "&gt;")
-
-        .replace(/"/g, "&quot;")
-
-        .replace(/'/g, "&#039;");
+    return Array.isArray(value) ? value : [];
 
 }
 
 
-/* ==========================================
-   时间格式
-========================================== */
+function formatDate(value){
 
-function formatTime(value) {
-
-    if (!value) {
-        return "--";
+    if(!value){
+        return "-";
     }
 
-    try {
+    try{
 
-        const d =
-            new Date(value);
+        const d = new Date(value);
 
-        if (
-            isNaN(
-                d.getTime()
-            )
-        ) {
+        if(isNaN(d.getTime())){
             return value;
         }
 
         return d.toLocaleString(
             "zh-CN",
             {
-                year: "numeric",
-                month: "2-digit",
-                day: "2-digit",
-                hour: "2-digit",
-                minute: "2-digit"
+                timeZone:"Asia/Shanghai",
+                year:"numeric",
+                month:"2-digit",
+                day:"2-digit",
+                hour:"2-digit",
+                minute:"2-digit"
             }
         );
 
-    }
-
-    catch(e) {
+    }catch(e){
 
         return value;
 
@@ -1223,20 +1178,235 @@ function formatTime(value) {
 }
 
 
-/* ==========================================
-   获取分类
-========================================== */
+/* =========================================================
+   Navigation
+========================================================= */
 
-function getCategories(item) {
+const navItems =
+    document.querySelectorAll(".nav-item");
 
-    if (
-        Array.isArray(
-            item.categories
-        )
-    ) {
+navItems.forEach(item => {
 
+    item.addEventListener("click", () => {
+
+        const target =
+            item.dataset.section;
+
+        navItems.forEach(n =>
+            n.classList.remove("active")
+        );
+
+        item.classList.add("active");
+
+        document
+            .querySelectorAll(".section")
+            .forEach(section =>
+                section.classList.remove("active")
+            );
+
+        const section =
+            document.getElementById(target);
+
+        if(section){
+            section.classList.add("active");
+        }
+
+        const titles = {
+
+            dashboard:"Dashboard",
+
+            news:"今日情报",
+
+            companies:"企业数据库",
+
+            cities:"城市数据库",
+
+            policies:"政策法规",
+
+            capital:"资本与合作",
+
+            history:"历史日报"
+
+        };
+
+        document.getElementById("pageTitle")
+            .textContent =
+            titles[target] || "Robotaxi 行业观察";
+
+    });
+
+});
+
+
+/* =========================================================
+   Load JSON
+========================================================= */
+
+async function loadJson(url, fallback){
+
+    try{
+
+        const response =
+            await fetch(
+                url + "?t=" + Date.now()
+            );
+
+        if(!response.ok){
+            throw new Error(
+                "HTTP " + response.status
+            );
+        }
+
+        return await response.json();
+
+    }catch(error){
+
+        console.warn(
+            "数据加载失败:",
+            url,
+            error
+        );
+
+        return fallback;
+
+    }
+
+}
+
+
+async function loadAll(){
+
+    latestData =
+        await loadJson(
+            "data/latest.json",
+            {
+                date:null,
+                updated_at:null,
+                items:[]
+            }
+        );
+
+
+    const companies =
+        await loadJson(
+            "data/companies.json",
+            []
+        );
+
+    companiesData =
+        Array.isArray(companies)
+            ? companies
+            : (
+                companies.companies || []
+            );
+
+
+    const cities =
+        await loadJson(
+            "data/cities.json",
+            []
+        );
+
+    citiesData =
+        Array.isArray(cities)
+            ? cities
+            : (
+                cities.cities || []
+            );
+
+
+    policiesData =
+        await loadJson(
+            "data/policies.json",
+            null
+        );
+
+
+    const history =
+        await loadJson(
+            "data/history.json",
+            []
+        );
+
+    historyData =
+        Array.isArray(history)
+            ? history
+            : (
+                history.history || []
+            );
+
+
+    renderAll();
+
+}
+
+
+/* =========================================================
+   Normalize News
+========================================================= */
+
+function getRegion(item){
+
+    if(item.region){
+        return item.region;
+    }
+
+    const source =
+        String(item.source || "")
+            .toLowerCase();
+
+    const title =
+        String(item.title || "")
+            .toLowerCase();
+
+    const overseasKeywords = [
+
+        "tesla",
+        "waymo",
+        "uber",
+        "zoox",
+        "lucid",
+        "bolt",
+        "nvidia",
+        "verne",
+        "doha",
+        "dubai",
+        "singapore",
+        "tokyo",
+        "austin",
+        "las vegas",
+        "korea",
+        "croatia",
+        "japan",
+        "usa",
+        "america"
+
+    ];
+
+    for(const key of overseasKeywords){
+
+        if(
+            source.includes(key) ||
+            title.includes(key)
+        ){
+            return "overseas";
+        }
+
+    }
+
+    return "china";
+
+}
+
+
+function getCategories(item){
+
+    if(Array.isArray(item.categories)){
         return item.categories;
+    }
 
+    if(item.category){
+        return [item.category];
     }
 
     return [];
@@ -1244,88 +1414,338 @@ function getCategories(item) {
 }
 
 
-/* ==========================================
-   新闻卡片
-========================================== */
+function getCategoryClass(category){
 
-function createNewsCard(item) {
+    if(category === "政策监管"){
+        return "blue";
+    }
 
-    const title =
-        escapeHTML(
-            item.title
+    if(category === "企业动态"){
+        return "green";
+    }
+
+    if(category === "资本合作"){
+        return "orange";
+    }
+
+    if(category === "安全事件"){
+        return "red";
+    }
+
+    return "";
+
+}
+
+
+/* =========================================================
+   Dashboard
+========================================================= */
+
+function renderDashboard(){
+
+    const items =
+        safeArray(
+            latestData?.items
         );
 
 
-    const summary =
-        escapeHTML(
-            item.summary || ""
+    const china =
+        items.filter(
+            x => getRegion(x) === "china"
         );
 
 
-    const source =
-        escapeHTML(
-            item.source || "未知来源"
+    const overseas =
+        items.filter(
+            x => getRegion(x) === "overseas"
         );
 
 
-    const published =
-        formatTime(
-            item.published
+    document.getElementById("kpiNews")
+        .textContent =
+        items.length;
+
+
+    document.getElementById("kpiChina")
+        .textContent =
+        china.length;
+
+
+    document.getElementById("kpiOverseas")
+        .textContent =
+        overseas.length;
+
+
+    document.getElementById("kpiCompanies")
+        .textContent =
+        companiesData.length;
+
+
+    document.getElementById("kpiCities")
+        .textContent =
+        citiesData.length;
+
+
+    const update =
+        latestData?.updated_at
+            ? formatDate(
+                latestData.updated_at
+              )
+            : "暂无";
+
+    document.getElementById("updateInfo")
+        .textContent =
+        "最后更新：" + update;
+
+
+    const events =
+        document.getElementById(
+            "dashboardEvents"
+        );
+
+    if(items.length === 0){
+
+        events.innerHTML =
+            emptyHtml(
+                "暂无今日情报",
+                "等待日报数据更新"
+            );
+
+    }else{
+
+        events.innerHTML =
+            items
+                .slice(0,8)
+                .map(renderEvent)
+                .join("");
+
+    }
+
+
+    renderCategoryStats(items);
+
+}
+
+
+function renderEvent(item){
+
+    const categories =
+        getCategories(item);
+
+    const categoryHtml =
+        categories
+            .slice(0,3)
+            .map(
+                c =>
+                    `<span class="tag ${getCategoryClass(c)}">
+                        ${escapeHtml(c)}
+                    </span>`
+            )
+            .join("");
+
+
+    return `
+
+        <div class="event">
+
+            <div class="event-title">
+
+                <a
+                    class="source-link"
+                    href="${escapeHtml(item.url || "#")}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    ${escapeHtml(item.title || "无标题")}
+                </a>
+
+            </div>
+
+            <div class="event-meta">
+
+                <span class="tag">
+                    ${getRegion(item) === "china"
+                        ? "中国"
+                        : "海外"}
+                </span>
+
+                ${categoryHtml}
+
+                <span class="tag">
+                    ${escapeHtml(item.source || "未知来源")}
+                </span>
+
+            </div>
+
+        </div>
+
+    `;
+
+}
+
+
+function renderCategoryStats(items){
+
+    const counter = {};
+
+    items.forEach(item => {
+
+        getCategories(item).forEach(category => {
+
+            counter[category] =
+                (counter[category] || 0) + 1;
+
+        });
+
+    });
+
+
+    const container =
+        document.getElementById(
+            "categoryStats"
         );
 
 
-    const url =
-        escapeHTML(
-            item.url || "#"
+    const entries =
+        Object.entries(counter)
+            .sort(
+                (a,b) =>
+                    b[1] - a[1]
+            );
+
+
+    if(entries.length === 0){
+
+        container.innerHTML =
+            emptyHtml(
+                "暂无分类数据",
+                "等待日报分类"
+            );
+
+        return;
+
+    }
+
+
+    container.innerHTML =
+        entries.map(([name,count]) => {
+
+            return `
+
+                <div style="
+                    display:flex;
+                    justify-content:space-between;
+                    padding:11px 0;
+                    border-bottom:1px solid #eee;
+                ">
+
+                    <span style="font-size:13px">
+                        ${escapeHtml(name)}
+                    </span>
+
+                    <strong>
+                        ${count}
+                    </strong>
+
+                </div>
+
+            `;
+
+        }).join("");
+
+}
+
+
+/* =========================================================
+   News
+========================================================= */
+
+function renderNews(){
+
+    const items =
+        safeArray(
+            latestData?.items
         );
 
+
+    const china =
+        items.filter(
+            x => getRegion(x) === "china"
+        );
+
+
+    const overseas =
+        items.filter(
+            x => getRegion(x) === "overseas"
+        );
+
+
+    document.getElementById(
+        "chinaNewsCount"
+    ).textContent =
+        china.length + " 条";
+
+
+    document.getElementById(
+        "overseasNewsCount"
+    ).textContent =
+        overseas.length + " 条";
+
+
+    document.getElementById(
+        "chinaNews"
+    ).innerHTML =
+        china.length
+            ? china.map(renderNewsItem).join("")
+            : emptyHtml(
+                "暂无中国情报",
+                "等待日报更新"
+            );
+
+
+    document.getElementById(
+        "overseasNews"
+    ).innerHTML =
+        overseas.length
+            ? overseas.map(renderNewsItem).join("")
+            : emptyHtml(
+                "暂无海外情报",
+                "后续自动补充"
+            );
+
+}
+
+
+function renderNewsItem(item){
 
     const categories =
         getCategories(item);
 
 
-    let tags = "";
-
-    categories.forEach(
-        function(category) {
-
-            tags += `
-
-                <span class="tag">
-
-                    ${escapeHTML(category)}
-
-                </span>
-
-            `;
-
-        }
-    );
+    const tags =
+        categories
+            .map(
+                c =>
+                    `<span class="tag ${getCategoryClass(c)}">
+                        ${escapeHtml(c)}
+                    </span>`
+            )
+            .join("");
 
 
     return `
 
-        <article class="news-card">
-
-            <div class="tags">
-
-                ${tags}
-
-            </div>
-
+        <div class="news-item">
 
             <div class="news-title">
 
                 <a
-
-                    href="${url}"
-
+                    class="source-link"
+                    href="${escapeHtml(item.url || "#")}"
                     target="_blank"
-
-                    rel="noopener noreferrer">
-
-                    ${title}
-
+                    rel="noopener noreferrer"
+                >
+                    ${escapeHtml(item.title || "无标题")}
                 </a>
 
             </div>
@@ -1333,584 +1753,778 @@ function createNewsCard(item) {
 
             <div class="news-summary">
 
-                ${summary}
+                ${escapeHtml(
+                    item.summary || ""
+                )}
 
             </div>
 
 
             <div class="news-meta">
 
-                <span>
+                ${escapeHtml(
+                    item.source || ""
+                )}
 
-                    ${source}
+                ·
 
-                </span>
+                ${formatDate(
+                    item.published
+                )}
 
-
-                <span>
-
-                    ${published}
-
-                </span>
+                ${tags
+                    ? " · " + tags
+                    : ""}
 
             </div>
 
-        </article>
+        </div>
 
     `;
 
 }
 
 
-/* ==========================================
-   统计分类
-========================================== */
+/* =========================================================
+   Companies
+========================================================= */
 
-function countCategories(items) {
+function renderCompanies(){
 
-    const result = {};
+    const tbody =
+        document.getElementById(
+            "companyTable"
+        );
 
 
-    items.forEach(
-        function(item) {
+    if(companiesData.length === 0){
+
+        tbody.innerHTML = `
+
+            <tr>
+
+                <td colspan="8">
+
+                    ${emptyHtml(
+                        "企业数据库正在建设",
+                        "下一阶段将加入运营商、自动驾驶技术企业和主机厂的结构化数据"
+                    )}
+
+                </td>
+
+            </tr>
+
+        `;
+
+        return;
+
+    }
+
+
+    tbody.innerHTML =
+        companiesData.map(company => {
+
+            return `
+
+                <tr>
+
+                    <td>
+
+                        <div class="company-name">
+                            ${escapeHtml(
+                                company.name
+                                || company.company
+                                || "-"
+                            )}
+                        </div>
+
+                    </td>
+
+
+                    <td>
+
+                        ${escapeHtml(
+                            company.type
+                            || "-"
+                        )}
+
+                    </td>
+
+
+                    <td>
+
+                        ${escapeHtml(
+                            Array.isArray(
+                                company.cities
+                            )
+                                ? company.cities.join("、")
+                                : (
+                                    company.cities
+                                    || "-"
+                                )
+                        )}
+
+                    </td>
+
+
+                    <td>
+
+                        ${escapeHtml(
+                            company.fleet
+                            || company.vehicles
+                            || "-"
+                        )}
+
+                    </td>
+
+
+                    <td>
+
+                        ${escapeHtml(
+                            company.tech_route
+                            || company.technology
+                            || "-"
+                        )}
+
+                    </td>
+
+
+                    <td>
+
+                        ${escapeHtml(
+                            Array.isArray(
+                                company.partners
+                            )
+                                ? company.partners.join("、")
+                                : (
+                                    company.partners
+                                    || "-"
+                                )
+                        )}
+
+                    </td>
+
+
+                    <td>
+
+                        ${escapeHtml(
+                            company.stage
+                            || company.commercial_stage
+                            || "-"
+                        )}
+
+                    </td>
+
+
+                    <td>
+
+                        <span class="small">
+
+                            ${escapeHtml(
+                                company.latest
+                                || company.latest_update
+                                || "-"
+                            )}
+
+                        </span>
+
+                    </td>
+
+                </tr>
+
+            `;
+
+        }).join("");
+
+}
+
+
+/* =========================================================
+   Cities
+========================================================= */
+
+function renderCities(){
+
+    const tbody =
+        document.getElementById(
+            "cityTable"
+        );
+
+
+    if(citiesData.length === 0){
+
+        tbody.innerHTML = `
+
+            <tr>
+
+                <td colspan="9">
+
+                    ${emptyHtml(
+                        "城市数据库正在建设",
+                        "下一阶段将加入中国及海外 Robotaxi 运营城市、车辆规模、政策和商业化状态"
+                    )}
+
+                </td>
+
+            </tr>
+
+        `;
+
+        return;
+
+    }
+
+
+    tbody.innerHTML =
+        citiesData.map(city => {
+
+            return `
+
+                <tr>
+
+                    <td>
+
+                        <strong>
+                            ${escapeHtml(
+                                city.city
+                                || city.name
+                                || "-"
+                            )}
+                        </strong>
+
+                    </td>
+
+
+                    <td>
+
+                        ${escapeHtml(
+                            city.country
+                            || city.region
+                            || "-"
+                        )}
+
+                    </td>
+
+
+                    <td>
+
+                        ${escapeHtml(
+                            Array.isArray(
+                                city.operators
+                            )
+                                ? city.operators.join("、")
+                                : (
+                                    city.operators
+                                    || city.operator
+                                    || "-"
+                                )
+                        )}
+
+                    </td>
+
+
+                    <td>
+
+                        ${escapeHtml(
+                            city.fleet
+                            || city.vehicles
+                            || "-"
+                        )}
+
+                    </td>
+
+
+                    <td>
+
+                        ${escapeHtml(
+                            city.commercial
+                            || city.commercial_status
+                            || "-"
+                        )}
+
+                    </td>
+
+
+                    <td>
+
+                        ${escapeHtml(
+                            city.driverless
+                            || city.unmanned
+                            || "-"
+                        )}
+
+                    </td>
+
+
+                    <td>
+
+                        ${escapeHtml(
+                            city.operating_area
+                            || city.area
+                            || "-"
+                        )}
+
+                    </td>
+
+
+                    <td>
+
+                        ${escapeHtml(
+                            city.policy
+                            || city.policy_status
+                            || "-"
+                        )}
+
+                    </td>
+
+
+                    <td>
+
+                        <span class="small">
+
+                            ${escapeHtml(
+                                city.latest
+                                || city.latest_update
+                                || "-"
+                            )}
+
+                        </span>
+
+                    </td>
+
+                </tr>
+
+            `;
+
+        }).join("");
+
+}
+
+
+/* =========================================================
+   Policies
+========================================================= */
+
+function renderPolicies(){
+
+    const tree =
+        document.getElementById(
+            "policyTree"
+        );
+
+
+    if(!policiesData){
+
+        tree.innerHTML = `
+
+            <div class="policy-node active">
+                Robotaxi 法律法规体系
+            </div>
+
+            <div class="policy-node policy-child">
+                国家层面
+            </div>
+
+            <div class="policy-node policy-child">
+                地方政策
+            </div>
+
+            <div class="policy-node policy-child">
+                道路测试
+            </div>
+
+            <div class="policy-node policy-child">
+                示范应用
+            </div>
+
+            <div class="policy-node policy-child">
+                载客运营
+            </div>
+
+            <div class="policy-node policy-child">
+                无人化
+            </div>
+
+            <div class="policy-node policy-child">
+                车辆准入
+            </div>
+
+            <div class="policy-node policy-child">
+                数据安全
+            </div>
+
+            <div class="small"
+                 style="padding:15px 10px;color:#9ca3af">
+
+                等待 policies.json 数据接入
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    const nodes =
+        Array.isArray(policiesData)
+            ? policiesData
+            : (
+                policiesData.nodes
+                || policiesData.categories
+                || []
+            );
+
+
+    if(nodes.length === 0){
+
+        tree.innerHTML =
+            `<div class="empty">
+                暂无政策节点
+            </div>`;
+
+        return;
+
+    }
+
+
+    tree.innerHTML =
+        nodes.map((node,index) => {
+
+            return `
+
+                <div
+                    class="policy-node ${index === 0 ? "active" : ""}"
+                    onclick="showPolicyNode(${index})"
+                >
+
+                    ${escapeHtml(
+                        node.name
+                        || node.title
+                        || "-"
+                    )}
+
+                </div>
+
+            `;
+
+        }).join("");
+
+
+    window.policyNodes = nodes;
+
+
+    if(nodes.length){
+
+        showPolicyNode(0);
+
+    }
+
+}
+
+
+function showPolicyNode(index){
+
+    const node =
+        window.policyNodes?.[index];
+
+    if(!node){
+        return;
+    }
+
+
+    document.getElementById(
+        "policyDetail"
+    ).innerHTML = `
+
+        <h2 style="
+            margin-top:0;
+            font-size:20px;
+        ">
+
+            ${escapeHtml(
+                node.name
+                || node.title
+                || "-"
+            )}
+
+        </h2>
+
+
+        <div style="
+            color:#6b7280;
+            font-size:13px;
+            line-height:1.8;
+        ">
+
+            ${escapeHtml(
+                node.description
+                || node.desc
+                || "暂无说明"
+            )}
+
+        </div>
+
+    `;
+
+
+    document
+        .querySelectorAll(
+            ".policy-node"
+        )
+        .forEach((el,i) => {
+
+            if(i === index){
+                el.classList.add("active");
+            }else{
+                el.classList.remove("active");
+            }
+
+        });
+
+}
+
+
+/* =========================================================
+   History
+========================================================= */
+
+function renderHistory(){
+
+    const tbody =
+        document.getElementById(
+            "historyTable"
+        );
+
+
+    if(historyData.length === 0){
+
+        tbody.innerHTML = `
+
+            <tr>
+
+                <td colspan="6">
+
+                    ${emptyHtml(
+                        "暂无历史日报",
+                        "每日自动更新后将在这里持续累积"
+                    )}
+
+                </td>
+
+            </tr>
+
+        `;
+
+        return;
+
+    }
+
+
+    tbody.innerHTML =
+        historyData
+            .sort(
+                (a,b) =>
+                    String(b.date || "")
+                        .localeCompare(
+                            String(a.date || "")
+                        )
+            )
+            .map(day => {
+
+                const total =
+                    day.total_items
+                    ?? day.total
+                    ?? "-";
+
+
+                const china =
+                    day.china_count
+                    ?? day.china
+                    ?? "-";
+
+
+                const overseas =
+                    day.overseas_count
+                    ?? day.overseas
+                    ?? "-";
+
+
+                const report =
+                    day.url
+                    || day.file
+                    || (
+                        day.date
+                        ? `data/daily-${day.date}.json`
+                        : "#"
+                    );
+
+
+                return `
+
+                    <tr>
+
+                        <td>
+
+                            <strong>
+                                ${escapeHtml(
+                                    day.date || "-"
+                                )}
+                            </strong>
+
+                        </td>
+
+                        <td>
+                            ${escapeHtml(total)}
+                        </td>
+
+                        <td>
+                            ${escapeHtml(china)}
+                        </td>
+
+                        <td>
+                            ${escapeHtml(overseas)}
+                        </td>
+
+                        <td>
+                            ${escapeHtml(
+                                formatDate(
+                                    day.updated_at
+                                    || day.update_time
+                                )
+                            )}
+                        </td>
+
+                        <td>
+
+                            <a
+                                class="source-link"
+                                href="${escapeHtml(report)}"
+                                target="_blank"
+                            >
+                                查看日报
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+                `;
+
+            })
+            .join("");
+
+}
+
+
+/* =========================================================
+   Capital
+========================================================= */
+
+function renderCapital(){
+
+    const items =
+        safeArray(
+            latestData?.items
+        );
+
+
+    const capital =
+        items.filter(item => {
 
             const categories =
                 getCategories(item);
 
-
-            categories.forEach(
-                function(category) {
-
-                    if (
-                        !result[category]
-                    ) {
-
-                        result[category] = 0;
-
-                    }
-
-                    result[category]++;
-
-                }
+            return categories.some(c =>
+                /资本|合作|融资|投资|战略/.test(c)
             );
 
-        }
-    );
+        });
 
-
-    return result;
-
-}
-
-
-/* ==========================================
-   Dashboard
-========================================== */
-
-function renderDashboard(data) {
-
-    const items =
-        Array.isArray(data.items)
-        ?
-        data.items
-        :
-        [];
-
-
-    document.getElementById(
-        "total"
-    ).textContent =
-        data.total_items ||
-        items.length;
-
-
-    const counts =
-        countCategories(items);
-
-
-    document.getElementById(
-        "policy"
-    ).textContent =
-        counts["政策监管"] || 0;
-
-
-    document.getElementById(
-        "company"
-    ).textContent =
-        counts["企业动态"] || 0;
-
-
-    document.getElementById(
-        "city"
-    ).textContent =
-        counts["城市运营"] || 0;
-
-}
-
-
-/* ==========================================
-   今日新闻
-========================================== */
-
-function renderNews(items) {
 
     const container =
         document.getElementById(
-            "news"
+            "capitalList"
         );
 
 
-    if (
-        !items ||
-        items.length === 0
-    ) {
-
-        container.innerHTML = `
-
-            <div class="empty">
-
-                今日暂无行业信息
-
-            </div>
-
-        `;
-
-        return;
-
-    }
-
-
-    container.innerHTML =
-        items
-            .map(
-                createNewsCard
-            )
-            .join("");
-
-}
-
-
-/* ==========================================
-   分类观察
-========================================== */
-
-function renderCategories(items) {
-
-    const container =
-        document.getElementById(
-            "categories"
-        );
-
-
-    const counts =
-        countCategories(items);
-
-
-    const entries =
-        Object.entries(
-            counts
-        );
-
-
-    if (
-        entries.length === 0
-    ) {
-
-        container.innerHTML = "";
-
-        return;
-
-    }
-
-
-    container.innerHTML =
-        entries
-
-            .sort(
-                function(a,b) {
-
-                    return b[1] - a[1];
-
-                }
-            )
-
-            .map(
-                function(entry) {
-
-                    return `
-
-                        <div class="category-card">
-
-                            <div class="category-name">
-
-                                ${escapeHTML(
-                                    entry[0]
-                                )}
-
-                            </div>
-
-
-                            <div class="category-number">
-
-                                ${entry[1]}
-
-                            </div>
-
-
-                            <p>
-
-                                今日相关行业信息
-
-                            </p>
-
-                        </div>
-
-                    `;
-
-                }
-            )
-
-            .join("");
-
-}
-
-
-/* ==========================================
-   政策
-========================================== */
-
-function renderPolicy(items) {
-
-    const container =
-        document.getElementById(
-            "policyNews"
-        );
-
-
-    const result =
-        items.filter(
-            function(item) {
-
-                return getCategories(item)
-                    .includes(
-                        "政策监管"
-                    );
-
-            }
-        );
-
-
-    if (
-        result.length === 0
-    ) {
-
-        container.innerHTML = `
-
-            <div class="empty">
-
-                今日暂无新增政策监管信息
-
-            </div>
-
-        `;
-
-        return;
-
-    }
-
-
-    container.innerHTML =
-        result
-            .map(createNewsCard)
-            .join("");
-
-}
-
-
-/* ==========================================
-   资本合作
-========================================== */
-
-function renderCapital(items) {
-
-    const container =
-        document.getElementById(
-            "capitalNews"
-        );
-
-
-    const result =
-        items.filter(
-            function(item) {
-
-                const categories =
-                    getCategories(item);
-
-
-                return categories.some(
-                    function(category) {
-
-                        return (
-
-                            category.includes("资本") ||
-
-                            category.includes("融资") ||
-
-                            category.includes("合作")
-
-                        );
-
-                    }
-                );
-
-            }
-        );
-
-
-    if (
-        result.length === 0
-    ) {
-
-        container.innerHTML = `
-
-            <div class="empty">
-
-                今日暂无新增资本与合作信息
-
-            </div>
-
-        `;
-
-        return;
-
-    }
-
-
-    container.innerHTML =
-        result
-            .map(createNewsCard)
-            .join("");
-
-}
-
-
-/* ==========================================
-   状态
-========================================== */
-
-function renderStatus(data) {
-
-    document.getElementById(
-        "statusTitle"
-    ).textContent =
-        "数据更新成功";
-
-
-    document.getElementById(
-        "statusTime"
-    ).textContent =
-
-        "最后更新：" +
-
-        formatTime(
-            data.updated_at
-        );
-
-
-    document.getElementById(
-        "date"
-    ).textContent =
-        data.date || "--";
-
-
-    document.getElementById(
-        "footerTime"
-    ).textContent =
-        formatTime(
-            data.updated_at
-        );
-
-}
-
-
-/* ==========================================
-   主函数
-========================================== */
-
-async function loadData() {
-
-    try {
-
-
-        /*
-         * 加时间参数，防止浏览器缓存旧数据
-         */
-
-        const url =
-            "data/latest.json?t=" +
-            Date.now();
-
-
-        const response =
-            await fetch(url);
-
-
-        if (
-            !response.ok
-        ) {
-
-            throw new Error(
-                "HTTP " +
-                response.status
+    if(capital.length === 0){
+
+        container.innerHTML =
+            emptyHtml(
+                "今日暂无资本与合作事件",
+                "后续从每日情报中自动沉淀"
             );
 
-        }
-
-
-        const data =
-            await response.json();
-
-
-        console.log(
-            "Robotaxi最新数据：",
-            data
-        );
-
-
-        const items =
-            Array.isArray(data.items)
-            ?
-            data.items
-            :
-            [];
-
-
-        /* Dashboard */
-
-        renderDashboard(
-            data
-        );
-
-
-        /* 今日新闻 */
-
-        renderNews(
-            items
-        );
-
-
-        /* 分类 */
-
-        renderCategories(
-            items
-        );
-
-
-        /* 政策 */
-
-        renderPolicy(
-            items
-        );
-
-
-        /* 资本 */
-
-        renderCapital(
-            items
-        );
-
-
-        /* 状态 */
-
-        renderStatus(
-            data
-        );
-
+        return;
 
     }
 
-    catch(error) {
 
-
-        console.error(
-            "数据加载失败：",
-            error
-        );
-
-
-        document.getElementById(
-            "statusDot"
-        ).classList.add(
-            "error"
-        );
-
-
-        document.getElementById(
-            "statusTitle"
-        ).textContent =
-            "数据加载失败";
-
-
-        document.getElementById(
-            "statusTime"
-        ).textContent =
-            "请检查 data/latest.json";
-
-
-        document.getElementById(
-            "news"
-        ).innerHTML = `
-
-            <div class="empty">
-
-                <strong>
-                    无法读取今日行业数据
-                </strong>
-
-                <br><br>
-
-                请检查 GitHub Actions
-                与 data/latest.json。
-
-            </div>
-
-        `;
-
-    }
+    container.innerHTML =
+        capital
+            .map(renderEvent)
+            .join("");
 
 }
 
 
-/* ==========================================
-   页面加载
-========================================== */
+/* =========================================================
+   Empty
+========================================================= */
 
-document.addEventListener(
-    "DOMContentLoaded",
-    function() {
+function emptyHtml(title,text){
 
-        loadData();
+    return `
 
-    }
-);
+        <div class="empty">
+
+            <div class="empty-title">
+                ${escapeHtml(title)}
+            </div>
+
+            <div class="empty-text">
+                ${escapeHtml(text)}
+            </div>
+
+        </div>
+
+    `;
+
+}
 
 
-/* ==========================================
-   每10分钟自动刷新
-========================================== */
+/* =========================================================
+   Render All
+========================================================= */
 
-setInterval(
-    function() {
+function renderAll(){
 
-        loadData();
+    renderDashboard();
 
-    },
-    10 * 60 * 1000
-);
+    renderNews();
+
+    renderCompanies();
+
+    renderCities();
+
+    renderPolicies();
+
+    renderCapital();
+
+    renderHistory();
+
+}
+
+
+/* =========================================================
+   Start
+========================================================= */
+
+loadAll();
 
 </script>
 
-
 </body>
-
 </html>
