@@ -1,17 +1,73 @@
 {
-  "date": "2026-10-15",
-  "updated_at": "2026-10-15T08:46:49.084197+08:00",
+  "date": "2026-10-16",
+  "updated_at": "2026-10-16T08:47:29.765310+08:00",
   "timezone": "Asia/Shanghai",
-  "total_items": 15,
+  "total_items": 22,
   "china_priority": true,
   "items": [
     {
-      "title": "官宣落地曼彻斯特 小马智行欧洲扩张进入新节奏 - 中国商用汽车网",
-      "summary": "官宣落地曼彻斯特 小马智行欧洲扩张进入新节奏 &nbsp;&nbsp; 中国商用汽车网",
+      "title": "广州Robotaxi实现单车盈利，网约车司机就业替代与政策应对议题升温 - 虎嗅网",
+      "summary": "广州Robotaxi实现单车盈利，网约车司机就业替代与政策应对议题升温 &nbsp;&nbsp; 虎嗅网",
       "source": "小马智行",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA0RzdIejQxdURqdEdZTWZTeVNRbHNwYnR3UFhFRWtQVXpHY0RSTWM5RWZ5TFdqZlB5TC02QU9yTTF4YW5aRFJzSE1jYWdxbUJWbzAzTE1lRnVzZ0dGM3I2bg?oc=5",
-      "published": "2026-10-15T07:02:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB6YjFiUGVjQzFid0dEVENKcjNzTEdhOVpBMVdiTmVtbnVFU0FKcGJGNVRvZWdURGdSQzUtWjNnVEYxYlpDOXFpblBtQnZDRDdsVzVVOQ?oc=5",
+      "published": "2026-10-15T18:02:59+08:00",
       "categories": [
+        "政策监管",
+        "城市运营"
+      ]
+    },
+    {
+      "title": "小马智行第七代Robotaxi驶入曼彻斯特 - 新浪网",
+      "summary": "小马智行第七代Robotaxi驶入曼彻斯特 &nbsp;&nbsp; 新浪网",
+      "source": "小马智行",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPejlvWXk4WXRaSmE1R1pyU3BnQkd3Rl84c0FXcURWMmJTU01GNTg2RVZNRGcyenpLdEpfYnFQMTlkb1J2YldPSFpXcjQyc0F3ZHRDSHZxblVFZ0hrZmVfaGhROFdkb2x0WjhhY3dwTUxUWFRuR29WWE5wcVEwWGZEa1F6VG5kM210aVNSbUdjSQ?oc=5",
+      "published": "2026-10-15T16:50:00+08:00",
+      "categories": [
+        "城市运营",
+        "企业动态"
+      ]
+    },
+    {
+      "title": "小鹏的Robotaxi上线了， 但它并不想和萝卜快跑抢饭碗 - 盖世汽车",
+      "summary": "小鹏的Robotaxi上线了， 但它并不想和萝卜快跑抢饭碗 &nbsp;&nbsp; 盖世汽车",
+      "source": "中国 自动驾驶出租车",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE93LU9iU3hnZV9FbmxtQ2FuSkdwdXVPdW9PbDRNNm9mZ2JzYm92MkFBVUV2RGVGUU1XRHdTVUhxelo5aGlZQ2N0Qlh4MjJ5V0RI?oc=5",
+      "published": "2026-10-15T15:58:38+08:00",
+      "categories": [
+        "城市运营",
+        "企业动态"
+      ]
+    },
+    {
+      "title": "小马智行一周布局英国双城：第七代Robotaxi驶入曼彻斯特 - 搜狐",
+      "summary": "小马智行一周布局英国双城：第七代Robotaxi驶入曼彻斯特 &nbsp;&nbsp; 搜狐",
+      "source": "小马智行",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOR1hjUERKTGFHelBxZU9OZVJDaXdhQ1l5cDNuTFRMbTJtZTh2RC16bUJpV1kySFZHQ2hGZjlOVGZHWlk1NjIwSDFfelVzWFF5amFXS0R3SW9LRlRuZzRsX2ZVUm0yNll2VHQxbk01a1hqSTgyRzl4dVJDUjVQMjBBVDItZ0FlNXROX0R6dg?oc=5",
+      "published": "2026-10-15T11:44:58+08:00",
+      "categories": [
+        "城市运营",
+        "企业动态"
+      ]
+    },
+    {
+      "title": "NHTSA 审查了一份关于特斯拉无人驾驶出租车在学校区域高速行驶的指控的请愿书 - VOI.ID",
+      "summary": "NHTSA 审查了一份关于特斯拉无人驾驶出租车在学校区域高速行驶的指控的请愿书 &nbsp;&nbsp; VOI.ID",
+      "source": "中国 自动驾驶出租车",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5jTGNSN21PaS03Q3k2Uno0cjg2TmtTYV9nTHp1VU0weUw1dnZfdmo4Yzd4RWNTOGljZ2J5TEczVEd3bVZRazhN0gFCQVVfeXFMTWEwREx2UGMxZWhuaTFmQ1ZXUlVuLVVLbmdGZlYxbWJXM0dTaGx1YUhIMi1lZlFVaERkemRQbTJySm1B?oc=5",
+      "published": "2026-10-15T09:32:41+08:00",
+      "categories": [
+        "城市运营",
+        "技术车辆"
+      ]
+    },
+    {
+      "title": "Robotaxi营收暴涨691%，小马智行开始谈盈利了 - 新浪财经",
+      "summary": "Robotaxi营收暴涨691%，小马智行开始谈盈利了 &nbsp;&nbsp; 新浪财经",
+      "source": "小马智行",
+      "url": "https://news.google.com/rss/articles/CBMi5gRBVV95cUxNZHZBVkV2VVFtdDl4Zk9JWEQtazRuR05VaUt4VWItMFIzY1VGOXFkdzRiSnNHTUlaZ2ZMNVlNa2UxelNvbkxVT2tINEFUS1VTZWI4VzMxTmJpc3BTTVl0N1Z1Tm1XdlVjcmpzck5rc2d4NzFXM29STUZTZXZfcXhNMjE2cGNlSzZsRm1HNktPZGQzVXBhbm5zZ3NoWFhsSWdkTmRpc0JZc1VCRmZ1RzdpMExVV2FCa2IyN280MTNyQXc1dC1sZV9OcWlKT2pPRWdzZ0xPdGdPOUNBdzVuaFViaTY5djNucEhHclpUT2RKTGc4LWhJblNOTDFnbzhnVV9jd2pjTzl4WFdpNmpkaG9NbmU0Q0x6RkdoVGlLZ1dOcnlqLXhIeUNMN3lUSU5vSzZncnlCVlJkUDZhdUczdXQ5Vm1EOEltdUhKRHltNUV5U0Uydjh6WFN3MmFQR1h5Q3BibUpkcUxkLWxmU0FZejUtUVFoQzNock9RSHhFb19hc2Y3NGQtdW9VUl8zRHpDRW9RLUZabXByNEFTUmdnZGhGMXZER2dtQ3FRNV9ialhyWjl1bDhLWDlTMVFsb0xQV2xwVll6QnB0bVRxeWlwc255X0l2ejNuN0tlSVlZRzJCeHEtMGxvSmp6WG1nS2xIMWdtWEg1cElvR09yX0k2Sm13cjA3eHZBdV93NXVYbW4xaG9ZaVNqQkpNV0Q4MXNxbHJOanp2a0VLZkFHWnRTanFhc2dRVW9OcnJ4NTBXY2M0dFJjTVNQX1FaQ0ZueE4zSUh2LXpwUC05OVUydGpUMUdJaWlyM2pBZw?oc=5",
+      "published": "2026-10-15T04:10:01+08:00",
+      "categories": [
+        "城市运营",
         "企业动态"
       ]
     },
@@ -21,6 +77,17 @@
       "source": "小马智行",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5fNEZLSEIzcUpTR2dJRWJ2djlsRHJCcDcxX1R3UDdyME96a2l5ODRXSGowZnNQbXJPalBLRGZCQ0FTYUVKRkppUUw2d3VtUVo2RXRqbkd2MzY5NDJjS3lYclVvQUdoME1RTWxVQVlPcDFDdw?oc=5",
       "published": "2026-10-15T00:45:00+08:00",
+      "categories": [
+        "城市运营",
+        "企业动态"
+      ]
+    },
+    {
+      "title": "小马智行第七代Robotaxi将落地曼彻斯特 欧洲5城规划超2000辆 - 新浪财经",
+      "summary": "小马智行第七代Robotaxi将落地曼彻斯特 欧洲5城规划超2000辆 &nbsp;&nbsp; 新浪财经",
+      "source": "小马智行",
+      "url": "https://news.google.com/rss/articles/CBMi4gJBVV95cUxNSmtfeVRiUHR6U21rblFpdW5leW9jc21qQkNNZjVLdU9XQ3VGUlNfanc1cEYzNEZITk5aQk81S0s0cVVuc0VZLU9FbHpPM3hUcjE3Z2dHU2Q3TUJjUGpHRnl1eFJQa0VXYjZfMTdTM05tQ0N2UlU5YnVENktHMzk2c2FRUEtjMnBMRFFvVW9kVzloR1VJSGV4bFQtc1diVjlBcGhDelZsZWRlbXlBRFpSSUQ2bllUOGFoa2VmaVpDWXpHRkhQTDVyM1dYYmZ6VGh4OWkyNEtLNzRBdHFET3JKeFJtbXBnUjNlVUhJWDJobmZLZUdtbjJIWkJkenhQUGt4dWRkYjJNM2tUQXZUdDZlYmVCczY5c2xPX2V2d0owZjFoMlFKaHUzNTRfWmdXWlk0R2JyNnhtUy1sQkNZQkpZVDFkRy1UWUY1bEFfZUxwRmVaQjAwcjkwYU9MR0tONzJjTWc?oc=5",
+      "published": "2026-10-14T23:42:55+08:00",
       "categories": [
         "城市运营",
         "企业动态"
@@ -47,6 +114,27 @@
       "categories": [
         "城市运营",
         "企业动态"
+      ]
+    },
+    {
+      "title": "小马智行共建车队模式加速落地英国 - 汽车之家",
+      "summary": "小马智行共建车队模式加速落地英国 &nbsp;&nbsp; 汽车之家",
+      "source": "小马智行",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5mRnk1d3oxdXREZnUwdkRUX0EtZ0pZWHJCVWZiTVN6SGdwZ3dsZmcyX1k5YzA3UXZLeDA4dUYtZG9oOVdSbGV6V3o4UEs4aldmMkpfYkw2cHF0WWNHZXc?oc=5",
+      "published": "2026-10-14T20:37:08+08:00",
+      "categories": [
+        "企业动态"
+      ]
+    },
+    {
+      "title": "使用中国自动驾驶技术的第七代Robotaxi将落地曼彻斯特 - finance.sina.com.cn",
+      "summary": "使用中国自动驾驶技术的第七代Robotaxi将落地曼彻斯特 &nbsp;&nbsp; finance.sina.com.cn",
+      "source": "小马智行",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1DWFU5RzRPVWJSclNEXzhLUGM5R1VJZ25Zbm5wUUh6SnNrQzlBX005V2I1S3V5VFFHeVY1aUlZdXVLSF9vc3ZiazJESnBiVGNxNUUyamJ5SUU5RmZwWGgzdnBRaEFTZkJXZ2F2bVZfcXFYZ1hUWDVDMQ?oc=5",
+      "published": "2026-10-14T20:17:02+08:00",
+      "categories": [
+        "城市运营",
+        "技术车辆"
       ]
     },
     {
@@ -93,9 +181,19 @@
     {
       "title": "南方财经全媒体集团 朱治宣 2026-10-14 17:56:19 - 南方财经",
       "summary": "南方财经全媒体集团 朱治宣 2026-10-14 17:56:19 &nbsp;&nbsp; 南方财经",
-      "source": "小马智行",
+      "source": "文远知行",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBldHdBYVR1NzRKd1V1ZUNkS0E2cVJuRmVZVWVabXREbTNSUVFvUGRnMTJGTG5udFNfUzR0OHFFQ2NyNUROWnMwM21qSHRhRU80SmxnYmhIY25fWXhyWmVhZkJCbVl3UjA?oc=5",
       "published": "2026-10-14T17:56:19+08:00",
+      "categories": [
+        "行业动态"
+      ]
+    },
+    {
+      "title": "不卖车，卖“司机”：广东AI出海换了新打法 - 21财经",
+      "summary": "不卖车，卖“司机”：广东AI出海换了新打法 &nbsp;&nbsp; 21财经",
+      "source": "小马智行",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdzJVOVpvcERKeHpSMjEzUjQ3Rm9heHlaMnQzdEYwU2hVV29IbzZjNDJRWDA4T1VNVVRjOXYwVVJlbjR0YVQ0eGhIalFaZmN0cm1QQ3lOUFM1MzczTng4SV85WmZQTVlyTUxlU0k1LWU1QVRLWTN5TndZSDI5TlMxQ2lwbmx5emxxejk5X2pvSQ?oc=5",
+      "published": "2026-10-14T17:56:15+08:00",
       "categories": [
         "行业动态"
       ]
@@ -113,16 +211,6 @@
       ]
     },
     {
-      "title": "小马智行共建车队模式加速落地英国 - 汽车之家",
-      "summary": "小马智行共建车队模式加速落地英国 &nbsp;&nbsp; 汽车之家",
-      "source": "小马智行",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1mSHR6c2lSeTk5WWFFWnJfT2dEMnFCVHdWVUp1c2pVNG5BUGYybTVONkJNMUhXWG95MW5WSXNfVUpiSXlUbHVuUUQ0alRXajItMXZwWWJqZFJOTjQ?oc=5",
-      "published": "2026-10-14T17:32:04+08:00",
-      "categories": [
-        "企业动态"
-      ]
-    },
-    {
       "title": "慕尼黑工业大学揭示： 传感器薄膜可致自动驾驶汽车误判车道位置 - 盖世汽车",
       "summary": "慕尼黑工业大学揭示： 传感器薄膜可致自动驾驶汽车误判车道位置 &nbsp;&nbsp; 盖世汽车",
       "source": "中国 自动驾驶出租车",
@@ -133,33 +221,21 @@
       ]
     },
     {
-      "title": "美国国家公路交通安全管理局审查特斯拉Robotaxi在学校区域的超速指控- Tesla 特斯拉 - cnBeta.COM",
-      "summary": "美国国家公路交通安全管理局审查特斯拉Robotaxi在学校区域的超速指控- Tesla 特斯拉 &nbsp;&nbsp; cnBeta.COM",
-      "source": "中国 自动驾驶出租车",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBtcEluSEZmNk9JWWFCeVVIWUpVNzVaTlZxb2tiLWtxZXRVdFcxNU9qY2gwYnZYeHRNZEs3ZEkzT3AtSHdRdVdobEdZMnVpNXkwWkdHbFVjT1FrYkRVaGgyNA?oc=5",
-      "published": "2026-10-14T02:51:00+08:00",
+      "title": "中企出海东南亚：百度计划最快今年在新加坡和马来西亚推出「萝卜快跑」业务! - 华人头条",
+      "summary": "中企出海东南亚：百度计划最快今年在新加坡和马来西亚推出「萝卜快跑」业务! &nbsp;&nbsp; 华人头条",
+      "source": "百度 Apollo Go",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcWY1UWd4cmpibHZ2Z3RlLTRyTnc1bkhVQTgxNkxjUFBxSm9IYTVQUnVZWm5vcHVCZzA0TlBhamV0Yzg1czg4TzA3eVRGY1l3QUFwd1Z5N0d1ZllFYVpoZWdQZFdMVVpYYWFvMUk2X0RzeVBKdTM1VFBXT3lybXo4YWtKXzd1Nm8?oc=5",
+      "published": "2026-10-14T09:04:13+08:00",
       "categories": [
-        "城市运营",
-        "企业动态",
-        "安全事件"
+        "企业动态"
       ]
     },
     {
-      "title": "Xpeng为中国精选用户推出Yoyo机器人出租车服务 - VOI.ID",
-      "summary": "Xpeng为中国精选用户推出Yoyo机器人出租车服务 &nbsp;&nbsp; VOI.ID",
-      "source": "中国 自动驾驶出租车",
-      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTFBIQWxQTEp4Z24tZGhCS2JfSlFDUnUwcUVXMDlWZThWT2hvdTZTUzFGT3hXVncwWXNxSUNNeFFLSndEWjJ40gFCQVVfeXFMUGJzbC1zZGUwYXAwS3h5U3daVXhGQzRLZV9kT1VwdjRqRmZISXdJRUhYdmdyLUNHZXd6N3ZNY213MDFR?oc=5",
-      "published": "2026-10-14T00:44:24+08:00",
-      "categories": [
-        "城市运营"
-      ]
-    },
-    {
-      "title": "小马智行杀入伦敦牵手Uber，中国Robotaxi出海怎么打？ - 新浪网",
-      "summary": "小马智行杀入伦敦牵手Uber，中国Robotaxi出海怎么打？ &nbsp;&nbsp; 新浪网",
-      "source": "中国 Robotaxi",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPQjd5cFFBdWZZNTN4Tkd2cmtrQVIxenFtTVJtT1ZzdTk3bldFWnNhRFlHVzJFSTYydnlKenpvQWdUY3hZeGZrcDZudl9tVEVTbnVZaExrb2g3LVpZZjlFd3RKeHg2bTN5a2UwWFk1clVRSjduSFpyTDdfMHB0SUhKVTRmOE9GalppMnJ3UXRoVQ?oc=5",
-      "published": "2026-10-14T00:35:00+08:00",
+      "title": "Tesla Robotaxi Tally Hits 739, Trails Waymo’s 1,185 [2026] - https://tech-insider.org/",
+      "summary": "Tesla Robotaxi Tally Hits 739, Trails Waymo’s 1,185 [2026] &nbsp;&nbsp; https://tech-insider.org/",
+      "source": "海外 Robotaxi",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5DeGxZSWQyTzdKUHBkUnFqV2Z2ODFsc2JwSHNxZ1psUGE5WHNNbmpWTzhYUlVSWkozRFM2aUZPTDl4SkpUdW1Ubm5LeWxULXRXY1cwdVRlTjRjWHdnRWhEQ3kzTVRvOXYwcmpFLXBnUlVmYlNMNnJR?oc=5",
+      "published": "2026-10-15T08:46:45+08:00",
       "categories": [
         "城市运营",
         "企业动态"
