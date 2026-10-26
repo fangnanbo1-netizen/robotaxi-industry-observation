@@ -1,13 +1,58 @@
 {
-  "date": "2026-10-25",
-  "updated_at": "2026-10-25T12:34:49.706445+08:00",
+  "date": "2026-10-26",
+  "updated_at": "2026-10-26T12:39:51.640584+08:00",
   "timezone": "Asia/Shanghai",
-  "total_items": 17,
+  "total_items": 7,
   "china_priority": true,
   "items": [
     {
-      "title": "西班牙首张国家级L4牌照落定，文远知行取得欧洲监管关键拼图 - icloudnews.net",
-      "summary": "西班牙首张国家级L4牌照落定，文远知行取得欧洲监管关键拼图 &nbsp;&nbsp; icloudnews.net",
+      "title": "小鹏悠游获批L4 级自动驾驶示范运营资质 - 盖世汽车",
+      "summary": "小鹏悠游获批L4 级自动驾驶示范运营资质 &nbsp;&nbsp; 盖世汽车",
+      "source": "小马智行",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8xVFRiRERPQVY4cjY1NTBQaW9MeDI0QjhkLS1ZS0dsUnNkdGstUXYtT1p4YTlpcFpRRXNNUDg0cnp3T0tUUkRaMkwtcFZNbHB2?oc=5",
+      "published": "2026-10-26T12:23:26+08:00",
+      "categories": [
+        "城市运营",
+        "技术车辆"
+      ]
+    },
+    {
+      "title": "Robotaxi赛道又来狠角！小鹏悠游拿下L4级自动驾驶示范运营资质 - Sohu",
+      "summary": "Robotaxi赛道又来狠角！小鹏悠游拿下L4级自动驾驶示范运营资质 &nbsp;&nbsp; Sohu",
+      "source": "小马智行",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMW40OFBKMV9UemNNMGpudXNzWGtIdzNNZW1wb3RZTG5lR2RUQkNxRUZSaFRIZ0htODZNcWhMaElFNWUySjRYRHg2VG5ubl9pM3hncnZhUTFhckxBU1BVZnhrOExTZ0tYWGdIMUJkYklYVk5YbGU1b0VvYk8tT3hrQjJTazlQMGtL?oc=5",
+      "published": "2026-10-26T12:21:36+08:00",
+      "categories": [
+        "城市运营",
+        "技术车辆"
+      ]
+    },
+    {
+      "title": "小马智行联手inDrive与英伟达在哈萨克斯坦试点Robotaxi - 盖世汽车",
+      "summary": "小马智行联手inDrive与英伟达在哈萨克斯坦试点Robotaxi &nbsp;&nbsp; 盖世汽车",
+      "source": "小马智行",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8tSUxJQTFzUzAtaHIyLW5Vak50WHM4ek45NnF2UnBxVkNOVnFCb0ZfN1lONGplRVJfby11ekF6VG1PcUNRMEVzUEUxUjB5S1lx?oc=5",
+      "published": "2026-10-26T11:22:30+08:00",
+      "categories": [
+        "政策监管",
+        "城市运营",
+        "企业动态"
+      ]
+    },
+    {
+      "title": "吉利无人驾驶出租车Robotaxi来了，无方向盘无踏板，你敢坐吗？ - 汽车之家",
+      "summary": "吉利无人驾驶出租车Robotaxi来了，无方向盘无踏板，你敢坐吗？ &nbsp;&nbsp; 汽车之家",
+      "source": "中国 自动驾驶出租车",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1hT2RMMWZCSG1nTE9YcDdpOGVXTHJsQU1qeC1oNU1IM2hfY1hPaElqeXNtZFgxWlRFMk9QV05CbXF6dGNjLV9yM05hME5rczNwc1RfS3lhbnY0TnJ6QWc?oc=5",
+      "published": "2026-10-26T00:14:43+08:00",
+      "categories": [
+        "城市运营",
+        "技术车辆"
+      ]
+    },
+    {
+      "title": "西班牙首张国家级L4牌照落定，文远知行取得欧洲监管关键拼图 - 人工智能",
+      "summary": "西班牙首张国家级L4牌照落定，文远知行取得欧洲监管关键拼图 &nbsp;&nbsp; 人工智能",
       "source": "文远知行",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBDOW9CS0FBVVZ5LVdxOGZGNkdrZ0wxUlhHenNwbnlVNjJPTmgyU1lZN0Y1ZktsTGdLcGVTaUNzeWpfcGY1RjBQelpmNkFYc05aT1E?oc=5",
       "published": "2026-10-25T08:39:00+08:00",
@@ -18,182 +63,25 @@
       ]
     },
     {
-      "title": "小马智行联手inDrive在哈萨克斯坦率先试点Robotaxi - 新浪财经",
-      "summary": "小马智行联手inDrive在哈萨克斯坦率先试点Robotaxi &nbsp;&nbsp; 新浪财经",
-      "source": "小马智行",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA5eV9leEdKa2dBWTBPTFFxdjdSX1oyNEtLVllwV1JwVy05M3IyaHp4VnJFa2hBbVozdVNLeXJyZVNKVTZpQlhrSnFZRWxLbDAyRFNteFV0NEtaXzZPM0FvWWJ2Zk5vS19SQUc5TldpTmItVVZUTFY4RA?oc=5",
-      "published": "2026-10-24T12:38:43+08:00",
-      "categories": [
-        "政策监管",
-        "城市运营",
-        "企业动态"
-      ]
-    },
-    {
-      "title": "“老司机”搭i人出行？文远知行L4自动驾驶出租车广州小体验 - 搜狐网",
-      "summary": "“老司机”搭i人出行？文远知行L4自动驾驶出租车广州小体验 &nbsp;&nbsp; 搜狐网",
+      "title": "自动驾驶出租车事故率是人类司机3-9倍 - 汽车之家",
+      "summary": "自动驾驶出租车事故率是人类司机3-9倍 &nbsp;&nbsp; 汽车之家",
       "source": "中国 自动驾驶出租车",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQazFZZ213QzBrX2U0X2RTOTB4LUJYcEF6NGtELVZRYnhjWURLck1HUWhvd1pqMzlBQUFHR2NtaEJmREdGU0hSaDVOWFF5UTFOUUVyOU5GLWRJdTNLTkE0QVQxS0tGRTRzMnQ2dFZVXy1MNEFka3h0MDRGRjV1Q1Z1cVY0WVQ1WG5keE9oNQ?oc=5",
-      "published": "2026-10-24T12:21:28+08:00",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5VQVFqN1RzNHY3VEFkb1ZudHB3TWRlYlV0QlhtN3JOZlVwNWZlaVJRbWM5dXZWdUlQcmVmQVNYREh2cWozY0g2TlRrWUhVZEt3ejN0WEJiMDFCSUZ5cmc?oc=5",
+      "published": "2026-10-25T07:24:51+08:00",
       "categories": [
         "城市运营",
-        "企业动态",
-        "技术车辆"
+        "技术车辆",
+        "安全事件"
       ]
     },
     {
-      "title": "小马智行探路中亚无人驾驶市场 - 东方财富",
-      "summary": "小马智行探路中亚无人驾驶市场 &nbsp;&nbsp; 东方财富",
-      "source": "中国 Robotaxi",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBMODhyWmRObUhjb0RrNmN5SzdTM2tzZkQxbDBkX0tDRXpqM3Z6dFViamkwdXhwSUZRTFVZUVc2QkVXTHpsUnhob25WRkVqa0xwRWtuT3h1emNZQXRJNTBaYmQ3SQ?oc=5",
-      "published": "2026-10-24T08:41:24+08:00",
-      "categories": [
-        "企业动态",
-        "技术车辆"
-      ]
-    },
-    {
-      "title": "特斯拉Robotaxi与谷歌Waymo之争：自动驾驶出租车的商业化竞争谁占优势？ - TradingKey",
-      "summary": "特斯拉Robotaxi与谷歌Waymo之争：自动驾驶出租车的商业化竞争谁占优势？ &nbsp;&nbsp; TradingKey",
-      "source": "中国 自动驾驶出租车",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQS2tRQjU5blN0X1U5TGhxWkhsUUFCT2N6NFduUk9GUWVSVWtRVE1NNTFZc0hJcnlCdHRhbzJVRVJKTnJZSXpvMURjanl1cGpmVFVCc3lkZkZjX05PU1hISGJhZWhxTjFQUWVvaVE1alVCRjNoME5qeW1aQjJoYi1TRk43X1Z5OEVfZ2hycXg0cS1pRGR6LUdDbHZNN0hPQ1lwSktLSE9kcGRqNGlVQjVsUmNsNVh2Z0M3MkVJODBWRFNTVXhkYW84RHpsbE9XOERLanBqWktkSUROdDRuM3MtV0FXcUtGcW8xT2tz?oc=5",
-      "published": "2026-10-23T21:00:00+08:00",
-      "categories": [
-        "城市运营",
-        "企业动态",
-        "技术车辆"
-      ]
-    },
-    {
-      "title": "GTC展台上的中国Robotaxi：北汽新能源L4业务抢滩欧洲 - 新浪网",
-      "summary": "GTC展台上的中国Robotaxi：北汽新能源L4业务抢滩欧洲 &nbsp;&nbsp; 新浪网",
-      "source": "中国 Robotaxi",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOUEdnMktrdzc3enBvTWRLNXRZdUI3QUVEbVFtNFYwcFhWVDVSNUJNNWtKR0F2TWNUOC13Tk5WT2xJaWhYajZPaGhfTXZrRW9fZkM5WFdyTzhKUEg4TmZfVnc1Tjk4N1YwSGRCNDhkQUkxZTZxZWlnY0FIb3FLWENDcGgzMDZJa1dZN2VNWUY4cw?oc=5",
-      "published": "2026-10-23T18:45:49+08:00",
-      "categories": [
-        "城市运营",
-        "技术车辆"
-      ]
-    },
-    {
-      "title": "小马智行联手inDrive在哈萨克斯坦试点Robotaxi - 汽车之家",
-      "summary": "小马智行联手inDrive在哈萨克斯坦试点Robotaxi &nbsp;&nbsp; 汽车之家",
+      "title": "新浪网· - 手机新浪网",
+      "summary": "新浪网· &nbsp;&nbsp; 手机新浪网",
       "source": "小马智行",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1DblMyZ2NfdmFwaHlNUVJVSXNMZzZaYlEwWEx0bk40S1F1ZVBHUzlFU1VHb19Kc2toaFlzX0JObUM3cnAzMGtfdHBYNWRaTDdrYjZYdmZ5NnFIZmFqOFE?oc=5",
-      "published": "2026-10-23T18:44:42+08:00",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5MekVCSjB0bjhSNEZFdjJwdEV4RkdVbnBwQ0tIRThSU0ZjbDJBOVhlWThBck12TFlEZnRaV0ljRVhaMmRqWm12Tlk0dm1pZUR0czJid3QwRTVXSjBnVnE4TUZCcw?oc=5",
+      "published": "2026-10-24T16:55:00+08:00",
       "categories": [
-        "政策监管",
-        "城市运营",
-        "企业动态"
-      ]
-    },
-    {
-      "title": "中国无人驾驶技术“驶向”哈萨克斯坦 - 新浪网",
-      "summary": "中国无人驾驶技术“驶向”哈萨克斯坦 &nbsp;&nbsp; 新浪网",
-      "source": "中国 Robotaxi",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE95RG9FdG5aellONHRkVERaT1dRTDRBNDRTdUpYQVY0cl9ZMTd0Y3NkVDBWTFF3VXZvRVQzcUJvVTIyMVlIMmtibFNoYkdacTBZR052WHV1dzlIX1diY0lIV2NlRFlqbWpURFJkVVgyZ2pvOGQ5QWV3TTRsTVlVUQ?oc=5",
-      "published": "2026-10-23T17:27:00+08:00",
-      "categories": [
-        "技术车辆"
-      ]
-    },
-    {
-      "title": "中国无人驾驶驶向“一带一路” 小马智行Robotaxi落地哈萨克斯坦 - 新浪网",
-      "summary": "中国无人驾驶驶向“一带一路” 小马智行Robotaxi落地哈萨克斯坦 &nbsp;&nbsp; 新浪网",
-      "source": "中国 Robotaxi",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE54R002MGlybDdjeV8zMFlBOEphR1hKdWVnN1VHUVdjeXdxcGFqRFkyelRyek83cWQxc2lLSVhEVGo3TVZPUGg5N2hRTmRKQ2tobTQ0VThYRHN6ZUptMGdwcVhSWTAxOFFpR1RicDA0WDA?oc=5",
-      "published": "2026-10-23T17:24:00+08:00",
-      "categories": [
-        "城市运营",
-        "企业动态",
-        "技术车辆"
-      ]
-    },
-    {
-      "title": "文远知行欧洲版图连点成网 半年接连布局西班牙、瑞士、丹麦三国 - 驱动之家",
-      "summary": "文远知行欧洲版图连点成网 半年接连布局西班牙、瑞士、丹麦三国 &nbsp;&nbsp; 驱动之家",
-      "source": "文远知行",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9vN3VReUszaFYzSHVNbFlHc2lwaVdkTk8tSHY1U2xPOHVadE9kS18wYmlTTkhMMVY2aENjQlZ1dzFta1NxWG5DTWFfVHpLWm5QdGhUNXBCSVU?oc=5",
-      "published": "2026-10-23T16:37:00+08:00",
-      "categories": [
-        "企业动态"
-      ]
-    },
-    {
-      "title": "半年推进三个欧洲市场项目，文远知行＂伙伴打法＂跑出欧洲加速度 - 搜狐",
-      "summary": "半年推进三个欧洲市场项目，文远知行＂伙伴打法＂跑出欧洲加速度 &nbsp;&nbsp; 搜狐",
-      "source": "文远知行",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObUd4YnBhYnQ1NnZRVFdfRWg2MUVNSHZ0VkxNX1N2QUt2YVZBWjN1c2luVWV0d3BFRTgxVEd5NHJkdlZuYjhhcDdJR1VFaXRsbXkzOHBSaE5GNXlianN6d0NBQVhEU0xUeEpaQk91bE1FQlFkaDJWLW1TbWRYdUdQaWNOXzVGa3Rn?oc=5",
-      "published": "2026-10-23T16:19:03+08:00",
-      "categories": [
-        "企业动态"
-      ]
-    },
-    {
-      "title": "中国无人驾驶技术“驶向”哈萨克斯坦 - 中国新闻网",
-      "summary": "中国无人驾驶技术“驶向”哈萨克斯坦 &nbsp;&nbsp; 中国新闻网",
-      "source": "小马智行",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE55YnQ1SWlkVkI4NFZFNVZzTWZTQ19ON1hlRG42VmxRc3A5VFNqRVg3dUlSeU1SellUdG1fOEFpRGJCbC1zRGxJQTJGMF81QThpVkNNbnM1eXFhdGFMSmVrS2l6NGQ3bEVWanZV?oc=5",
-      "published": "2026-10-23T16:17:16+08:00",
-      "categories": [
-        "技术车辆"
-      ]
-    },
-    {
-      "title": "小马智行携手InDrive在哈萨克斯坦推出机器人出租车试点，进军中亚市场 - Moomoo",
-      "summary": "小马智行携手InDrive在哈萨克斯坦推出机器人出租车试点，进军中亚市场 &nbsp;&nbsp; Moomoo",
-      "source": "小马智行",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWF9PdWtkeTRnWVd5d05hRWhxYVo3SzZMbFE5R0RzazBzOUMtbkpxbzJaTmdjVlFxM2c5ODBzaVVtVE9qbTd3NWp3VGFUNzFXYVdzN2FVSmhhNThTaUphRzhOalJ4NkQ4MWlPNXJlQ3BsdVhyMm1qQ080X1lnYnJxbDNUekRRbXFuaXV3cmlDTzltQWRURWU0RV9qVXRUQWtYa2o2b1RRbFRUZlU?oc=5",
-      "published": "2026-10-23T14:46:56+08:00",
-      "categories": [
-        "政策监管",
-        "城市运营",
-        "企业动态"
-      ]
-    },
-    {
-      "title": "小马智行Robotaxi首次落地中亚 与inDrive、英伟达合作 - 搜狐",
-      "summary": "小马智行Robotaxi首次落地中亚 与inDrive、英伟达合作 &nbsp;&nbsp; 搜狐",
-      "source": "小马智行",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNVVczeE9VZFlwRUlVekdrc3JESWdEQUVsQXc5ZzBsUjhmcHZlaFcxclBzYVJxekdyRXAxVlJPdGJrVC1Ka1QxREF5eXFYaHVJNDFJSTNYdnkzUFpqeGxtU3A5ZjdrZmZubTRiRWt2QjhPRjRYS0c1LTBXMThrT1Z6NFpZTy1YbHBV?oc=5",
-      "published": "2026-10-23T14:24:00+08:00",
-      "categories": [
-        "城市运营",
-        "企业动态",
-        "资本合作"
-      ]
-    },
-    {
-      "title": "小马智行携手inDrive推动Robotaxi落地哈萨克斯坦 - 中国商用汽车网",
-      "summary": "小马智行携手inDrive推动Robotaxi落地哈萨克斯坦 &nbsp;&nbsp; 中国商用汽车网",
-      "source": "中国 Robotaxi",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1BYjcwOFN3UXgxSXF4bEdRN0hSNVVrMEZ1RU1oRTVGZTFoYlh6MDhVOVdabWVTRGlyY1dPWVhQMWFBclgxcFlYbEtvQ0EtaUYybE5pMVN4Qjg0c3lKTjlHaw?oc=5",
-      "published": "2026-10-23T13:51:00+08:00",
-      "categories": [
-        "城市运营",
-        "企业动态"
-      ]
-    },
-    {
-      "title": "小马智行出海中亚：联手inDrive在哈萨克斯坦率先试点Robotaxi - 观察者网",
-      "summary": "小马智行出海中亚：联手inDrive在哈萨克斯坦率先试点Robotaxi &nbsp;&nbsp; 观察者网",
-      "source": "小马智行",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5wWFd6NlZoU2lfTWRadFg3TXJxSld0M1Z4T1JydjRhRWtjVVJIVV9WdjZGVzI1Nnh5TXMyQ2RQQWRqUjJlSUV3UnozMEZRRVBaNHNuZXdMMHZWbTdPRHpNcGlB?oc=5",
-      "published": "2026-10-23T13:19:00+08:00",
-      "categories": [
-        "政策监管",
-        "城市运营",
-        "企业动态"
-      ]
-    },
-    {
-      "title": "小马智行港股今日为何上涨？ 提供者 Investing.com - 英为财情 Investing.com",
-      "summary": "小马智行港股今日为何上涨？ 提供者 Investing.com &nbsp;&nbsp; 英为财情 Investing.com",
-      "source": "小马智行",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE42c19hUG1JNkQzeURtMVFSMUFCT093aEREWkNrVjI0em1VeXJoQURtc1FRdEtXZGNoSnUwMmpWZ1VLNWVybnlPN2hYc1l0Z3UwRWhyRk1fUDIxSTFoMXp4Zl8yQTlxTVkyUjV3aEI5NlNGMFR2TWNF?oc=5",
-      "published": "2026-10-23T13:10:00+08:00",
-      "categories": [
-        "企业动态"
+        "行业动态"
       ]
     }
   ]
