@@ -1,10 +1,99 @@
 {
-  "date": "2026-10-30",
-  "updated_at": "2026-10-30T13:40:14.030526+08:00",
+  "date": "2026-10-31",
+  "updated_at": "2026-10-31T13:31:53.393336+08:00",
   "timezone": "Asia/Shanghai",
-  "total_items": 8,
+  "total_items": 12,
   "china_priority": true,
   "items": [
+    {
+      "title": "海珠区上线文远知行Robotaxi，实测L4水平 - 手机新浪网",
+      "summary": "海珠区上线文远知行Robotaxi，实测L4水平 &nbsp;&nbsp; 手机新浪网",
+      "source": "文远知行",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5LelRGMkUwcTJpN3lZOGFXOThCQTJtSFZ2WmRBRXAzYmNRLWV1dW1abnR5YXNwbS1neUR6TUhmUHU0SWp1V2VOQVFCSE9RZnVTMXZhZU0ybGhxZzNKTTdic05GYm5IV1g2SV9EaVRQa2VVRlU?oc=5",
+      "published": "2026-10-31T08:33:59+08:00",
+      "categories": [
+        "城市运营",
+        "企业动态",
+        "技术车辆"
+      ]
+    },
+    {
+      "title": "丰田自动驾驶出租车计划2027年在日本运营 - 旅日侨网",
+      "summary": "丰田自动驾驶出租车计划2027年在日本运营 &nbsp;&nbsp; 旅日侨网",
+      "source": "中国 自动驾驶出租车",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPenRiWkg1YzZxU2Vzdnpocm9aaXVZTDN4SnBtV1UtdjZ5TjV4Vk0wVkUzTEM3czlKVjVGSXVtTC1WOWFvSFZhT01tVXdPUmM0ZDJ3SFRuVHZCQVF2SHRVRU4yOFBuVDRaSE11QndNOTFqc0otZDlkQ3BPblNsU0NKbVFwb3JPUmQyUlE?oc=5",
+      "published": "2026-10-31T01:15:38+08:00",
+      "categories": [
+        "城市运营",
+        "技术车辆"
+      ]
+    },
+    {
+      "title": "丰田bZ4X Robotaxi配自动车门，2027日本测试 - 汽车之家",
+      "summary": "丰田bZ4X Robotaxi配自动车门，2027日本测试 &nbsp;&nbsp; 汽车之家",
+      "source": "中国 自动驾驶出租车",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA1cmxhSHk5U0QwSWVvUVVPMGpnaXVzRHlqMG96M0xESUFMUDV4ak1EZGM2U2FjZWZ1TXY1Uk4ySDZFbDNWRzdYLXBNTGhhY0ZPbi11cjlsV0h5TU0?oc=5",
+      "published": "2026-10-30T23:43:50+08:00",
+      "categories": [
+        "城市运营"
+      ]
+    },
+    {
+      "title": "丰田携手Waymo，2027年在日本启动bZ4X Robotaxi车队测试 - 搜狐网",
+      "summary": "丰田携手Waymo，2027年在日本启动bZ4X Robotaxi车队测试 &nbsp;&nbsp; 搜狐网",
+      "source": "中国 自动驾驶出租车",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNendlNDRQS3BFQVp3YXpRRnJkVmxjZ1hWVnh3QkE5bDFDbHRja181TG8yaDh0SnBsOWMzT0EtN0Y5QUJpVG5iS0U1TVBELWh4MlI5U2JmQUhTNmFRb085aUdKOTlKVnhhcEhOT1psbXV3dlR1VEtZU1BvdC1LQ1ZDNXdCMmJSbFZP?oc=5",
+      "published": "2026-10-30T22:50:58+08:00",
+      "categories": [
+        "城市运营",
+        "企业动态"
+      ]
+    },
+    {
+      "title": "广州海珠区上线文远知行Robotaxi 实测L4水平 - 手机新浪网",
+      "summary": "广州海珠区上线文远知行Robotaxi 实测L4水平 &nbsp;&nbsp; 手机新浪网",
+      "source": "文远知行",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNN1FTa0FmRUZHWlNpN293a2Y0dkJzdTY1ZUM4T0xKTlJBTHBHWm12V3NkYnlVMGlnTFhMcUptRi1CS3Y0UjRNbkVHcVNlcVN6MEpRQXk3aGZ6Q3RMX0JrZC1QejZJN1o1MFF1UnN0bmRwNmJhb2dVVEU2RGFwaEFQeA?oc=5",
+      "published": "2026-10-30T22:46:31+08:00",
+      "categories": [
+        "城市运营",
+        "企业动态",
+        "技术车辆"
+      ]
+    },
+    {
+      "title": "实测三家Robotaxi，下次还想坐的是滴滴 - 汽车之家",
+      "summary": "实测三家Robotaxi，下次还想坐的是滴滴 &nbsp;&nbsp; 汽车之家",
+      "source": "滴滴 自动驾驶",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5lMGRuNkR0NE5MWVY1NWdqMy1rMmNna3RjMzItYnBkX2lFMDN5N1ppRzQ3VUJpdDBKYkxKWWxVbFNqT2FZemRCMENOcXZpR0FuNmlNSVlET1Y3Tnh2TFE?oc=5",
+      "published": "2026-10-30T18:35:22+08:00",
+      "categories": [
+        "城市运营",
+        "企业动态"
+      ]
+    },
+    {
+      "title": "小马智行联手inDrive与英伟达，L4级自动驾驶Robotaxi驶向中亚高寒战场 - 网通社",
+      "summary": "小马智行联手inDrive与英伟达，L4级自动驾驶Robotaxi驶向中亚高寒战场 &nbsp;&nbsp; 网通社",
+      "source": "小马智行",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5wLUZzYVo2dWtSQ2Vqak1nTjJxb3F6TjJvQ19qaTlkdURkSjFIdU1oQVc1SkcwLWJVMlh0dlY1b2lqSzNTRElfMjJNdS13LWlRcnp6dTluWFg0MEQ5?oc=5",
+      "published": "2026-10-30T17:29:11+08:00",
+      "categories": [
+        "城市运营",
+        "企业动态",
+        "技术车辆"
+      ]
+    },
+    {
+      "title": "新能源车周报：上海拟依法有序推动自动驾驶技术在出租汽车行业的应用 - 证券之星",
+      "summary": "新能源车周报：上海拟依法有序推动自动驾驶技术在出租汽车行业的应用 &nbsp;&nbsp; 证券之星",
+      "source": "小马智行",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBELWFONjhuOVhHN0ZYLUlMMnhSdE5KVmtyUDJGb1BZVmNkLUtXcU41RGZnbHRWb195Rkd1N2NVWHJlaUJTY2NwUjlFaXVLcFJaTFZmck85UXRuVXhpc1dEcXpB?oc=5",
+      "published": "2026-10-30T15:04:24+08:00",
+      "categories": [
+        "技术车辆"
+      ]
+    },
     {
       "title": "小马智行无人驾驶出租车业务是在取消司机 CEO彭军在中国搞合适吗？ - 搜狐网",
       "summary": "小马智行无人驾驶出租车业务是在取消司机 CEO彭军在中国搞合适吗？ &nbsp;&nbsp; 搜狐网",
@@ -33,7 +122,7 @@
       "summary": "小鹏杀入Robotaxi战局，智驾之城迎来三强争霸 &nbsp;&nbsp; 21财经",
       "source": "小马智行",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdWVVOWQ4Ym5IUXBhMFhBRmotYVpYVnduZHl3VlR6YXRMZXZpMnN1QXIydzRsRnA1SFowT3RmVFR1UzVJdlVSMndRcWJjdTFrNHdIN1J3ZjRUcGFfWEdhSkhNelZmV2IxS0pPU3BiS05EVFNaTzJrZ0daQ1JGdmlycUV3bDRPOVZoV1FiejZnaw?oc=5",
-      "published": "2026-10-29T20:27:00+08:00",
+      "published": "2026-10-29T20:27:21+08:00",
       "categories": [
         "城市运营"
       ]
@@ -47,52 +136,6 @@
       "categories": [
         "企业动态",
         "资本合作"
-      ]
-    },
-    {
-      "title": "自动驾驶驶入出租车行业！上海拟立法推动 多股获融资客抢筹（名单） - 东方财富",
-      "summary": "自动驾驶驶入出租车行业！上海拟立法推动 多股获融资客抢筹（名单） &nbsp;&nbsp; 东方财富",
-      "source": "中国 自动驾驶出租车",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5zZW9FSEJNaXhKekJQakFLVVdtQmszZEFjOC1qU1ZMMldEb29VTGxCTE9scmVKeUtSZXQ4YjBpNHo5aldsYko0aldJOW12bFctYjFQTDJ5ZVpWN3B4a3lhQw?oc=5",
-      "published": "2026-10-29T11:10:45+08:00",
-      "categories": [
-        "城市运营",
-        "资本合作",
-        "技术车辆"
-      ]
-    },
-    {
-      "title": "Tesla Gains Another 4% as ARK Restates $4,400 Robotaxi Target and Musk Teases “A Storm of Cybercabs” - TIKR.com",
-      "summary": "Tesla Gains Another 4% as ARK Restates $4,400 Robotaxi Target and Musk Teases “A Storm of Cybercabs” &nbsp;&nbsp; TIKR.com",
-      "source": "中国 自动驾驶出租车",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPc1EwMVIxckNNUTJBQTBpMm9yUldpaWR3TTQyenVCRUtYUnViakNKYU5UUmkyTmJHWkw1cjYwMG9HYTcxTUQzWDRCbW5vcEJZNUpJOXY4VU94OGtFTC1TMnJYcEE5My14bDBPT05FZnF6OElSVlZtejBzQkhSVGV6X3BDX2tCXzl4MVVZZjQ1Tm1uejBTQndWU3pfSWZQTmJLLXU0dzY2akNtVU5OSVRwMmlwZ3QwdGlUSkJvX3g4RWh2Nmc?oc=5",
-      "published": "2026-10-29T01:10:43+08:00",
-      "categories": [
-        "城市运营",
-        "企业动态"
-      ]
-    },
-    {
-      "title": "Robotaxi行业专题点评报告：Robotaxi从技术验证走向运营验证，商业化破冰进入制度红利期 - 证券之星",
-      "summary": "Robotaxi行业专题点评报告：Robotaxi从技术验证走向运营验证，商业化破冰进入制度红利期 &nbsp;&nbsp; 证券之星",
-      "source": "小马智行",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9wSjNqcDMxaXJtWGFFNmlMWFdHdGxOeEVibmNOOUphdWVyWnNUYTFob0ZPV0dkVkd0VVM1ZE9zNzZXa01DZnUtYktZM2pBV2pkcWp2U2pDeUVEREpzT0w3WWp3?oc=5",
-      "published": "2026-10-28T19:00:00+08:00",
-      "categories": [
-        "城市运营"
-      ]
-    },
-    {
-      "title": "文远知行全球保险合作计划启动：定制化保险方案覆盖自动驾驶运营全生命周期 - 人工智能",
-      "summary": "文远知行全球保险合作计划启动：定制化保险方案覆盖自动驾驶运营全生命周期 &nbsp;&nbsp; 人工智能",
-      "source": "文远知行",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE12bWcyYTZzaktTSFlSUzdKZU9veXUxWnFtcHBoMWtoSkVtSFB5NWRTSlhrbnUyN1l4T2FUZ1hHMVBhRllQd1ZjN2pZNmFQVWVOc2c?oc=5",
-      "published": "2026-10-28T17:14:00+08:00",
-      "categories": [
-        "城市运营",
-        "企业动态",
-        "资本合作",
-        "技术车辆"
       ]
     }
   ]
