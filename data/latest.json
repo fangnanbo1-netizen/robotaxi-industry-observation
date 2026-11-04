@@ -1,10 +1,62 @@
 {
-  "date": "2026-11-03",
-  "updated_at": "2026-11-03T14:41:26.227957+08:00",
+  "date": "2026-11-04",
+  "updated_at": "2026-11-04T14:08:45.011737+08:00",
   "timezone": "Asia/Shanghai",
-  "total_items": 4,
+  "total_items": 7,
   "china_priority": true,
   "items": [
+    {
+      "title": "官宣落地曼彻斯特，小马智行欧洲扩张进入新节奏 - 汽车之家",
+      "summary": "官宣落地曼彻斯特，小马智行欧洲扩张进入新节奏 &nbsp;&nbsp; 汽车之家",
+      "source": "小马智行",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBHOFRBbnNScDRfSGl1VVNVcHB3X1pSdFM0aXF0bl9rVFF4aHU4dUtrUWwwWWdPSTluekxYYzBLcDNyOXFhbk9XZlN5S0ZDTUNob2VWTzlnSDdhcHM?oc=5",
+      "published": "2026-11-03T20:43:36+08:00",
+      "categories": [
+        "企业动态"
+      ]
+    },
+    {
+      "title": "特斯拉自动驾驶出租车在沃斯堡上线 - 网通社",
+      "summary": "特斯拉自动驾驶出租车在沃斯堡上线 &nbsp;&nbsp; 网通社",
+      "source": "中国 自动驾驶出租车",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE0xN1g0bWZxRmQzcTVGVndDdTNLSFppel9PRnN1QzBwWHBDNURKN2ZWRUUtYXU2NFZsSzJraTNEVWxwSXVoZnkzNHBqN0R6Z2EyY21fbGZhQ1lRQVlI?oc=5",
+      "published": "2026-11-03T14:45:16+08:00",
+      "categories": [
+        "城市运营",
+        "技术车辆"
+      ]
+    },
+    {
+      "title": "特斯拉Robotaxi沃斯堡上线，无安全员服务开启 - 新浪网",
+      "summary": "特斯拉Robotaxi沃斯堡上线，无安全员服务开启 &nbsp;&nbsp; 新浪网",
+      "source": "中国 自动驾驶出租车",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBnTzcwRWNvLWtJTDZZUjNhRDJDTWtSalQxQ1BhWVFuRndCT0YzTUl3bUozTHFZbVVEWkxPekdncXMtYnh3MC1USkYybVhWSDdhd2VzcW5HRDJXZWM1UTBSNnBMbkJaNmtJbko4MkRDQ08?oc=5",
+      "published": "2026-11-03T14:42:39+08:00",
+      "categories": [
+        "城市运营",
+        "安全事件"
+      ]
+    },
+    {
+      "title": "特斯拉 Robotaxi 又下一城：沃斯堡突袭上线 - 新浪财经",
+      "summary": "特斯拉 Robotaxi 又下一城：沃斯堡突袭上线 &nbsp;&nbsp; 新浪财经",
+      "source": "中国 自动驾驶出租车",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBNellBT3pIWnd4NzM4NWdSUHhSM014blV5dlZFWW9Fd2ttblRQREk1MWZVRGxSQkZzWWlYY1ZDLWJNLUNxNVpWSVVObzlUUWdEQ1B3VFJEYlRpMGU3TmM3dHFUOTYtY25FRlRUTEJxZy1vbmZERUNuXzV3aXlMS1k?oc=5",
+      "published": "2026-11-03T14:41:51+08:00",
+      "categories": [
+        "城市运营"
+      ]
+    },
+    {
+      "title": "最新财新周刊｜自动驾驶如何走出“试验田” - 财新周刊",
+      "summary": "最新财新周刊｜自动驾驶如何走出“试验田” &nbsp;&nbsp; 财新周刊",
+      "source": "中国 自动驾驶出租车",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5vSDJrYTZWemRHTGowWHIxaGllbEV3YVNESlF6YlROVVpfMFJOVmNQcDZ4SW9yczgyRHlKcWIzekw0c3FRVVUybzNERjR4enZXSVZjMTVGSDhGRjRvSDFFYQ?oc=5",
+      "published": "2026-11-03T00:28:27+08:00",
+      "categories": [
+        "技术车辆"
+      ]
+    },
     {
       "title": "特斯拉(TSLA)股票11月2日盘中上涨3.31%：投资者必看的核心信息 - TradingKey",
       "summary": "特斯拉(TSLA)股票11月2日盘中上涨3.31%：投资者必看的核心信息 &nbsp;&nbsp; TradingKey",
@@ -16,36 +68,13 @@
       ]
     },
     {
-      "title": "Waymo 选择丰田 bZ4X 作为新的自动驾驶出租车，从 2027 年开始在日本进行测试 - VOI.ID",
-      "summary": "Waymo 选择丰田 bZ4X 作为新的自动驾驶出租车，从 2027 年开始在日本进行测试 &nbsp;&nbsp; VOI.ID",
+      "title": "特斯拉V15推送，Model Y预计接入Robotaxi - 汽车之家",
+      "summary": "特斯拉V15推送，Model Y预计接入Robotaxi &nbsp;&nbsp; 汽车之家",
       "source": "中国 自动驾驶出租车",
-      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9LWXhQNmx6MlNUeDlfdmFPXzJDVmxKY25MTXk0S0VmdlRPUkVJbFI0azM0NXNmaHo0WjNacXltSkRVSWhp0gFCQVVfeXFMT0lSY0xCVV9Ob0J1NDFpcDBuLVBqUS1fNFFpVGtqeXhXa1FUbGxfd3A2QUFrN2puWUlEZExFWVhVWnFn?oc=5",
-      "published": "2026-11-02T11:35:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9qWWZaaGc1V0J0RE1JQXdxMXZVVFpZZkZoRHlyWE9hODFXR2xvRVZDZ2dxZ0RWSkN3Wk03eGlTaHFKLW94cmRBMkhwa3VKNU9VdDlqQmxKeUttMEU?oc=5",
+      "published": "2026-11-02T16:15:03+08:00",
       "categories": [
-        "城市运营",
-        "企业动态",
-        "技术车辆"
-      ]
-    },
-    {
-      "title": "【无方向盘 bZ4X 来了！丰田、Waymo 联合开发】 - 汽车之家",
-      "summary": "【无方向盘 bZ4X 来了！丰田、Waymo 联合开发】 &nbsp;&nbsp; 汽车之家",
-      "source": "中国 自动驾驶出租车",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5MelphMlM2WWI5Mkpta0I0ZTN0em9vY3ozdFRQemplRVA0ZlkxZXZVMWExMWJ1alJUUkxVLVl6TE5aZzVVVjJObkNockZQdkN0OXZObzhMbkFIcDg?oc=5",
-      "published": "2026-11-01T21:35:03+08:00",
-      "categories": [
-        "企业动态"
-      ]
-    },
-    {
-      "title": "吉利无人驾驶出租车Robotaxi来了，无方向盘无踏板，你敢坐吗？ - 汽车之家",
-      "summary": "吉利无人驾驶出租车Robotaxi来了，无方向盘无踏板，你敢坐吗？ &nbsp;&nbsp; 汽车之家",
-      "source": "中国 自动驾驶出租车",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1hT2RMMWZCSG1nTE9YcDdpOGVXTHJsQU1qeC1oNU1IM2hfY1hPaElqeXNtZFgxWlRFMk9QV05CbXF6dGNjLV9yM05hME5rczNwc1RfS3lhbnY0TnJ6QWc?oc=5",
-      "published": "2026-11-01T21:34:42+08:00",
-      "categories": [
-        "城市运营",
-        "技术车辆"
+        "城市运营"
       ]
     }
   ]
