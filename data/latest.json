@@ -1,10 +1,31 @@
 {
-  "date": "2026-11-05",
-  "updated_at": "2026-11-05T14:37:42.939428+08:00",
+  "date": "2026-11-06",
+  "updated_at": "2026-11-06T14:33:19.321259+08:00",
   "timezone": "Asia/Shanghai",
   "total_items": 4,
   "china_priority": true,
   "items": [
+    {
+      "title": "李斌：自动驾驶意义不在于抢司机饭碗！但无人出租车不断在扩军 - 汽车之家",
+      "summary": "李斌：自动驾驶意义不在于抢司机饭碗！但无人出租车不断在扩军 &nbsp;&nbsp; 汽车之家",
+      "source": "文远知行",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1tcXhTRXl4SWkzbHNZS3hRYWYwcWVLVkxKU0xpNm9BdEowenNrd2tCamlMclphMkhyY1hLd3pNSmpXMUVlLXVKU0pUREI3RkN1TGtQLVBRT2diSGc?oc=5",
+      "published": "2026-11-05T17:53:59+08:00",
+      "categories": [
+        "城市运营",
+        "技术车辆"
+      ]
+    },
+    {
+      "title": "自动驾驶十年，钱烧去哪了 - 汽车之家",
+      "summary": "自动驾驶十年，钱烧去哪了 &nbsp;&nbsp; 汽车之家",
+      "source": "小马智行",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB4SllvdmZPZzFxYXpVdFRCaVZxQW9RWVpiU0F2Rl9DNGJSTkhzbDFZQ01acHBPMHBFRFliaDJPczRrdVd6WWEyYW1lM0ltek9qSFAzLUhEQWF1bUk?oc=5",
+      "published": "2026-11-05T15:28:55+08:00",
+      "categories": [
+        "技术车辆"
+      ]
+    },
     {
       "title": "李斌再谈自动驾驶：最大意义是解放精力减少事故，而非让司机失业 - Jiemian.com",
       "summary": "李斌再谈自动驾驶：最大意义是解放精力减少事故，而非让司机失业 &nbsp;&nbsp; Jiemian.com",
@@ -17,34 +38,14 @@
       ]
     },
     {
-      "title": "中国下一批赢家 —— 自动驾驶：中国在规模、成本与落地应用上领先。它能否走向全球？ - 电子工程专辑EE Times China",
-      "summary": "中国下一批赢家 —— 自动驾驶：中国在规模、成本与落地应用上领先。它能否走向全球？ &nbsp;&nbsp; 电子工程专辑EE Times China",
-      "source": "文远知行",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5XbUhIakZmOVBnYUZNV2ViNU1saWVzTlE3TW1aLWZvMTBDWThRb0ZUVWpXTWNpRERLV1BJb0tfYmJYdVF4ZUVUczJCcFIzd2xRMExJ?oc=5",
-      "published": "2026-11-04T09:09:00+08:00",
-      "categories": [
-        "技术车辆"
-      ]
-    },
-    {
-      "title": "Early Uber Investor: Tesla and Uber Will “Split 80%” of the Robotaxi Market - TIKR.com",
-      "summary": "Early Uber Investor: Tesla and Uber Will “Split 80%” of the Robotaxi Market &nbsp;&nbsp; TIKR.com",
-      "source": "中国 自动驾驶出租车",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOUGJRdTA3ei11MkJQVXJUUEZXLWVObDdKd0xxTXVSVWJVUTlUQlpPMUEtN1JGeXV0OHBGek8xUjBPX1E1UTJLRW5XWjBnVTRWa1JDcU1RdUFSMk00RlFCTFAxaFFVR1hBS3VDRVdpZ3kzQWdqZHhRRnBuQ1ItaUpwc1ZzS1hpM0U3azNaMFlIWmdJTEdhX3V6Nkw1Vng0S29WOHc?oc=5",
-      "published": "2026-11-03T22:49:05+08:00",
+      "title": "Amazon’s Zoox Plans Robotaxi Testing Expansion Into Europe and Asia - Drive Tesla Canada",
+      "summary": "Amazon’s Zoox Plans Robotaxi Testing Expansion Into Europe and Asia &nbsp;&nbsp; Drive Tesla Canada",
+      "source": "海外 Robotaxi",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE51ZDBrdXB0elVyTkNPa21PMG9SX1ZyV3d5MEpNb0F6dkowbGFuSTlDWjk2eFBoVklLQ3E2S0FtV1NKVXdVMHA0LWFHaW1UWVZaSzIxcE0zaFN4SDFQSVRaQndfU2l6WGNXZk5iVGpaU1Z1T3B2eWxUYjV3NWE5S00?oc=5",
+      "published": "2026-11-06T00:48:00+08:00",
       "categories": [
         "城市运营",
         "企业动态"
-      ]
-    },
-    {
-      "title": "特斯拉Robotaxi又下一城：沃斯堡突袭上线 - 凤凰网科技",
-      "summary": "特斯拉Robotaxi又下一城：沃斯堡突袭上线 &nbsp;&nbsp; 凤凰网科技",
-      "source": "中国 自动驾驶出租车",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5aX3FTWEZnYUJ6SVJQVEVNTGtyeG5Ra2t2LW03SUk3d2d6VEdDSEZKbXdMODVGMHVLak14NzBvMlo2R1ZuOXduZl9ubG8?oc=5",
-      "published": "2026-11-03T14:48:17+08:00",
-      "categories": [
-        "城市运营"
       ]
     }
   ]
