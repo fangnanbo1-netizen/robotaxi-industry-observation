@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-11-09",
+    "file": "data/daily-2026-11-09.json",
+    "items": 1,
+    "updated_at": "2026-11-09T14:15:12.528889+08:00"
+  },
+  {
     "date": "2026-11-08",
     "file": "data/daily-2026-11-08.json",
     "items": 5,

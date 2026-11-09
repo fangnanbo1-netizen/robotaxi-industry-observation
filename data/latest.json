@@ -1,59 +1,18 @@
 {
-  "date": "2026-11-08",
-  "updated_at": "2026-11-08T13:54:42.036491+08:00",
+  "date": "2026-11-09",
+  "updated_at": "2026-11-09T14:15:12.528889+08:00",
   "timezone": "Asia/Shanghai",
-  "total_items": 5,
+  "total_items": 1,
   "china_priority": true,
   "items": [
     {
-      "title": "文远知行韩旭：1800辆Robotaxi已上路，五年内广州直达香港 - 汽车之家",
-      "summary": "文远知行韩旭：1800辆Robotaxi已上路，五年内广州直达香港 &nbsp;&nbsp; 汽车之家",
-      "source": "中国 自动驾驶出租车",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9yVnBTeEhxX29HdXc0VTFHYmF4NlNVeXhveGQ3ZzV4dm9fTF9oaFc5Zmk3UW5rMW0xdE5zN25rRW5GeXFCbFk0Y2l6bmVWNWRfRktkY0ZhWXZYNDg?oc=5",
-      "published": "2026-11-07T18:40:48+08:00",
-      "categories": [
-        "城市运营",
-        "企业动态"
-      ]
-    },
-    {
-      "title": "1.4万辆到70.5万辆：Robotaxi的账本，算得过来吗？ - 汽车之家",
-      "summary": "1.4万辆到70.5万辆：Robotaxi的账本，算得过来吗？ &nbsp;&nbsp; 汽车之家",
-      "source": "小马智行",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4zZnZ3aGZHdmJ6WGllUktWdHdWOERQQ3J5SjRwVF91b1RzeklrdWNmZ2ZUUmpNVzRPZzBXY2NjM0FXc09ZSDhSMzdFa0xpSTlmVGRJRkJGOTVmZ28?oc=5",
-      "published": "2026-11-07T14:32:17+08:00",
-      "categories": [
-        "城市运营"
-      ]
-    },
-    {
-      "title": "文远知行覆盖13国60城，韩旭称五年内广州直达香港 - 汽车之家",
-      "summary": "文远知行覆盖13国60城，韩旭称五年内广州直达香港 &nbsp;&nbsp; 汽车之家",
+      "title": "早报｜曝特努斯要求加快AI研发/Win 11优化8GB内存电脑流畅度/马斯克：SpaceX明年12月年化营收或超5000亿美元 - 爱范儿",
+      "summary": "早报｜曝特努斯要求加快AI研发/Win 11优化8GB内存电脑流畅度/马斯克：SpaceX明年12月年化营收或超5000亿美元 &nbsp;&nbsp; 爱范儿",
       "source": "文远知行",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBxZ2l2UXFLN1RTNmdYdGJrS1hnalh3M2FvZGNudlJwQXVyS0NnNWpwUkRKYzRkSUd2SmpKT28yQVlEbUppV0h3MnVTd3VhSjdTcHJ4YkdLbUNSb1k?oc=5",
-      "published": "2026-11-07T07:59:20+08:00",
-      "categories": [
-        "企业动态"
-      ]
-    },
-    {
-      "title": "埃隆·马斯克叫停 Cybertruck 生产以专注于特斯拉 Cybercab，令死忠粉丝大失所望 - 17173",
-      "summary": "埃隆·马斯克叫停 Cybertruck 生产以专注于特斯拉 Cybercab，令死忠粉丝大失所望 &nbsp;&nbsp; 17173",
-      "source": "中国 自动驾驶出租车",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA4OUFGQUpjb3V4cUhxTzZkeTNfUi1FQUJuaWhYYU1tRlA2MnFLSmhaMkFaVERZd1Q4NjZMOGRkbmdrZ29fVUgySW9QYUxCT3pxZFBlaXdtTVRxcnFCLTlicGlnTE8?oc=5",
-      "published": "2026-11-06T23:08:28+08:00",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9WYm40Ym5lam5KTWhVelczYTJqampQOFZFeEplU25HUm9IYnNrZDMzS0JNTWhvSkxXRFBLTTBFdC1yRFk?oc=5",
+      "published": "2026-11-09T08:34:19+08:00",
       "categories": [
         "行业动态"
-      ]
-    },
-    {
-      "title": "Waymo不想再当“技术供应商”了 - 潮起网",
-      "summary": "Waymo不想再当“技术供应商”了 &nbsp;&nbsp; 潮起网",
-      "source": "小马智行",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBxbGcyRlZHbEhMcDROTVVCNkc4TGtYMmdWdFBVYjUyckdMRXFBbjd5UjNuSlNPVDN4SVRpS0VRN1Y4SUdmZlRfMFFVY3J6eklqRUVfdllmejdaUHIwV3NCNzM0NA?oc=5",
-      "published": "2026-11-06T18:30:03+08:00",
-      "categories": [
-        "企业动态"
       ]
     }
   ]
