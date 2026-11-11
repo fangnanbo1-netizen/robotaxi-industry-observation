@@ -1,10 +1,20 @@
 {
-  "date": "2026-11-10",
-  "updated_at": "2026-11-10T15:10:21.141309+08:00",
+  "date": "2026-11-11",
+  "updated_at": "2026-11-11T14:05:19.136820+08:00",
   "timezone": "Asia/Shanghai",
-  "total_items": 6,
+  "total_items": 5,
   "china_priority": true,
   "items": [
+    {
+      "title": "特斯拉在圣安东尼奥推出 Robotaxi 服务 - arch-web.com.tw",
+      "summary": "特斯拉在圣安东尼奥推出 Robotaxi 服务 &nbsp;&nbsp; arch-web.com.tw",
+      "source": "中国 自动驾驶出租车",
+      "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxNbWNKdnNjWWdnYWtYMndTZ0g4NHJmU3draThKREpNMUdvQVFpYzdmX2tidm1ObHpxS1AwclFiVjhTYjVqZzVrcnNVOHZJZnh3a2xfa280ZTBnX0ZtczlZQldYTjFjSmlfQlBYX2VrOFh0MmliTENJVms5UVdSLVVaQkhyc2U2ekRnY2xZclBzZS04MWhYdkh5dXZBS1hVS0ZRcUNrWDNXYm4tWHhXQmtSVDNaMU5CWElfUUNSM2hpcmhXX3E5R0EwU0h3eWFiUE13MnEteERyRFBaMGJicC1mUDhYUDhqa3N2OUJ1QVpPUS1MSlR5NFVfbkdKOW1JVkQyU1p5dDNGZ2phLU52VC1DMXdzaW9mUnhySGcycDZVeEMtaHpsQzNn?oc=5",
+      "published": "2026-11-10T18:10:08+08:00",
+      "categories": [
+        "城市运营"
+      ]
+    },
     {
       "title": "谁说10万级智驾没好货？文远知行WRD 3.0智驾车型赢麻了 - 小熊在线",
       "summary": "谁说10万级智驾没好货？文远知行WRD 3.0智驾车型赢麻了 &nbsp;&nbsp; 小熊在线",
@@ -46,27 +56,6 @@
       "published": "2026-11-09T15:17:00+08:00",
       "categories": [
         "企业动态"
-      ]
-    },
-    {
-      "title": "八冠王之后，冠亚军又是同一家？10-30万级的智驾牌桌，被文远知行掀了 - 凤凰网财经",
-      "summary": "八冠王之后，冠亚军又是同一家？10-30万级的智驾牌桌，被文远知行掀了 &nbsp;&nbsp; 凤凰网财经",
-      "source": "文远知行",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1idEdjdERMbDFvMDlPVVcxdFpzd0p5NkxUMEtZaElGSURZYnQ2U3h2MjkyU0owNlpzR3N4S25JbG5LbVY2U2tibHhyMXJPY19s?oc=5",
-      "published": "2026-11-09T14:28:03+08:00",
-      "categories": [
-        "企业动态"
-      ]
-    },
-    {
-      "title": "谁说10万级智驾没好货？文远知行WRD 3.0智驾车型赢麻了_行业新闻 - 证券之星",
-      "summary": "谁说10万级智驾没好货？文远知行WRD 3.0智驾车型赢麻了_行业新闻 &nbsp;&nbsp; 证券之星",
-      "source": "文远知行",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9xbDU5NFdhVjd1aVFLQnZ2ZV94RzF0SXV1eHlxVHdsd3IydXBNMEl3N3VnTnNMSjhJVDEySjBaMDJMbk9CRE1QRHFTREthQUxISGt3ZUdYTW9UemJrRXZ2bWtMT3Y?oc=5",
-      "published": "2026-11-09T14:01:15+08:00",
-      "categories": [
-        "企业动态",
-        "技术车辆"
       ]
     }
   ]
