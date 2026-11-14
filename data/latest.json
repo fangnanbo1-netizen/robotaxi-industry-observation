@@ -1,10 +1,41 @@
 {
-  "date": "2026-11-13",
-  "updated_at": "2026-11-13T14:34:06.431172+08:00",
+  "date": "2026-11-14",
+  "updated_at": "2026-11-14T14:12:03.729234+08:00",
   "timezone": "Asia/Shanghai",
-  "total_items": 7,
+  "total_items": 9,
   "china_priority": true,
   "items": [
+    {
+      "title": "新浪网· - 新浪网",
+      "summary": "新浪网· &nbsp;&nbsp; 新浪网",
+      "source": "中国 自动驾驶出租车",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBjeHp6Ti1Sd0pac1huMTVBdGg1SXFudEh5blRzeXQ2aDNCMW9KVlJKYzM3OEZQM1kyZEVWRGFoU2Z3dUowNVFRaHU3dW9pb0lHeW0zRjRsMENGTlFJeGJtYVpDZw?oc=5",
+      "published": "2026-11-14T10:55:00+08:00",
+      "categories": [
+        "行业动态"
+      ]
+    },
+    {
+      "title": "文远知行全球Robotaxi车队规模突破1000辆 - 汽车之家",
+      "summary": "文远知行全球Robotaxi车队规模突破1000辆 &nbsp;&nbsp; 汽车之家",
+      "source": "文远知行",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9XTXVwVjA5TkxMUlVvZHFtSmlnUF8tbXdvOVpRVmdYcnJXLUVfT2pHcklWR2JYYnVNbE1LNEItOG5PdDkwSE4xdl93QUFGb3lyVklTUjBWdlN5LVU?oc=5",
+      "published": "2026-11-13T22:54:33+08:00",
+      "categories": [
+        "城市运营",
+        "企业动态"
+      ]
+    },
+    {
+      "title": "滴滴造车往事：遗憾、成全与新生 - 野马财经",
+      "summary": "滴滴造车往事：遗憾、成全与新生 &nbsp;&nbsp; 野马财经",
+      "source": "滴滴 自动驾驶",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5SajgzcmkyQlpFVDFkd0w4azNmX3JucDJuYWhlWTVvR082QXFGVUQtY1NraG0tSVVQbG9NX2p3VUFjS2x4YWpCZVFpY2pLbnNENnZ1VXBzc3RlZmJ1a3NkX3F3?oc=5",
+      "published": "2026-11-13T14:59:22+08:00",
+      "categories": [
+        "企业动态"
+      ]
+    },
     {
       "title": "自动驾驶，还没有赢家 - ThePaper.cn",
       "summary": "自动驾驶，还没有赢家 &nbsp;&nbsp; ThePaper.cn",
@@ -67,16 +98,6 @@
       "published": "2026-11-12T18:10:35+08:00",
       "categories": [
         "城市运营",
-        "企业动态"
-      ]
-    },
-    {
-      "title": "文远知行包揽10月智驾大赛榜冠亚军 智驾大赛史上唯一“八冠王” - Sohu",
-      "summary": "文远知行包揽10月智驾大赛榜冠亚军 智驾大赛史上唯一“八冠王” &nbsp;&nbsp; Sohu",
-      "source": "文远知行",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaGFIYlN4QzRVSGNpc0ZtRUZqeDJZSVZLR2s5UkxEMWE0d2lPSzlfc01UbUJDSHBtZFZvT1AxbnZ1bEVyTlhwVjBtc2lqclhEVXd6Slg4S2VNNE9DREljdHlQQ19kdkdiSFItSk50NGtBcFNqX1lfLTE5Z1VCRnpIakktdTIwSkl1?oc=5",
-      "published": "2026-11-11T16:44:09+08:00",
-      "categories": [
         "企业动态"
       ]
     }
