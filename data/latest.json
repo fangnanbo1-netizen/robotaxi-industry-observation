@@ -1,10 +1,79 @@
 {
-  "date": "2026-11-17",
-  "updated_at": "2026-11-17T15:49:11.120468+08:00",
+  "date": "2026-11-18",
+  "updated_at": "2026-11-18T15:18:21.271074+08:00",
   "timezone": "Asia/Shanghai",
-  "total_items": 18,
+  "total_items": 21,
   "china_priority": true,
   "items": [
+    {
+      "title": "23万元目标成本之后：Robotaxi的单车经济模型还差哪几步验证 - 同花顺财经",
+      "summary": "23万元目标成本之后：Robotaxi的单车经济模型还差哪几步验证 &nbsp;&nbsp; 同花顺财经",
+      "source": "小马智行",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE43WGE3SWpSV1BpVDBGLXpwNDhXenJwckdZVnRzT0N2UWt0ZEFzUUhvUW9naFZPV3cwZFV2OVNuazd0SGZCSEUxaF9qV3lVaGRWcFFxRW5HcXV1LUk5RHJQTA?oc=5",
+      "published": "2026-11-18T08:49:13+08:00",
+      "categories": [
+        "城市运营"
+      ]
+    },
+    {
+      "title": "小马智行×丰田第七代铂智4X Robotaxi广州投运，L4级自动驾驶服务覆盖北上广深四城 - 网通社",
+      "summary": "小马智行×丰田第七代铂智4X Robotaxi广州投运，L4级自动驾驶服务覆盖北上广深四城 &nbsp;&nbsp; 网通社",
+      "source": "小马智行",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBIMlg1QmlaQ2F6QU5BeG4zOTR1NDVxSF9oOUlXUGxzbjJTV3lzZngzUWpDZzVQdHR3LURtODBEdjZTcXJGaF9rb1Z3VldIeGxPYVVqSnplNTdvYzA?oc=5",
+      "published": "2026-11-18T03:09:09+08:00",
+      "categories": [
+        "城市运营",
+        "企业动态",
+        "技术车辆"
+      ]
+    },
+    {
+      "title": "【视频】丰田与小马智行合作的Robotaxi广州开跑 - 汽车之家",
+      "summary": "【视频】丰田与小马智行合作的Robotaxi广州开跑 &nbsp;&nbsp; 汽车之家",
+      "source": "小马智行",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5hX2RVQmE3SzNuV0hLUEprQUhXcFc2cUNkaEVjcUFub2t2MWFRdEYwNF9idndIUnpQRVRtQldtVzM3NTFZdGM3bzlpVjVvUXVKamVWbG94Q0Y4RjA?oc=5",
+      "published": "2026-11-18T00:02:37+08:00",
+      "categories": [
+        "城市运营",
+        "企业动态",
+        "资本合作"
+      ]
+    },
+    {
+      "title": "私家车接入特斯拉Robotaxi下月自动赚钱？马斯克再绘自动驾驶出租车新蓝图 - 36Kr",
+      "summary": "私家车接入特斯拉Robotaxi下月自动赚钱？马斯克再绘自动驾驶出租车新蓝图 &nbsp;&nbsp; 36Kr",
+      "source": "中国 自动驾驶出租车",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9Ebk1jajUta3VyRWZKVWFtUFJQZWs0X0VpVF82V2tjcDJNVElnUXUxMnZoakl6R0pwS0tGZUJua0oyeHFpYXpZelF0akxLM0c1ZW5v?oc=5",
+      "published": "2026-11-17T16:28:00+08:00",
+      "categories": [
+        "城市运营",
+        "技术车辆"
+      ]
+    },
+    {
+      "title": "小马智行第七代铂智4X Robotaxi广州开启接单；彪马全球首家赛车概念店上海亮相｜早资道 - Sohu",
+      "summary": "小马智行第七代铂智4X Robotaxi广州开启接单；彪马全球首家赛车概念店上海亮相｜早资道 &nbsp;&nbsp; Sohu",
+      "source": "小马智行",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQb0duNTVWdVZybTJXU3BIdDNiaW9NNXVTb1l6VkFnZkhQQUhzbF95NFJvRFZxZkYxOHlORGJCRXRsdzVldFZDU1pjTGpuV0JZM3VpWmRweV9ZMG1QY3RHRlRmbjZDUHRIdFlrcEE0emI0RDl6Z28zV1o4dnVESV9VNFpqMWZwTTJDT2hVVg?oc=5",
+      "published": "2026-11-17T09:30:48+08:00",
+      "categories": [
+        "城市运营",
+        "企业动态"
+      ]
+    },
+    {
+      "title": "周二盘前必读消息出炉!11月16日晚间产业与消息面催化密集：华为云发布基于昇腾算力训练的具身世界模型；小马智行联合丰田L4自动驾驶Robotaxi在广州开放示范运营；国内大型风光制氢一体化项目正式启动；DeepSeek收紧使用限额凸显算力紧张；同时多家上市公 - 新浪网",
+      "summary": "周二盘前必读消息出炉!11月16日晚间产业与消息面催化密集：华为云发布基于昇腾算力训练的具身世界模型；小马智行联合丰田L4自动驾驶Robotaxi在广州开放示范运营；国内大型风光制氢一体化项目正式启动；DeepSeek收紧使用限额凸显算力紧张；同时多家上市公 &nbsp;&nbsp; 新浪网",
+      "source": "小马智行",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE14M2RuOVhqcy1lVENlc0VhV1d4Nk12aTN3MmpaejB0WWQwYmdZX29md254QjdkVmdmeHNGY0toRUM0QzZQMHRLM19HTlJTbXpkMkxWeGhUaVFuY2NIOVdXbVN3NA?oc=5",
+      "published": "2026-11-17T07:49:00+08:00",
+      "categories": [
+        "城市运营",
+        "企业动态",
+        "资本合作",
+        "技术车辆"
+      ]
+    },
     {
       "title": "铂智4X Robotaxi广州示范运营，10亿合资造L4 - 汽车之家",
       "summary": "铂智4X Robotaxi广州示范运营，10亿合资造L4 &nbsp;&nbsp; 汽车之家",
@@ -18,6 +87,17 @@
       ]
     },
     {
+      "title": "亚马逊旗下 Zoox 首次接入第三方叫车平台：robotaxi 周一起可通过 Uber 应用在拉斯维加斯叫到 - 智源社区",
+      "summary": "亚马逊旗下 Zoox 首次接入第三方叫车平台：robotaxi 周一起可通过 Uber 应用在拉斯维加斯叫到 &nbsp;&nbsp; 智源社区",
+      "source": "中国 自动驾驶出租车",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE8wRkltcjRnajdoM3VRZ1l6MWs1d0VWREpfS3ZWdmdmbW1SMzVkV3gzUFFNWlk2T2RNNFlaRm5GYWVKT0F3MlpmOA?oc=5",
+      "published": "2026-11-17T04:11:00+08:00",
+      "categories": [
+        "城市运营",
+        "企业动态"
+      ]
+    },
+    {
       "title": "广州市区能打到小马智行铂智4X Robotaxi了 - 汽车之家",
       "summary": "广州市区能打到小马智行铂智4X Robotaxi了 &nbsp;&nbsp; 汽车之家",
       "source": "小马智行",
@@ -26,6 +106,18 @@
       "categories": [
         "城市运营",
         "企业动态"
+      ]
+    },
+    {
+      "title": "法规授权为什么比技术更稀缺？上海依法推动自动驾驶出租车应用 - Sohu",
+      "summary": "法规授权为什么比技术更稀缺？上海依法推动自动驾驶出租车应用 &nbsp;&nbsp; Sohu",
+      "source": "中国 自动驾驶出租车",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQVJWVGRLVVp4anhCYzc5Zi0xM3F3QmoyUW5VZkZLLW5Nelg3RlBrNzBqM05ld0MzNVR6anJlNGZKUWNFX2tCQk5fdVVyZ2NaVWU2VXFtOWE0YUZaeVpSRG9wUXFMN2lNX3RZSWY5SlQ3aUk1ZWU2cElhTjMtSV9tTFBVQ3VDUWl3dEVGOA?oc=5",
+      "published": "2026-11-16T22:39:22+08:00",
+      "categories": [
+        "政策监管",
+        "城市运营",
+        "技术车辆"
       ]
     },
     {
@@ -53,12 +145,13 @@
       ]
     },
     {
-      "title": "小马智行第七代铂智4X Robotaxi在广州投入示范运营 - CAIJING.COM.CN",
-      "summary": "小马智行第七代铂智4X Robotaxi在广州投入示范运营 &nbsp;&nbsp; CAIJING.COM.CN",
-      "source": "小马智行",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBGOENSaHFHTDgtMXV0V0JHUGVOREFOTW81NWU4SWNpRzdqU2xxWkt6SnQtWGhJWW8waDU0Yk9FbnlOR3BGRmtydWhsQ1lpU1MwQ19kUmpNN3dGZ2x2dmFJUA?oc=5",
-      "published": "2026-11-16T19:23:00+08:00",
+      "title": "Tesla Cybercab即将面向私人销售：Robotaxi计划遭遇美国监管机构的麻烦 - VISION mobility",
+      "summary": "Tesla Cybercab即将面向私人销售：Robotaxi计划遭遇美国监管机构的麻烦 &nbsp;&nbsp; VISION mobility",
+      "source": "中国 自动驾驶出租车",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNZW5sQkxNcTRFcFV1eGNOZDRxZi1neTVYWmhkaGJDVl9memNpZG54dGRVVExRVVpyaDhRa2NBODEyTGdTaUNRUi1qYWNlNDFRZktQa1l0ek9fdy00TzJ3YnhoWXRMTWpteWJqSjhVNzJPMTItYW15aW1tc2Ywd0o4b2x5SmUzZXVqOU5JeGFfeXJMN3N1WmpKeFhXUUZRU1JQdGc2QWQ3bkVjRFRoX0Z2bVRwNVdpTUFqV2ZKd1dsaFkxYXFIQjhzSlhrTnZ3S21f?oc=5",
+      "published": "2026-11-16T20:45:00+08:00",
       "categories": [
+        "政策监管",
         "城市运营",
         "企业动态"
       ]
@@ -130,6 +223,17 @@
       ]
     },
     {
+      "title": "小马智行和丰田7年磨一剑？第七代铂智4X Robotaxi开启运营 - 汽车之家",
+      "summary": "小马智行和丰田7年磨一剑？第七代铂智4X Robotaxi开启运营 &nbsp;&nbsp; 汽车之家",
+      "source": "小马智行",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1tRG9OcUxpd1Nma3M3V1NLNlVQaTBURkJpUFgyb0VEaGNfRVZHck9lSFZOZ3BvOWZrRWlSblJ1ZEZSVFg5QkJfTXRqVk1BNjMxQ1U5S0I5RkloNmZEMndPU3hZd3diTDRZdnJ3?oc=5",
+      "published": "2026-11-16T16:00:00+08:00",
+      "categories": [
+        "城市运营",
+        "企业动态"
+      ]
+    },
+    {
       "title": "丰田联手小马智行，第七代铂智 4X Robotaxi 在广州开启示范运营 - 汽车之家",
       "summary": "丰田联手小马智行，第七代铂智 4X Robotaxi 在广州开启示范运营 &nbsp;&nbsp; 汽车之家",
       "source": "小马智行",
@@ -138,71 +242,6 @@
       "categories": [
         "城市运营",
         "企业动态"
-      ]
-    },
-    {
-      "title": "丰田携手小马智行 铂智4X无人车在广州南沙开启示范运营 - 汽车之家",
-      "summary": "丰田携手小马智行 铂智4X无人车在广州南沙开启示范运营 &nbsp;&nbsp; 汽车之家",
-      "source": "小马智行",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBOcldTYkN4M19DSDAwb3o1UVd0X0RlTUloVGlIT0dJQkt5MEx0S1ZyWjduTEk4YlBoWGNEZnBVWEJlYVctUWlLS3FzNnFLRk83RlFrNHdPLVFsWG8?oc=5",
-      "published": "2026-11-16T14:37:56+08:00",
-      "categories": [
-        "城市运营",
-        "企业动态"
-      ]
-    },
-    {
-      "title": "第七代铂智4X Robotaxi广州开跑 - 汽车之家",
-      "summary": "第七代铂智4X Robotaxi广州开跑 &nbsp;&nbsp; 汽车之家",
-      "source": "小马智行",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBfc09hRmpMc0ZhbC1JaGJGc2xTTFdhaVZNNU1vU016anRzQTM0aWlEMVBpOVJQcjdqa1d4MURURjFCdjNIMXlqbHZHNmRFQ2NfZUFOdmd2N0NTZU0?oc=5",
-      "published": "2026-11-16T14:27:55+08:00",
-      "categories": [
-        "城市运营"
-      ]
-    },
-    {
-      "title": "小马智行第七代铂智4X Robotaxi广州开放L4级自动驾驶服务 - 凤凰网",
-      "summary": "小马智行第七代铂智4X Robotaxi广州开放L4级自动驾驶服务 &nbsp;&nbsp; 凤凰网",
-      "source": "小马智行",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5uc2xwWVp6akFxdWNQVmZqbmlBSEhNZ2xwYVBmd0RIY0tpV1JzYkxFaVpUYXZmQjRjRm9kYjdWYUF6b0E2WnZYTHZzYm8?oc=5",
-      "published": "2026-11-16T14:25:58+08:00",
-      "categories": [
-        "城市运营",
-        "企业动态",
-        "技术车辆"
-      ]
-    },
-    {
-      "title": "小马智行与丰田合作的第七代铂智4X Robotaxi启动示范运营 - 新浪网",
-      "summary": "小马智行与丰田合作的第七代铂智4X Robotaxi启动示范运营 &nbsp;&nbsp; 新浪网",
-      "source": "小马智行",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9IQ2dYRWVUekFPNEZHWWhEZkVoOElIclJKUDVsc2xZM0pPUk1UZWlnQ2FkdlNkZndKeWlsemNxWDZPQWRYNUNNd0cyOA?oc=5",
-      "published": "2026-11-16T12:39:14+08:00",
-      "categories": [
-        "城市运营",
-        "企业动态",
-        "资本合作"
-      ]
-    },
-    {
-      "title": "今天起，无人驾驶多了一种新可能 - https://www.itopmarketing.com/",
-      "summary": "今天起，无人驾驶多了一种新可能 &nbsp;&nbsp; https://www.itopmarketing.com/",
-      "source": "百度 Apollo Go",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5SbjVHdlZaUnZkempJX0ZrYWpNbkRBbnA0SDJfRnlmWDFOVHFzRkpTR09iSUxhdHVRR1NhNmFjLUNEdXplNHNJVFRWUXhMRmxJ?oc=5",
-      "published": "2026-11-16T11:49:44+08:00",
-      "categories": [
-        "技术车辆"
-      ]
-    },
-    {
-      "title": "四家L4公司回应单车盈利：口径各异，全面盈利仍需跨过成本分摊与规模化门槛 - 虎嗅",
-      "summary": "四家L4公司回应单车盈利：口径各异，全面盈利仍需跨过成本分摊与规模化门槛 &nbsp;&nbsp; 虎嗅",
-      "source": "小马智行",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9fSklYTHhrV21EdEZ6NVJRbWlfaGh1MGRzQ3Y3NnN4d3QwMm92ZFREbEdYMVJQcUpzaVpwVS1DaElVaURrT3BsY2xCX0g3UHQ2VW54RQ?oc=5",
-      "published": "2026-11-15T21:18:41+08:00",
-      "categories": [
-        "技术车辆"
       ]
     }
   ]
