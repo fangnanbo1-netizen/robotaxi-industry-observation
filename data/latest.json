@@ -1,10 +1,22 @@
 {
-  "date": "2026-11-27",
-  "updated_at": "2026-11-27T16:17:59.868299+08:00",
+  "date": "2026-11-28",
+  "updated_at": "2026-11-28T15:39:31.568199+08:00",
   "timezone": "Asia/Shanghai",
-  "total_items": 4,
+  "total_items": 5,
   "china_priority": true,
   "items": [
+    {
+      "title": "新增7成高价值订单正在改变司机收入：滴滴甄选司机每月多赚500元 - Jiemian.com",
+      "summary": "新增7成高价值订单正在改变司机收入：滴滴甄选司机每月多赚500元 &nbsp;&nbsp; Jiemian.com",
+      "source": "滴滴 自动驾驶",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Ta0hyOE9UcjNuWFBDQ0JJT1FVVXlTclMxSndMWGhIUlNjbHJmU21Pd2VlY2lnY0d6ZnllM2RObmIwRERWSnUxaFE0Q0kzR3pYdV9sbkdn?oc=5",
+      "published": "2026-11-27T18:55:57+08:00",
+      "categories": [
+        "城市运营",
+        "企业动态",
+        "资本合作"
+      ]
+    },
     {
       "title": "港股异动 | 小马智行-W(02026)涨超6% 三季度自动驾驶出行服务收入飙升165% 公司重申全年车队目标计划-证券之星 - 证券之星",
       "summary": "港股异动 | 小马智行-W(02026)涨超6% 三季度自动驾驶出行服务收入飙升165% 公司重申全年车队目标计划-证券之星 &nbsp;&nbsp; 证券之星",
@@ -28,25 +40,27 @@
       ]
     },
     {
-      "title": "中国Robotaxi公司加速布局迪拜，百度、文远知行、小马智行以不同模式竞逐无人出租车市场 - 虎嗅网",
-      "summary": "中国Robotaxi公司加速布局迪拜，百度、文远知行、小马智行以不同模式竞逐无人出租车市场 &nbsp;&nbsp; 虎嗅网",
+      "title": "官宣落地曼彻斯特，小马智行欧洲扩张进入新节奏 - 汽车之家",
+      "summary": "官宣落地曼彻斯特，小马智行欧洲扩张进入新节奏 &nbsp;&nbsp; 汽车之家",
       "source": "小马智行",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4xNmc3eFV1djZtTnZQdXh5NklzMmhxOTFLdG1PZll6OU1ZNU5oU25GV3FCNXUxeldsdHRkaUg2MXU3ZEdCWk9yUTBSeTZ2azBQRWdGUQ?oc=5",
-      "published": "2026-11-26T11:41:03+08:00",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBHOFRBbnNScDRfSGl1VVNVcHB3X1pSdFM0aXF0bl9rVFF4aHU4dUtrUWwwWWdPSTluekxYYzBLcDNyOXFhbk9XZlN5S0ZDTUNob2VWTzlnSDdhcHM?oc=5",
+      "published": "2026-11-26T18:22:37+08:00",
       "categories": [
-        "城市运营",
         "企业动态"
       ]
     },
     {
-      "title": "吉利无人驾驶出租车Robotaxi来了，无方向盘无踏板，你敢坐吗？ - 汽车之家",
-      "summary": "吉利无人驾驶出租车Robotaxi来了，无方向盘无踏板，你敢坐吗？ &nbsp;&nbsp; 汽车之家",
-      "source": "中国 自动驾驶出租车",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1hT2RMMWZCSG1nTE9YcDdpOGVXTHJsQU1qeC1oNU1IM2hfY1hPaElqeXNtZFgxWlRFMk9QV05CbXF6dGNjLV9yM05hME5rczNwc1RfS3lhbnY0TnJ6QWc?oc=5",
-      "published": "2026-11-25T23:37:22+08:00",
+      "title": "营收暴涨、研发超营收，文远知行出海遇安全考验 新加坡榜鹅，搭载文远知行方案的自动驾驶接驳车测试时险些撞到过马路学生，当地监管叫停同类路口测试。险情背后，文远知行第三季度，营收同比大增 88%，Robotaxi 收入首破亿元；但单季研发投入高于营收，亏损仍 - Sohu",
+      "summary": "营收暴涨、研发超营收，文远知行出海遇安全考验 新加坡榜鹅，搭载文远知行方案的自动驾驶接驳车测试时险些撞到过马路学生，当地监管叫停同类路口测试。险情背后，文远知行第三季度，营收同比大增 88%，Robotaxi 收入首破亿元；但单季研发投入高于营收，亏损仍 &nbsp;&nbsp; Sohu",
+      "source": "文远知行",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObEZ5YkkyNGJjaW5mSEJaVE84cDMwYWpRdW5Kb3FmQU91eGRqNXd2TVpyVWFLcXpKWUxxUUI1RXl4WElfMzgwZ3NEMlNTbG0wS3FnUGI0c2NyWUZIX0NzV1R0aVZ0Y09uOXE1d2NCTnQwZW8xV2VsY3BLLW5qWmM1a2wwemdEbzNy?oc=5",
+      "published": "2026-11-26T15:44:52+08:00",
       "categories": [
+        "政策监管",
         "城市运营",
-        "技术车辆"
+        "企业动态",
+        "技术车辆",
+        "安全事件"
       ]
     }
   ]
